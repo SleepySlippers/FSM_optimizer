@@ -1,0 +1,12 @@
+
+768,771 book1
+295,651 book1_o2_FSM0  // rc_v5 256-state FSM bruteforce-optimized for book1bwt
+289,113 book1_o2_FSM0a // P_recalc (state probabilities from actual file stats, APM-like)
+298,185 book1_o2_FSM1  // DC3 counter (32665 states)
+285,329 book1_o2_FSM1a // P_recalc
+298,966 book1_o2_FSM2  // linear counter (32543 states)
+284,095 book1_o2_FSM2a // P_recalc
+302,819 book1_o2_FSM3  // 32767 states, history-to-state encoding, P's from histories of states
+288,512 book1_o2_FSM3a // P_recalc
+327,422 book1_o2_FSM4  // 255 states, history-to-state encoding
+306,423 book1_o2_FSM4a // P_recalc
