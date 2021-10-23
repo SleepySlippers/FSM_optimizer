@@ -3,5 +3,5 @@ project(optimizer)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(optimizer graph_optimizer.cpp)
+add_executable(optimizer graph_optimizer.cpp traverse.h bit.h)
 

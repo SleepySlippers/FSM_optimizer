@@ -14,6 +14,7 @@ enum {
 #include <iostream>
 #include <map>
 #include <vector>
+#include "bit.h"
 
 typedef unsigned int uint;
 typedef unsigned short word;
@@ -35,7 +36,7 @@ uint flen(FILE *f) {
 
 uint ACTUAL_FSM_SIZE = 0;
 
-uint HISTORY_SZ = 1;
+const uint HISTORY_SZ = 2;
 
 struct fsm {
     word s[2] = {0, 0}; // next state after bits 0,1
@@ -43,8 +44,8 @@ struct fsm {
     word me;
     // uint actual_zeros = 0;
     // uint actual_visits = 0;
-    std::map<std::array<int, 2>, std::array<int, 2>> from;
-    //std::array<int, 2> prev = {-1, -1};
+    //std::map<std::array<word, HISTORY_SZ>, std::array<long long, 2>> from;
+    std::map<std::pair<word, char>, std::array<long long, 2> > from;
     bool tainted = false;
 
     void recalc_pp(int my_state) {
@@ -60,14 +61,19 @@ struct fsm {
         }
     }
 
-    void Update(uint my_state, uint bit, std::array<int, 2> &prev) {
+    /*void Update(word my_state, word bit, std::array<word, 2> &prev) {
         bit = (bit > 0);
         // actual_zeros += (bit == 0);
         //++actual_visits;
-        if (prev[1] != -1) {
+        if (prev[1] != word(-1)) {
             ++from[prev][bit];
+            // TODO use traverse
         }
-        prev = {int(my_state), int(bit)};
+        prev = {my_state, bit};
+    }*/
+
+    void NewUpdate(std::pair<word, char> prev, Bit bit) {
+        ++from[prev][bit];
     }
 
     uint get_number(char *&p, char *q) {
@@ -111,6 +117,8 @@ struct fsm {
     }
 } FSM[N_STATES];
 
+#include "traverse.h"
+
 void Clear(int my_state) {
     FSM[my_state].me = my_state;
     FSM[my_state].from.clear();
@@ -119,23 +127,26 @@ void Clear(int my_state) {
 }
 
 void split_in_two(int my_state) {
-    std::vector<std::array<int, 2>> more_zeros, more_ones;
+    if (my_state == 0) return;
+    if (ACTUAL_FSM_SIZE >= N_STATES) return;
+    //std::vector<std::array<word, 2>> more_zeros, more_ones;
+    int more_zeros = 0, more_ones = 0;
     for (auto it: FSM[my_state].from) {
-        ((it.second[0] < it.second[1]) ? more_ones : more_zeros).push_back(it.first);
+        //((it.second[0] < it.second[1]) ? more_ones : more_zeros).push_back(it.first);
+        ++((it.second[0] < it.second[1]) ? more_ones : more_zeros);
     }
-    if (more_zeros.size() == 0 || more_ones.size() == 0)
+    //if (more_zeros.size() == 0 || more_ones.size() == 0)
+    if (more_zeros == 0 || more_ones == 0)
         return;
     FSM[ACTUAL_FSM_SIZE].s[0] = FSM[my_state].s[0];
     FSM[ACTUAL_FSM_SIZE].s[1] = FSM[my_state].s[1];
     for (auto it: FSM[my_state].from) {
-
-        ((it.second[0] < it.second[1]) ? more_ones : more_zeros).push_back(it.first);
         int to = (it.second[0] < it.second[1]) ? ACTUAL_FSM_SIZE : my_state;
-        if (it.first[0] == my_state) {
-            FSM[my_state].s[it.first[1]] = to;
-            FSM[ACTUAL_FSM_SIZE].s[it.first[1]] = to;
+        if (it.first.first == my_state) {
+            FSM[my_state].s[it.first.second] = to;
+            FSM[ACTUAL_FSM_SIZE].s[it.first.second] = to;
         } else {
-            FSM[it.first[0]].s[it.first[1]] = to;
+            FSM[it.first.first].s[it.first.second] = to;
         }
     }
     FSM[ACTUAL_FSM_SIZE].tainted = true;
@@ -171,67 +182,85 @@ void try_optimize_links(int my_state) {
     }
 }
 
+
+/*struct StringToBit {
+    StringToBit(std::string &s) : s(s) {}
+
+    Bit GetBit(size_t ind) const {
+        return
+    }
+
+private:
+    const std::string &s;
+};*/
+
 struct Counter {
     word state = 0;
-    std::array<int, 2> prev = {-1, -1};
+    //std::array<word, 2> prev = {word(-1), word(-1)};
+    Traverse traverse;
 
     uint P() const { return FSM[state].pp; }
 
     void Update(uint bit) {
         bit = (bit > 0);
+        if (state != 0) {
+            FSM[state].NewUpdate(traverse.GetPrev(), bit);
+        }
         state = FSM[state].s[bit];
+        traverse.Add(bit);
     }
 };
 
 struct Predictor {
-    uint ctx;               // o0 aligned bit context
-    Counter p[0x100 << 16]; // order2
-
-    uint prelastbyte = 0;
-    uint lastbyte = 0;
-    uint bits = 0;
-    int shift = 1;
+    uint ctx = 1 << 16;               // o0 aligned bit context
+    static const int P_SZ = 0x100 << 16;
+    Counter p[P_SZ]; // order2
 
     void Init() {
-        for (uint i = 0; i < sizeof(p) / sizeof(p[0]); i++)
+        for (uint i = 0; i < sizeof(p) / sizeof(p[0]); i++) {
             p[i].state = 0;
+            p[i].traverse.Init(i);
+        }
         ctx = 1 << 16;
     }
 
     uint P() const { return p[ctx].P(); }
 
-    uint State() const {
+    word State() const {
         return p[ctx].state;
     }
 
     uint byte() {
         uint c = ctx & 0xFF;
         ctx = (ctx & 0xFFFF) | (1 << 16);
-        bits = 0;
-        shift = 1;
-        prelastbyte = lastbyte;
-        lastbyte = c;
         return c;
     }
 
     void update(uint bit) {
         bit = (bit > 0);
-        FSM[p[ctx].state].Update(State(), bit, p[ctx].prev);
+        //FSM[p[ctx].state].Update(State(), bit, p[ctx].prev);
         p[ctx].Update(bit);
         // assert(shift == 0 || (ctx & ((1 << shift) - 1)) == bits);
         (ctx *= 2) += bit;
-        (bits *= 2) += bit;
-        ++shift;
     }
 };
 
+Predictor *p;
+
 struct Context {
-    Predictor *p;
+    Context() {
+        p = new Predictor();
+    }
+
+    ~Context() {
+        delete p;
+    }
 };
 
 void proc(Context &ctx, uint bit) {
     bit = (bit > 0);
-    ctx.p->update(bit);
+    //ctx.p->update(bit);
+    p->update(bit);
 }
 
 void optimize_pp(const std::string s) {
@@ -239,9 +268,12 @@ void optimize_pp(const std::string s) {
         Clear(i);
     }
     Context ctx{};
-    ctx.p = new Predictor();
-    ctx.p->Init();
-    for (int i = 0; i < s.size(); ++i) {
+    //ctx.p->Init();
+    p->Init();
+    for (size_t i = 0; i < s.size(); ++i) {
+        if (i % (s.size() / 100) == 0) {
+            std::cerr << i * 100 / s.size() << "%" << std::endl;
+        }
         uint c = s[i];
         proc(ctx, c & 0x80);
         proc(ctx, c & 0x40);
@@ -251,15 +283,16 @@ void optimize_pp(const std::string s) {
         proc(ctx, c & 0x04);
         proc(ctx, c & 0x02);
         proc(ctx, c & 0x01);
-        ctx.p->byte();
+        //ctx.p->byte();
+        p->byte();
     }
     for (uint i = 0; i < ACTUAL_FSM_SIZE; ++i) {
         FSM[i].recalc_pp(i);
     }
-    delete ctx.p;
 }
 
 void whole_optimization(const std::string &s) {
+    std::cerr << sizeof(Traverse) << std::endl;
     optimize_pp(s);
     for (uint i = 0; i < ACTUAL_FSM_SIZE; ++i) {
         try_optimize_links(i);
@@ -286,8 +319,6 @@ int main(int argc, char *argv[]) {
         return 5;
     uint f_len = 0, c, i;
     f_len = flen(in);
-    int cnt = 0;
-    int debt = 0;
     std::string s;
     s.reserve(f_len);
     for (i = 0; i < f_len; i++) {
