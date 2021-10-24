@@ -14,6 +14,8 @@ enum {
 #include <iostream>
 #include <map>
 #include <vector>
+#include <unordered_set>
+#include <unordered_map>
 #include "bit.h"
 
 typedef unsigned int uint;
@@ -45,7 +47,8 @@ struct fsm {
     // uint actual_zeros = 0;
     // uint actual_visits = 0;
     //std::map<std::array<word, HISTORY_SZ>, std::array<long long, 2>> from;
-    std::map<std::pair<word, char>, std::array<long long, 2> > from;
+    //std::map<std::pair<word, char>, std::array<long long, 2> > from;
+    std::map<signed short, std::array<qword, 2>> from;
     qword actual_zeros = 0;
     qword actual_ones = 0;
     bool tainted = false;
@@ -58,12 +61,12 @@ struct fsm {
     }
 
     void recalc_pp(int my_state) {
-        actual_zeros = 0;
+        /*actual_zeros = 0;
         actual_ones = 0;
         for (auto it: from) {
             actual_zeros += it.second[0];
             actual_ones += it.second[1];
-        }
+        }*/
         if (actual_ones + actual_zeros != 0) {
             pp = uint((qword(actual_zeros) << SCALElog) / (actual_ones + actual_zeros));
         }
@@ -83,7 +86,8 @@ struct fsm {
     void NewUpdate(std::pair<word, char> prev, Bit bit) {
         actual_zeros += int(bit) == 0;
         actual_ones += int(bit) == 1;
-        ++from[prev][bit];
+        //++from[prev][bit];
+        ++from[prev.first * ((prev.second == 1) ? 1 : -1)][bit];
     }
 
     uint get_number(char *&p, char *q) {
@@ -118,7 +122,7 @@ struct fsm {
             this[i].s[1] = Max(0, Min(N_STATES - 1, get_number(p, q)));
             this[i].pp = Max(1, Min(SCALE - 1, get_number(p, q)));
             if (p == q) {
-                ACTUAL_FSM_SIZE = i + 1;
+                ACTUAL_FSM_SIZE = i;
                 break;
             }
         }
@@ -129,14 +133,14 @@ struct fsm {
 
 //#include "traverse.h"
 
-void Clear(int my_state) {
+/*void Clear(int my_state) {
     FSM[my_state].me = my_state;
     FSM[my_state].from.clear();
     //FSM[my_state].prev = {-1, -1};
     FSM[my_state].tainted = false;
-}
+}*/
 
-void split_in_two(int my_state) {
+/*void split_in_two(int my_state) {
     if (my_state == 0) return;
     if (ACTUAL_FSM_SIZE >= N_STATES) return;
     //std::vector<std::array<word, 2>> more_zeros, more_ones;
@@ -163,26 +167,10 @@ void split_in_two(int my_state) {
     FSM[my_state].tainted = true;
     FSM[FSM[my_state].s[0]].tainted = true;
     FSM[FSM[my_state].s[1]].tainted = true;
-    /*FSM[ACTUAL_FSM_SIZE].s[0] = FSM[my_state].s[0];
-    FSM[ACTUAL_FSM_SIZE].s[1] = FSM[my_state].s[1];
-    for (auto it : more_zeros)
-    {
-        // FSM[ACTUAL_FSM_SIZE].from[it] = FSM[my_state].from[it];
-        // FSM[my_state].from.erase(it);
-        if (it[0] == my_state)
-        {
-            FSM[my_state].s[it[1]] = my_state;
-            FSM[ACTUAL_FSM_SIZE].s[it[1]] = my_state;
-        }
-        else
-        {
-            FSM[it[0]].s[it[1]] = my_state;
-        }
-    }*/
     ++ACTUAL_FSM_SIZE;
-}
+}*/
 
-void new_split_in_two(word my_state) {
+/*void new_split_in_two(word my_state) {
     if (my_state == 0) return;
     if (ACTUAL_FSM_SIZE + 1 >= N_STATES) return;
     auto &tmp = FSM[my_state];
@@ -220,9 +208,47 @@ void new_split_in_two(word my_state) {
     // links are right. need to recalc %from% for some nodes
     ACTUAL_FSM_SIZE += 2;
     //Traverse::RecalcFrom(my_state);
+}*/
+
+bool split_most() {
+    if (ACTUAL_FSM_SIZE >= N_STATES) return false;
+    qword mx = 0;
+    std::pair<signed short, word> ind;
+    for (word i = 1; i < ACTUAL_FSM_SIZE; ++i) {
+        if (FSM[i].from.size() > 1) {
+            for (auto it: FSM[i].from) {
+                if (abs(it.first) != i && it.second[0] + it.second[1] > mx){
+                    mx = it.second[0] + it.second[1];
+                    ind = {it.first, i};
+                }
+            }
+        }
+    }
+    if (mx == 0){
+        return false;
+    }
+    if (ind.second != abs(ind.first)) {
+        FSM[ACTUAL_FSM_SIZE].s[0] = FSM[ind.second].s[0];
+        FSM[ACTUAL_FSM_SIZE].s[1] = FSM[ind.second].s[1];
+        FSM[ACTUAL_FSM_SIZE].from[ind.first] = FSM[ind.second].from[ind.first];
+        FSM[ACTUAL_FSM_SIZE].actual_zeros = FSM[ind.second].from[ind.first][0];
+        FSM[ACTUAL_FSM_SIZE].actual_ones = FSM[ind.second].from[ind.first][1];
+        FSM[ACTUAL_FSM_SIZE].recalc_pp(ACTUAL_FSM_SIZE);
+        FSM[ACTUAL_FSM_SIZE].me = ACTUAL_FSM_SIZE;
+
+        FSM[abs(ind.first)].s[int(Bit(ind.first))] = ACTUAL_FSM_SIZE;
+
+        FSM[ind.second].actual_zeros -= FSM[ind.second].from[ind.first][0];
+        FSM[ind.second].actual_ones -= FSM[ind.second].from[ind.first][1];
+        FSM[ind.second].from.erase(ind.first);
+        FSM[ind.second].recalc_pp(ind.second);
+        ++ACTUAL_FSM_SIZE;
+        return true;
+    }
+    return false;
 }
 
-void try_optimize_links(int my_state) {
+/*void try_optimize_links(int my_state) {
     if (FSM[my_state].tainted)
         return;
     const int ACTIVATION = 10000;
@@ -234,7 +260,7 @@ void try_optimize_links(int my_state) {
 
 void new_try_optimize_links(word my_state) {
     new_split_in_two(my_state);
-}
+}*/
 
 
 /*struct StringToBit {
@@ -351,7 +377,7 @@ word get_new_state(word state, word *new_states, word real_states) {
     return new_states[state];
 }
 
-void shrink() {
+/*void shrink() {
     word new_states[N_STATES];
     word real_states = 0;
     for (int i = 0; i < ACTUAL_FSM_SIZE; ++i) {
@@ -378,7 +404,7 @@ void shrink() {
     FSM[real_states].Init();
     FSM[real_states].s[0] = FSM[real_states].s[1] = real_states;
     ACTUAL_FSM_SIZE = real_states + 1;
-}
+}*/
 
 void optimize_pp() {
     for (uint i = 0; i < ACTUAL_FSM_SIZE; ++i) {
@@ -388,10 +414,16 @@ void optimize_pp() {
 
 void whole_optimization(const std::string &s) {
     //std::cerr << sizeof(Traverse) << std::endl;
+    std::cerr << ACTUAL_FSM_SIZE << std::endl;
     calc_infos(s);
     //shrink();
     optimize_pp();
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 100000; ++i){
+        split_most();
+    }
+    calc_infos(s);
+    optimize_pp();
+    /*for (int i = 0; i < 10; ++i) {
         for (uint i = 0; i < ACTUAL_FSM_SIZE; ++i) {
             //try_optimize_links(i);
             new_try_optimize_links(i);
@@ -399,7 +431,7 @@ void whole_optimization(const std::string &s) {
         calc_infos(s);
         //shrink();
         optimize_pp();
-    }
+    }*/
 }
 
 void print_graph() {
