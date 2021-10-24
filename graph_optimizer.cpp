@@ -46,18 +46,26 @@ struct fsm {
     // uint actual_visits = 0;
     //std::map<std::array<word, HISTORY_SZ>, std::array<long long, 2>> from;
     std::map<std::pair<word, char>, std::array<long long, 2> > from;
+    qword actual_zeros = 0;
+    qword actual_ones = 0;
     bool tainted = false;
 
+    void Init() {
+        actual_ones = 0;
+        actual_zeros = 0;
+        from.clear();
+        tainted = false;
+    }
+
     void recalc_pp(int my_state) {
-        uint actual_zeros = 0;
-        uint actual_visits = 0;
+        actual_zeros = 0;
+        actual_ones = 0;
         for (auto it: from) {
             actual_zeros += it.second[0];
-            actual_visits += it.second[1];
+            actual_ones += it.second[1];
         }
-        actual_visits += actual_zeros;
-        if (actual_visits != 0) {
-            pp = uint((qword(actual_zeros) << SCALElog) / actual_visits);
+        if (actual_ones + actual_zeros != 0) {
+            pp = uint((qword(actual_zeros) << SCALElog) / (actual_ones + actual_zeros));
         }
     }
 
@@ -73,6 +81,8 @@ struct fsm {
     }*/
 
     void NewUpdate(std::pair<word, char> prev, Bit bit) {
+        actual_zeros += int(bit) == 0;
+        actual_ones += int(bit) == 1;
         ++from[prev][bit];
     }
 
@@ -117,7 +127,7 @@ struct fsm {
     }
 } FSM[N_STATES];
 
-#include "traverse.h"
+//#include "traverse.h"
 
 void Clear(int my_state) {
     FSM[my_state].me = my_state;
@@ -172,6 +182,46 @@ void split_in_two(int my_state) {
     ++ACTUAL_FSM_SIZE;
 }
 
+void new_split_in_two(word my_state) {
+    if (my_state == 0) return;
+    if (ACTUAL_FSM_SIZE + 1 >= N_STATES) return;
+    auto &tmp = FSM[my_state];
+    if (tmp.tainted) return;
+    //std::vector<std::pair<word, char>> more_ones, more_zeros;
+    std::vector<std::pair<std::pair<word, char>, std::array<long long, 2> >> more_ones, more_zeros;
+    for (auto it: tmp.from) {
+        ((it.second[0] > it.second[1]) ? more_zeros : more_ones).emplace_back(it);
+    }
+    tmp.tainted = true;
+    if (more_ones.empty() || more_zeros.empty()) {
+        return;
+    }
+    std::cerr << my_state << std::endl;
+    FSM[ACTUAL_FSM_SIZE].s[0] = FSM[my_state].s[0];
+    FSM[ACTUAL_FSM_SIZE].s[1] = FSM[my_state].s[1];
+    FSM[ACTUAL_FSM_SIZE + 1].s[0] = FSM[my_state].s[0];
+    FSM[ACTUAL_FSM_SIZE + 1].s[1] = FSM[my_state].s[1];
+    FSM[ACTUAL_FSM_SIZE].tainted = true;
+    FSM[ACTUAL_FSM_SIZE + 1].tainted = true;
+    FSM[FSM[my_state].s[0]].tainted = true;
+    FSM[FSM[my_state].s[1]].tainted = true;
+    for (int i = 0; i < 2; ++i) {
+        for (auto it: ((i == 0) ? more_zeros : more_ones)) {
+            if (it.first.first != my_state) {
+                FSM[it.first.first].s[it.first.second] = ACTUAL_FSM_SIZE + i;
+                //FSM[ACTUAL_FSM_SIZE + i].from[it.first] = it.second;
+                //FSM[ACTUAL_FSM_SIZE + i].from.emplace(it);
+            } else {
+                FSM[ACTUAL_FSM_SIZE].s[it.first.second] = ACTUAL_FSM_SIZE + i;
+                FSM[ACTUAL_FSM_SIZE + 1].s[it.first.second] = ACTUAL_FSM_SIZE + i;
+            }
+        }
+    }
+    // links are right. need to recalc %from% for some nodes
+    ACTUAL_FSM_SIZE += 2;
+    //Traverse::RecalcFrom(my_state);
+}
+
 void try_optimize_links(int my_state) {
     if (FSM[my_state].tainted)
         return;
@@ -180,6 +230,10 @@ void try_optimize_links(int my_state) {
         split_in_two(my_state);
         std::cerr << my_state << std::endl;
     }
+}
+
+void new_try_optimize_links(word my_state) {
+    new_split_in_two(my_state);
 }
 
 
@@ -197,17 +251,19 @@ private:
 struct Counter {
     word state = 0;
     //std::array<word, 2> prev = {word(-1), word(-1)};
-    Traverse traverse;
+    //Traverse traverse;
+    std::pair<word, char> prev = {word(-1), word(-1)};
 
     uint P() const { return FSM[state].pp; }
 
     void Update(uint bit) {
         bit = (bit > 0);
         if (state != 0) {
-            FSM[state].NewUpdate(traverse.GetPrev(), bit);
+            FSM[state].NewUpdate(prev, bit);
         }
+        prev = {state, bit};
         state = FSM[state].s[bit];
-        traverse.Add(bit);
+        //traverse.Add(bit);
     }
 };
 
@@ -217,9 +273,12 @@ struct Predictor {
     Counter p[P_SZ]; // order2
 
     void Init() {
+        for (int i = 0; i < ACTUAL_FSM_SIZE; ++i) {
+            FSM[i].Init();
+        }
         for (uint i = 0; i < sizeof(p) / sizeof(p[0]); i++) {
             p[i].state = 0;
-            p[i].traverse.Init(i);
+            //p[i].traverse.Init(i);
         }
         ctx = 1 << 16;
     }
@@ -263,10 +322,7 @@ void proc(Context &ctx, uint bit) {
     p->update(bit);
 }
 
-void optimize_pp(const std::string s) {
-    for (uint i = 0; i < ACTUAL_FSM_SIZE; ++i) {
-        Clear(i);
-    }
+void calc_infos(const std::string s) {
     Context ctx{};
     //ctx.p->Init();
     p->Init();
@@ -286,18 +342,64 @@ void optimize_pp(const std::string s) {
         //ctx.p->byte();
         p->byte();
     }
+}
+
+word get_new_state(word state, word *new_states, word real_states) {
+    if (new_states[state] == word(-1)) {
+        return real_states;
+    }
+    return new_states[state];
+}
+
+void shrink() {
+    word new_states[N_STATES];
+    word real_states = 0;
+    for (int i = 0; i < ACTUAL_FSM_SIZE; ++i) {
+        if (FSM[i].actual_zeros + FSM[i].actual_ones > 0) {
+            new_states[i] = real_states;
+            ++real_states;
+        } else {
+            new_states[i] = word(-1);
+        }
+    }
+    for (int i = 0; i < ACTUAL_FSM_SIZE; ++i) {
+        if (FSM[i].actual_zeros + FSM[i].actual_ones > 0) {
+            for (int j = 0; j < 2; ++j) {
+                FSM[i].s[j] = get_new_state(FSM[i].s[j], new_states, real_states);
+            }
+            decltype(FSM[i].from) new_from;
+            for (auto it: FSM[i].from) {
+                new_from[{get_new_state(it.first.first, new_states, real_states), it.first.second}] = it.second;
+            }
+            FSM[new_states[i]] = FSM[i];
+            FSM[new_states[i]].from = std::move(new_from);
+        }
+    }
+    FSM[real_states].Init();
+    FSM[real_states].s[0] = FSM[real_states].s[1] = real_states;
+    ACTUAL_FSM_SIZE = real_states + 1;
+}
+
+void optimize_pp() {
     for (uint i = 0; i < ACTUAL_FSM_SIZE; ++i) {
         FSM[i].recalc_pp(i);
     }
 }
 
 void whole_optimization(const std::string &s) {
-    std::cerr << sizeof(Traverse) << std::endl;
-    optimize_pp(s);
-    for (uint i = 0; i < ACTUAL_FSM_SIZE; ++i) {
-        try_optimize_links(i);
+    //std::cerr << sizeof(Traverse) << std::endl;
+    calc_infos(s);
+    //shrink();
+    optimize_pp();
+    for (int i = 0; i < 10; ++i) {
+        for (uint i = 0; i < ACTUAL_FSM_SIZE; ++i) {
+            //try_optimize_links(i);
+            new_try_optimize_links(i);
+        }
+        calc_infos(s);
+        //shrink();
+        optimize_pp();
     }
-    optimize_pp(s);
 }
 
 void print_graph() {

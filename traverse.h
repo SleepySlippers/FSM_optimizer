@@ -3,6 +3,7 @@
 //
 
 // must be included after FSM declaration
+// must be included after Predictor declaration
 
 #ifndef OPTIMIZER_TRAVERSE_H
 #define OPTIMIZER_TRAVERSE_H
@@ -19,18 +20,23 @@ struct Traverse;
 
 //std::array<std::unordered_map<uint, std::unordered_set<size_t> >, N_STATES> where;
 //std::array<std::unordered_map<uint, std::unordered_set<uint> >, N_STATES> where;
-std::array<std::unordered_set<uint>, N_STATES> has_one;
-std::unordered_map<uint, std::unordered_map<word, std::vector<uint>>> where;
+std::array<std::unordered_set<Traverse*>, N_STATES> has_one;
+std::unordered_map<Traverse*, std::unordered_map<word, std::vector<uint>>> where;
 
 struct Traverse {
     static const size_t ARR_SZ = sizeof(char) * 8; // better to be power of 2
     static const size_t BATCH_SZ = 1024 * 2; // better to be power of 2
 
-
+    static void RecalcFrom(word splitted_state){
+        for (auto it: has_one[splitted_state]){
+            for (auto iit: where[it][splitted_state]){
+                it->_batch[iit];
+            }
+        }
+    }
 
     void Init(uint ctx) {
-        *const_cast<uint *>(&_ctx) = ctx;
-        where[ctx].clear();
+        where[this].clear();
     }
 
     void Add(uint bit) {
@@ -45,11 +51,11 @@ struct Traverse {
         }
         if (_state != 0) {
             //where[_state][ctx].insert(_batch.size() - 1);
-            if (where[_ctx][_state].empty()) {
-                has_one[_state].insert(_ctx);
-                where[_ctx][_state].emplace_back(_batch.size() - 1);
-            } else if (where[_ctx][_state].back() != _batch.size() - 1) {
-                where[_ctx][_state].emplace_back(_batch.size() - 1);
+            if (where[this][_state].empty()) {
+                has_one[_state].insert(this);
+                where[this][_state].emplace_back(_batch.size() - 1);
+            } else if (where[this][_state].back() != _batch.size() - 1) {
+                where[this][_state].emplace_back(_batch.size() - 1);
             }
         }
     }
@@ -122,8 +128,6 @@ private:
         }
         return ans;
     }
-
-    const uint _ctx{0};
 
     ind_t _cached_ind = -1;
     std::array<Bit, ARR_SZ> _cached_arr{};

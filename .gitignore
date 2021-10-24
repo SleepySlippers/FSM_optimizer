@@ -1,3 +1,4 @@
 # Project exclude paths
 /cmake-build-debug/
 /bench/
+/cmake-build-release/
