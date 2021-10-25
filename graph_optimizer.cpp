@@ -122,7 +122,7 @@ struct fsm {
             this[i].s[1] = Max(0, Min(N_STATES - 1, get_number(p, q)));
             this[i].pp = Max(1, Min(SCALE - 1, get_number(p, q)));
             if (p == q) {
-                ACTUAL_FSM_SIZE = i;
+                ACTUAL_FSM_SIZE = i + 1;
                 break;
             }
         }
@@ -418,11 +418,13 @@ void whole_optimization(const std::string &s) {
     calc_infos(s);
     //shrink();
     optimize_pp();
-    for (int i = 0; i < 100000; ++i){
-        split_most();
+    for (int j = 0; j < 5; ++j) {
+        for (int i = 0; i < 1000; ++i) {
+            split_most();
+        }
+        calc_infos(s);
+        optimize_pp();
     }
-    calc_infos(s);
-    optimize_pp();
     /*for (int i = 0; i < 10; ++i) {
         for (uint i = 0; i < ACTUAL_FSM_SIZE; ++i) {
             //try_optimize_links(i);
