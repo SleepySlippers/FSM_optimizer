@@ -16,12 +16,29 @@ enum {
 #include <vector>
 #include <unordered_set>
 #include <unordered_map>
-#include "bit.h"
+
+struct Bit {
+    template<typename T>
+    Bit(const T &x) : _val(x > 0) {}
+
+    Bit() : _val(0) {}
+
+    template<typename T>
+    operator T() const {
+        return T(_val);
+    }
+
+    ~Bit() = default;
+private:
+    signed char _val;
+};
 
 typedef unsigned int uint;
 typedef unsigned short word;
+typedef signed short sword;
 typedef unsigned char byte;
 typedef unsigned long long int qword;
+typedef signed long long int sqword;
 
 template<typename T1, typename T2>
 T1 Min(T1 t1, T2 t2) { return t1 < t2 ? t1 : t2; }
@@ -48,7 +65,7 @@ struct fsm {
     // uint actual_visits = 0;
     //std::map<std::array<word, HISTORY_SZ>, std::array<long long, 2>> from;
     //std::map<std::pair<word, char>, std::array<long long, 2> > from;
-    std::map<signed short, std::array<qword, 2>> from;
+    std::map<sword, std::array<sqword, 2>> from;
     qword actual_zeros = 0;
     qword actual_ones = 0;
     bool tainted = false;
@@ -210,10 +227,11 @@ struct fsm {
     //Traverse::RecalcFrom(my_state);
 }*/
 
+/// Sploils actual_zeros, actual_ones and pp but FSM[any].from[any][0] + FSM[any].from[any][1] must remain actual
 bool split_most() {
     if (ACTUAL_FSM_SIZE >= N_STATES) return false;
     qword mx = 0;
-    std::pair<signed short, word> ind;
+    std::pair<sword, word> ind;
     for (word i = 1; i < ACTUAL_FSM_SIZE; ++i) {
         if (FSM[i].from.size() > 1) {
             for (auto it: FSM[i].from) {
@@ -228,20 +246,40 @@ bool split_most() {
         return false;
     }
     if (ind.second != abs(ind.first)) {
-        FSM[ACTUAL_FSM_SIZE].s[0] = FSM[ind.second].s[0];
-        FSM[ACTUAL_FSM_SIZE].s[1] = FSM[ind.second].s[1];
+        word zero_after = FSM[ind.second].s[0];
+        word one_after = FSM[ind.second].s[1];
+        FSM[ACTUAL_FSM_SIZE].s[0] = zero_after;
+        FSM[ACTUAL_FSM_SIZE].s[1] = one_after;
         FSM[ACTUAL_FSM_SIZE].from[ind.first] = FSM[ind.second].from[ind.first];
-        FSM[ACTUAL_FSM_SIZE].actual_zeros = FSM[ind.second].from[ind.first][0];
-        FSM[ACTUAL_FSM_SIZE].actual_ones = FSM[ind.second].from[ind.first][1];
-        FSM[ACTUAL_FSM_SIZE].recalc_pp(ACTUAL_FSM_SIZE);
+        //FSM[ACTUAL_FSM_SIZE].actual_zeros = FSM[ind.second].from[ind.first][0];
+        //FSM[ACTUAL_FSM_SIZE].actual_ones = FSM[ind.second].from[ind.first][1];
+        //FSM[ACTUAL_FSM_SIZE].recalc_pp(ACTUAL_FSM_SIZE);
         FSM[ACTUAL_FSM_SIZE].me = ACTUAL_FSM_SIZE;
 
         FSM[abs(ind.first)].s[int(Bit(ind.first))] = ACTUAL_FSM_SIZE;
 
-        FSM[ind.second].actual_zeros -= FSM[ind.second].from[ind.first][0];
-        FSM[ind.second].actual_ones -= FSM[ind.second].from[ind.first][1];
+
+        FSM[zero_after].from[-sword(ind.second)][0] -= 0;
+        FSM[one_after].from[sword(ind.second)][0] -= 0;
+        FSM[zero_after].from[-ACTUAL_FSM_SIZE][0] += 0;
+        FSM[one_after].from[ACTUAL_FSM_SIZE][0] += 0;
         FSM[ind.second].from.erase(ind.first);
-        FSM[ind.second].recalc_pp(ind.second);
+        /*qword full_zero_out = FSM[zero_after].from[-sword(ind.second)][0] + FSM[zero_after].from[-sword(ind.second)][1];
+        sqword zero_out = full_zero_out;
+        qword full_one_out = FSM[one_after].from[sword(ind.second)][0] + FSM[one_after].from[sword(ind.second)][1];
+        sqword one_out = full_one_out;
+        for (auto it: FSM[ind.second].from) {
+            zero_out -= (it.second[0] + it.second[1]) * full_zero_out / (full_one_out + full_zero_out);
+            one_out -= (it.second[0] + it.second[1]) * full_one_out / (full_one_out + full_zero_out);
+        }
+        FSM[zero_after].from[-sword(ind.second)][0] -= zero_out;
+        FSM[one_after].from[sword(ind.second)][0] -= one_out;
+        FSM[zero_after].from[-ACTUAL_FSM_SIZE][0] += zero_out;
+        FSM[one_after].from[ACTUAL_FSM_SIZE][0] += one_out;*/
+
+        //FSM[ind.second].actual_zeros -= FSM[ind.second].from[ind.first][0];
+        //FSM[ind.second].actual_ones -= FSM[ind.second].from[ind.first][1];
+        //FSM[ind.second].recalc_pp(ind.second);
         ++ACTUAL_FSM_SIZE;
         return true;
     }
