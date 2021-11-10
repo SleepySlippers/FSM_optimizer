@@ -16,6 +16,7 @@ enum {
 #include <vector>
 #include <unordered_set>
 #include <unordered_map>
+#include <algorithm>
 
 struct Bit {
     template<typename T>
@@ -29,6 +30,7 @@ struct Bit {
     }
 
     ~Bit() = default;
+
 private:
     signed char _val;
 };
@@ -104,7 +106,7 @@ struct fsm {
         actual_zeros += int(bit) == 0;
         actual_ones += int(bit) == 1;
         //++from[prev][bit];
-        ++from[prev.first * ((prev.second == 1) ? 1 : -1)][bit];
+        ++from[prev.first * (prev.second * 2 - 1)][bit];
     }
 
     uint get_number(char *&p, char *q) {
@@ -227,7 +229,7 @@ struct fsm {
     //Traverse::RecalcFrom(my_state);
 }*/
 
-/// Sploils actual_zeros, actual_ones and pp but FSM[any].from[any][0] + FSM[any].from[any][1] must remain actual
+/// Sploils actual_zeros, actual_ones and pp but FSM[any].from[any][0] + FSM[any].from[any][1] must remain near actual
 bool split_most() {
     if (ACTUAL_FSM_SIZE >= N_STATES) return false;
     qword mx = 0;
@@ -235,14 +237,14 @@ bool split_most() {
     for (word i = 1; i < ACTUAL_FSM_SIZE; ++i) {
         if (FSM[i].from.size() > 1) {
             for (auto it: FSM[i].from) {
-                if (abs(it.first) != i && it.second[0] + it.second[1] > mx){
+                if (abs(it.first) != i && it.second[0] + it.second[1] > mx) {
                     mx = it.second[0] + it.second[1];
                     ind = {it.first, i};
                 }
             }
         }
     }
-    if (mx == 0){
+    if (mx == 0) {
         return false;
     }
     if (ind.second != abs(ind.first)) {
@@ -258,12 +260,29 @@ bool split_most() {
 
         FSM[abs(ind.first)].s[int(Bit(ind.first))] = ACTUAL_FSM_SIZE;
 
+        qword full_zero_out = FSM[zero_after].from[-sword(ind.second)][0] + FSM[zero_after].from[-sword(ind.second)][1];
+        sqword zero_out = full_zero_out;
+        qword full_one_out = FSM[one_after].from[sword(ind.second)][0] + FSM[one_after].from[sword(ind.second)][1];
+        sqword one_out = full_one_out;
+        sqword sum = 0;
+        for (auto it: FSM[ind.second].from) {
+            sum += (it.second[0] + it.second[1]);
+            //zero_out -= (it.second[0] + it.second[1]) * full_zero_out / (full_one_out + full_zero_out);
+            //one_out -= (it.second[0] + it.second[1]) * full_one_out / (full_one_out + full_zero_out);
+        }
+        sqword without = (FSM[ind.second].from[ind.first][0] + FSM[ind.second].from[ind.first][1]);
+        zero_out = full_zero_out * without / sum;
+        one_out = full_one_out * without / sum;
 
-        FSM[zero_after].from[-sword(ind.second)][0] -= 0;
-        FSM[one_after].from[sword(ind.second)][0] -= 0;
-        FSM[zero_after].from[-ACTUAL_FSM_SIZE][0] += 0;
-        FSM[one_after].from[ACTUAL_FSM_SIZE][0] += 0;
+        zero_out = 0;
+        one_out = 0;
+
         FSM[ind.second].from.erase(ind.first);
+
+        FSM[zero_after].from[-sword(ind.second)][0] -= zero_out;
+        FSM[one_after].from[sword(ind.second)][0] -= one_out;
+        FSM[zero_after].from[-sword(ACTUAL_FSM_SIZE)][0] += zero_out;
+        FSM[one_after].from[ACTUAL_FSM_SIZE][0] += one_out;
         /*qword full_zero_out = FSM[zero_after].from[-sword(ind.second)][0] + FSM[zero_after].from[-sword(ind.second)][1];
         sqword zero_out = full_zero_out;
         qword full_one_out = FSM[one_after].from[sword(ind.second)][0] + FSM[one_after].from[sword(ind.second)][1];
@@ -317,16 +336,26 @@ struct Counter {
     //std::array<word, 2> prev = {word(-1), word(-1)};
     //Traverse traverse;
     std::pair<word, char> prev = {word(-1), word(-1)};
+    int vis = 0;
+    uint zeros = 0;
+    uint ones = 0;
 
     uint P() const { return FSM[state].pp; }
+
+    bool operator < (Counter other) const {
+        return vis > other.vis;
+    }
 
     void Update(uint bit) {
         bit = (bit > 0);
         if (state != 0) {
             FSM[state].NewUpdate(prev, bit);
         }
+        zeros += (bit == 0);
+        ones += (bit == 1);
         prev = {state, bit};
         state = FSM[state].s[bit];
+        ++vis;
         //traverse.Add(bit);
     }
 };
@@ -406,6 +435,19 @@ void calc_infos(const std::string s) {
         //ctx.p->byte();
         p->byte();
     }
+    std::vector < std::pair<Counter, int> > hits;
+    for (int i = 0; i < Predictor::P_SZ; ++i){
+        if (p->p[i].vis){
+            if (p->p[i].vis > 100) {
+                hits.emplace_back(p->p[i], i);
+            }
+        }
+    }
+    std::sort(hits.begin(), hits.end());
+    for (auto it: hits){
+        double pp = (double)it.first.zeros / (it.first.zeros + it.first.ones);
+        printf("%o: %d, zeros: %d, ones: %d, pp: %f\n", it.second, it.first.vis, it.first.zeros, it.first.ones, pp);
+    }
 }
 
 word get_new_state(word state, word *new_states, word real_states) {
@@ -454,11 +496,15 @@ void whole_optimization(const std::string &s) {
     //std::cerr << sizeof(Traverse) << std::endl;
     std::cerr << ACTUAL_FSM_SIZE << std::endl;
     calc_infos(s);
+    //exit(0);
+    return;
     //shrink();
     optimize_pp();
-    for (int j = 0; j < 5; ++j) {
-        for (int i = 0; i < 1000; ++i) {
-            split_most();
+    for (int j = 0; j < 3; ++j) {
+        for (int i = 0; i < 3000; ++i) {
+            if (!split_most()) {
+                break;
+            }
         }
         calc_infos(s);
         optimize_pp();

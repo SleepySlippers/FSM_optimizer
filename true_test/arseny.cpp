@@ -456,8 +456,8 @@ void whole_optimization(const std::string &s) {
     calc_infos(s);
     //shrink();
     optimize_pp();
-    for (int j = 0; j < 5; ++j) {
-        for (int i = 0; i < 1000; ++i) {
+    for (int j = 0; j < 11; ++j) {
+        for (int i = 0; i < 3000; ++i) {
             split_most();
         }
         calc_infos(s);
