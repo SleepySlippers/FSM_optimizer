@@ -19,6 +19,7 @@ enum {
 #include <iostream>
 #include <memory>
 #include <algorithm>
+#include <utility>
 
 typedef unsigned int uint;
 typedef unsigned short word;
@@ -32,11 +33,36 @@ struct FSMNodeBase {
     uint pp = SCALE - 1;
 };
 
+struct AnalyzedFSMNode : FSMNodeBase {
+    qword goto_zeros = 0;
+    qword goto_ones = 0;
+
+    void UpdatePP() {
+        if (goto_zeros + goto_ones != 0) {
+            pp = static_cast<uint>((goto_zeros << SCALElog) / (goto_zeros + goto_ones));
+        }
+    }
+
+    AnalyzedFSMNode() {}
+
+    AnalyzedFSMNode(const FSMNodeBase &b) : FSMNodeBase(b) {}
+};
+
 template<typename Node>
 struct FSM {
     Node fsm[N_STATES];
     uint fsm_size = 0;
     uint new_state_ind = 0;
+
+    FSM() {}
+
+    template<typename ParentNode>
+    FSM(const FSM<ParentNode> &p_fsm) : fsm_size(p_fsm.fsm_size), new_state_ind(p_fsm.new_state_ind) {
+        //static_assert(static_cast<Node *>(&p_fsm.fsm[0]));
+        for (int i = 0; i < new_state_ind; ++i) {
+            fsm[i] = p_fsm.fsm[i];
+        }
+    }
 
     int AddState(Node node) {
         if (new_state_ind < N_STATES) {
@@ -60,23 +86,32 @@ struct CounterBase {
 };
 
 template<typename FSM>
-struct FSMCounter final : CounterBase {
-    static FSM *fsm;
+struct FSMCounter : CounterBase {
+    static std::shared_ptr<FSM> fsm;
     word state = 0;
 
     void Update(uint bit) override { state = fsm->fsm[state].s[bit]; }
 };
 
+struct FSMAnalyzerCounter final : FSMCounter<FSM<AnalyzedFSMNode>> {
+
+    void Update(uint bit) override {
+        fsm->fsm[state].goto_ones += (bit == 1);
+        fsm->fsm[state].goto_zeros += (bit == 0);
+        state = fsm->fsm[state].s[bit];
+    }
+};
+
 template<typename FSM>
-FSM *FSMCounter<FSM>::fsm = nullptr;
+std::shared_ptr<FSM> FSMCounter<FSM>::fsm = nullptr;
 
 struct AnalyzerCounter final : CounterBase {
-    std::string first;
+    std::string starts;
     qword zeros = 0;
     qword ones = 0;
 
-    bool operator < (const AnalyzerCounter& other) const {
-        return first < other.first;
+    bool operator<(const AnalyzerCounter &other) const {
+        //return starts < other.starts;
         return zeros + ones > other.zeros + other.ones;
     }
 
@@ -86,8 +121,8 @@ struct AnalyzerCounter final : CounterBase {
         bit = (bit > 0);
         zeros += (bit == 0);
         ones += (bit == 1);
-        if (first.size() < HIST_SZ) {
-            first.push_back(bit + '0');
+        if (starts.size() < HIST_SZ) {
+            starts.push_back(bit + '0');
         }
     }
 };
@@ -97,6 +132,8 @@ template<typename Counter>
 struct Predictor {
     uint ctx = 1 << 16;               // o0 aligned bit context
     static const int P_SZ = 0x100 << 16;
+    qword all_zeros = 0;
+    qword all_ones = 0;
     Counter p[P_SZ]; // order2
 
     uint byte() {
@@ -107,6 +144,8 @@ struct Predictor {
 
     void update(uint bit) {
         bit = (bit > 0);
+        all_zeros += (bit == 0);
+        all_ones += (bit == 1);
         //FSM[p[ctx].state].Update(State(), bit, p[ctx].prev);
         p[ctx].Update(bit);
         // assert(shift == 0 || (ctx & ((1 << shift) - 1)) == bits);
@@ -114,19 +153,41 @@ struct Predictor {
     }
 };
 
-void PrintInfo(const std::shared_ptr<Predictor<AnalyzerCounter>>& p){
-    std::vector < std::pair<AnalyzerCounter, int> > hits;
-    for (int i = 0; i < Predictor<AnalyzerCounter>::P_SZ; ++i){
-        if (p->p[i].ones + p->p[i].zeros){
-            if (p->p[i].ones + p->p[i].zeros > 100) {
+void PrintInfo(const std::shared_ptr<Predictor<AnalyzerCounter>> &p) {
+    std::vector<std::pair<AnalyzerCounter, int> > hits;
+    for (int i = 0; i < Predictor<AnalyzerCounter>::P_SZ; ++i) {
+        if (p->p[i].ones + p->p[i].zeros) {
+            if (p->p[i].ones + p->p[i].zeros > 0) {
                 hits.emplace_back(p->p[i], i);
             }
         }
     }
     std::sort(hits.begin(), hits.end());
-    for (auto it: hits){
-        double pp = (double)it.first.zeros / (it.first.zeros + it.first.ones);
-        printf("%o: %d, zeros: %d, ones: %d, pp: %f, history: %s\n", it.second, it.first.ones + it.first.zeros, it.first.zeros, it.first.ones, pp, it.first.first.c_str());
+    //auto prev = *hits.begin();
+    qword prev = 1;
+    qword prev_zeros = 0;
+    qword prev_ones = 0;
+    for (auto it: hits) {
+        prev_zeros += it.first.zeros;
+        prev_ones += it.first.ones;
+        if (prev == it.first.zeros + it.first.ones) {
+            continue;
+        }
+        printf("len: %lli, percentile: %lf\n", prev, (double) (prev_ones + prev_zeros) / (p->all_ones + p->all_zeros));
+        prev = it.first.zeros + it.first.ones;
+        continue;
+        /*if (it.first.starts == prev.first.starts){
+            prev_zeros += it.first.zeros;
+            prev_ones += it.first.ones;
+        } else {
+            double pp = (double)prev_zeros / (prev_zeros + prev_ones);
+            printf("first: %s, zeros: %lli, ones: %lli, pp: %f\n", prev.first.starts.c_str(), prev_zeros, prev_ones, pp);
+            prev.first.starts = it.first.starts;
+            prev_zeros = it.first.zeros;
+            prev_ones = it.first.ones;
+        }*/
+        //double pp = (double)it.first.zeros / (it.first.zeros + it.first.ones);
+        //printf("%o: %d, zeros: %d, ones: %d, pp: %f, history: %s\n", it.second, it.first.ones + it.first.zeros, it.first.zeros, it.first.ones, pp, it.first.first.c_str());
     }
 }
 
@@ -157,6 +218,37 @@ std::shared_ptr<Predictor<Counter>> ProcessFile(std::string &s) {
     return p;
 }
 
+BaseFSM BuildGraph(const std::shared_ptr<Predictor<AnalyzerCounter>> &p) {
+    BaseFSM res;
+    const int ANAL_LEN = 100;
+    int st_num[ANAL_LEN][ANAL_LEN];
+    for (int i = 0; i < ANAL_LEN; ++i) {
+        for (int j = 0; i + j < ANAL_LEN; ++j) {
+            st_num[i][j] = res.AddState({});
+        }
+    }
+    for (int i = 0; i < ANAL_LEN; ++i) {
+        for (int j = 0; i + j < ANAL_LEN; ++j) {
+            if (i - 1 > 0) {
+                res.fsm[st_num[i - 1][j]].s[0] = static_cast<word>(st_num[i][j]);
+            }
+            if (j - 1 > 0) {
+                res.fsm[st_num[i][j - 1]].s[1] = static_cast<word>(st_num[i][j]);
+            }
+        }
+    }
+    for (int i = 0; i < ANAL_LEN; ++i) {
+        word cycle_node = static_cast<word>(st_num[i][ANAL_LEN - i - 1]);
+        res.fsm[cycle_node].s = {cycle_node, cycle_node};
+    }
+}
+
+void CountPPForGraph(std::string &s, BaseFSM &graph) {
+    FSMAnalyzerCounter::fsm = std::make_shared<FSM<AnalyzedFSMNode>>(graph);
+    auto pred = ProcessFile<FSMAnalyzerCounter>(s);
+
+}
+
 uint flen(FILE *f);
 
 std::string LoadFileIntoString(FILE *in);
@@ -166,7 +258,12 @@ int main(int argc, char *argv[]) {
     FILE *in = fopen(argv[1], "rb");
     freopen(argv[2], "w", stdout);
     std::string s = LoadFileIntoString(in);
-    PrintInfo(ProcessFile<AnalyzerCounter>(s));
+    auto info = ProcessFile<AnalyzerCounter>(s);
+    //PrintInfo(info);
+    FSMNodeBase b;
+    AnalyzedFSMNode a;
+    auto graph = BuildGraph(info);
+    CountPPForGraph(s, graph);
 }
 
 uint flen(FILE *f) {
