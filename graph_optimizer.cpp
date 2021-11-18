@@ -435,7 +435,7 @@ void calc_infos(const std::string s) {
         //ctx.p->byte();
         p->byte();
     }
-    std::vector < std::pair<Counter, int> > hits;
+    /*std::vector < std::pair<Counter, int> > hits;
     for (int i = 0; i < Predictor::P_SZ; ++i){
         if (p->p[i].vis){
             if (p->p[i].vis > 100) {
@@ -447,7 +447,7 @@ void calc_infos(const std::string s) {
     for (auto it: hits){
         double pp = (double)it.first.zeros / (it.first.zeros + it.first.ones);
         printf("%o: %d, zeros: %d, ones: %d, pp: %f\n", it.second, it.first.vis, it.first.zeros, it.first.ones, pp);
-    }
+    }*/
 }
 
 word get_new_state(word state, word *new_states, word real_states) {
@@ -497,10 +497,10 @@ void whole_optimization(const std::string &s) {
     std::cerr << ACTUAL_FSM_SIZE << std::endl;
     calc_infos(s);
     //exit(0);
-    return;
+    //return;
     //shrink();
     optimize_pp();
-    for (int j = 0; j < 3; ++j) {
+    for (int j = 0; j < 10; ++j) {
         for (int i = 0; i < 3000; ++i) {
             if (!split_most()) {
                 break;

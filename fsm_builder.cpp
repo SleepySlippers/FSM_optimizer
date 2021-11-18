@@ -19,6 +19,7 @@ enum {
 #include <iostream>
 #include <memory>
 #include <algorithm>
+#include <vector>
 #include <utility>
 
 typedef unsigned int uint;
@@ -37,10 +38,11 @@ struct AnalyzedFSMNode : FSMNodeBase {
     qword goto_zeros = 0;
     qword goto_ones = 0;
 
-    void UpdatePP() {
+    uint UpdatePP() {
         if (goto_zeros + goto_ones != 0) {
-            pp = static_cast<uint>((goto_zeros << SCALElog) / (goto_zeros + goto_ones));
+            return pp = static_cast<uint>((goto_zeros << SCALElog) / (goto_zeros + goto_ones));
         }
+        return 0;
     }
 
     AnalyzedFSMNode() {}
@@ -51,8 +53,8 @@ struct AnalyzedFSMNode : FSMNodeBase {
 template<typename Node>
 struct FSM {
     Node fsm[N_STATES];
-    uint fsm_size = 0;
-    uint new_state_ind = 0;
+    word fsm_size = 0;
+    word new_state_ind = 0;
 
     FSM() {}
 
@@ -64,11 +66,17 @@ struct FSM {
         }
     }
 
-    int AddState(Node node) {
+    void Print() const {
+        for (uint i = 0; i < new_state_ind; ++i) {
+            printf("%u, %u, %u\n", fsm[i].s[0], fsm[i].s[1], fsm[i].pp);
+        }
+    }
+
+    word AddState(Node node) {
         if (new_state_ind < N_STATES) {
             fsm[new_state_ind] = std::move(node);
         } else {
-            return -1;
+            return static_cast<word>(-1);
         }
         ++fsm_size;
         return new_state_ind++;
@@ -167,7 +175,7 @@ void PrintInfo(const std::shared_ptr<Predictor<AnalyzerCounter>> &p) {
     qword prev = 1;
     qword prev_zeros = 0;
     qword prev_ones = 0;
-    for (auto it: hits) {
+    for (const auto& it: hits) {
         prev_zeros += it.first.zeros;
         prev_ones += it.first.ones;
         if (prev == it.first.zeros + it.first.ones) {
@@ -229,24 +237,28 @@ BaseFSM BuildGraph(const std::shared_ptr<Predictor<AnalyzerCounter>> &p) {
     }
     for (int i = 0; i < ANAL_LEN; ++i) {
         for (int j = 0; i + j < ANAL_LEN; ++j) {
-            if (i - 1 > 0) {
+            if (i > 0) {
                 res.fsm[st_num[i - 1][j]].s[0] = static_cast<word>(st_num[i][j]);
             }
-            if (j - 1 > 0) {
+            if (j > 0) {
                 res.fsm[st_num[i][j - 1]].s[1] = static_cast<word>(st_num[i][j]);
             }
         }
     }
     for (int i = 0; i < ANAL_LEN; ++i) {
         word cycle_node = static_cast<word>(st_num[i][ANAL_LEN - i - 1]);
-        res.fsm[cycle_node].s = {cycle_node, cycle_node};
+        word nw = res.AddState({{cycle_node, cycle_node}, 0});
+        res.fsm[cycle_node].s = {nw, nw};
     }
+    return res;
 }
 
 void CountPPForGraph(std::string &s, BaseFSM &graph) {
     FSMAnalyzerCounter::fsm = std::make_shared<FSM<AnalyzedFSMNode>>(graph);
     auto pred = ProcessFile<FSMAnalyzerCounter>(s);
-
+    for (int i = 0; i < FSMAnalyzerCounter::fsm->new_state_ind; ++i){
+        graph.fsm[i].pp = FSMAnalyzerCounter::fsm->fsm[i].UpdatePP();
+    }
 }
 
 uint flen(FILE *f);
@@ -264,6 +276,7 @@ int main(int argc, char *argv[]) {
     AnalyzedFSMNode a;
     auto graph = BuildGraph(info);
     CountPPForGraph(s, graph);
+    graph.Print();
 }
 
 uint flen(FILE *f) {

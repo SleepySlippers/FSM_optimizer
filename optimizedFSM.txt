@@ -1,1714 +1,5150 @@
-len: 1, percentile: 0.001407
-len: 2, percentile: 0.002691
-len: 3, percentile: 0.003828
-len: 4, percentile: 0.005123
-len: 5, percentile: 0.006307
-len: 6, percentile: 0.007285
-len: 7, percentile: 0.008331
-len: 8, percentile: 0.009449
-len: 9, percentile: 0.010349
-len: 10, percentile: 0.011258
-len: 11, percentile: 0.012151
-len: 12, percentile: 0.013062
-len: 13, percentile: 0.013853
-len: 14, percentile: 0.014884
-len: 15, percentile: 0.015777
-len: 16, percentile: 0.016469
-len: 17, percentile: 0.017232
-len: 18, percentile: 0.018075
-len: 19, percentile: 0.018724
-len: 20, percentile: 0.019498
-len: 21, percentile: 0.020216
-len: 22, percentile: 0.020817
-len: 23, percentile: 0.021453
-len: 24, percentile: 0.022151
-len: 25, percentile: 0.022814
-len: 26, percentile: 0.023613
-len: 27, percentile: 0.024404
-len: 28, percentile: 0.025192
-len: 29, percentile: 0.025899
-len: 30, percentile: 0.026548
-len: 31, percentile: 0.027158
-len: 32, percentile: 0.027928
-len: 33, percentile: 0.028803
-len: 34, percentile: 0.029748
-len: 35, percentile: 0.030460
-len: 36, percentile: 0.031186
-len: 37, percentile: 0.031800
-len: 38, percentile: 0.032436
-len: 39, percentile: 0.033090
-len: 40, percentile: 0.033734
-len: 41, percentile: 0.034707
-len: 42, percentile: 0.035622
-len: 43, percentile: 0.036287
-len: 44, percentile: 0.036802
-len: 45, percentile: 0.037592
-len: 46, percentile: 0.038311
-len: 47, percentile: 0.039144
-len: 48, percentile: 0.039807
-len: 49, percentile: 0.040397
-len: 50, percentile: 0.041064
-len: 51, percentile: 0.041786
-len: 52, percentile: 0.042344
-len: 53, percentile: 0.042801
-len: 54, percentile: 0.043459
-len: 55, percentile: 0.043853
-len: 56, percentile: 0.044399
-len: 57, percentile: 0.045132
-len: 58, percentile: 0.045868
-len: 59, percentile: 0.046376
-len: 60, percentile: 0.046932
-len: 61, percentile: 0.047667
-len: 62, percentile: 0.048251
-len: 63, percentile: 0.048846
-len: 64, percentile: 0.049397
-len: 65, percentile: 0.050063
-len: 66, percentile: 0.050858
-len: 67, percentile: 0.051631
-len: 68, percentile: 0.052240
-len: 69, percentile: 0.052756
-len: 70, percentile: 0.053280
-len: 71, percentile: 0.053915
-len: 72, percentile: 0.054570
-len: 73, percentile: 0.055033
-len: 74, percentile: 0.055731
-len: 75, percentile: 0.056378
-len: 76, percentile: 0.057033
-len: 77, percentile: 0.057522
-len: 78, percentile: 0.058270
-len: 79, percentile: 0.058810
-len: 80, percentile: 0.059434
-len: 81, percentile: 0.059816
-len: 82, percentile: 0.060443
-len: 83, percentile: 0.060956
-len: 84, percentile: 0.061421
-len: 85, percentile: 0.062112
-len: 86, percentile: 0.062671
-len: 87, percentile: 0.063336
-len: 88, percentile: 0.063852
-len: 89, percentile: 0.064517
-len: 90, percentile: 0.065088
-len: 91, percentile: 0.065680
-len: 92, percentile: 0.066189
-len: 93, percentile: 0.066900
-len: 94, percentile: 0.067832
-len: 95, percentile: 0.068404
-len: 96, percentile: 0.068873
-len: 97, percentile: 0.069472
-len: 98, percentile: 0.070381
-len: 99, percentile: 0.071073
-len: 100, percentile: 0.071545
-len: 101, percentile: 0.072005
-len: 102, percentile: 0.072569
-len: 103, percentile: 0.073222
-len: 104, percentile: 0.073797
-len: 105, percentile: 0.074343
-len: 106, percentile: 0.074912
-len: 107, percentile: 0.075713
-len: 108, percentile: 0.076205
-len: 109, percentile: 0.076861
-len: 110, percentile: 0.077576
-len: 111, percentile: 0.078118
-len: 112, percentile: 0.078500
-len: 113, percentile: 0.079052
-len: 114, percentile: 0.079664
-len: 115, percentile: 0.080262
-len: 116, percentile: 0.080847
-len: 117, percentile: 0.081304
-len: 118, percentile: 0.081899
-len: 119, percentile: 0.082460
-len: 120, percentile: 0.082987
-len: 121, percentile: 0.083597
-len: 122, percentile: 0.084609
-len: 123, percentile: 0.085149
-len: 124, percentile: 0.085895
-len: 125, percentile: 0.086464
-len: 126, percentile: 0.086874
-len: 127, percentile: 0.087432
-len: 128, percentile: 0.087953
-len: 129, percentile: 0.088456
-len: 130, percentile: 0.088900
-len: 131, percentile: 0.089561
-len: 132, percentile: 0.090076
-len: 133, percentile: 0.090573
-len: 134, percentile: 0.091336
-len: 135, percentile: 0.092105
-len: 136, percentile: 0.092503
-len: 137, percentile: 0.093038
-len: 138, percentile: 0.093576
-len: 139, percentile: 0.094141
-len: 140, percentile: 0.094369
-len: 141, percentile: 0.094874
-len: 142, percentile: 0.095567
-len: 143, percentile: 0.096102
-len: 144, percentile: 0.096593
-len: 145, percentile: 0.097372
-len: 146, percentile: 0.097752
-len: 147, percentile: 0.098445
-len: 148, percentile: 0.098975
-len: 149, percentile: 0.099556
-len: 150, percentile: 0.099873
-len: 151, percentile: 0.100463
-len: 152, percentile: 0.100710
-len: 153, percentile: 0.101382
-len: 154, percentile: 0.101783
-len: 155, percentile: 0.102438
-len: 156, percentile: 0.102971
-len: 157, percentile: 0.103916
-len: 158, percentile: 0.104430
-len: 159, percentile: 0.105024
-len: 160, percentile: 0.105571
-len: 161, percentile: 0.105754
-len: 162, percentile: 0.106071
-len: 163, percentile: 0.106680
-len: 164, percentile: 0.107400
-len: 165, percentile: 0.107669
-len: 166, percentile: 0.108074
-len: 167, percentile: 0.108237
-len: 168, percentile: 0.108811
-len: 169, percentile: 0.109086
-len: 170, percentile: 0.109528
-len: 171, percentile: 0.110196
-len: 172, percentile: 0.110420
-len: 173, percentile: 0.110982
-len: 174, percentile: 0.111633
-len: 175, percentile: 0.112202
-len: 176, percentile: 0.112804
-len: 177, percentile: 0.113552
-len: 178, percentile: 0.114102
-len: 179, percentile: 0.114568
-len: 180, percentile: 0.115592
-len: 181, percentile: 0.116034
-len: 182, percentile: 0.116804
-len: 183, percentile: 0.117369
-len: 184, percentile: 0.117938
-len: 185, percentile: 0.118509
-len: 186, percentile: 0.118963
-len: 187, percentile: 0.119420
-len: 188, percentile: 0.119603
-len: 189, percentile: 0.120156
-len: 190, percentile: 0.120435
-len: 191, percentile: 0.120870
-len: 192, percentile: 0.121151
-len: 193, percentile: 0.121841
-len: 194, percentile: 0.122567
-len: 195, percentile: 0.123011
-len: 196, percentile: 0.123362
-len: 197, percentile: 0.123714
-len: 198, percentile: 0.123908
-len: 199, percentile: 0.124264
-len: 200, percentile: 0.124524
-len: 201, percentile: 0.124884
-len: 202, percentile: 0.125409
-len: 203, percentile: 0.125640
-len: 204, percentile: 0.126205
-len: 205, percentile: 0.126738
-len: 206, percentile: 0.127274
-len: 207, percentile: 0.127745
-len: 208, percentile: 0.127982
-len: 209, percentile: 0.128492
-len: 210, percentile: 0.129039
-len: 211, percentile: 0.129554
-len: 212, percentile: 0.130140
-len: 213, percentile: 0.130521
-len: 214, percentile: 0.131321
-len: 215, percentile: 0.132160
-len: 216, percentile: 0.132793
-len: 217, percentile: 0.133075
-len: 218, percentile: 0.133855
-len: 219, percentile: 0.134318
-len: 220, percentile: 0.134891
-len: 221, percentile: 0.135502
-len: 222, percentile: 0.135935
-len: 223, percentile: 0.136552
-len: 224, percentile: 0.136843
-len: 225, percentile: 0.137209
-len: 226, percentile: 0.137577
-len: 227, percentile: 0.137835
-len: 228, percentile: 0.138355
-len: 229, percentile: 0.138839
-len: 230, percentile: 0.139325
-len: 231, percentile: 0.139513
-len: 232, percentile: 0.139664
-len: 233, percentile: 0.140611
-len: 234, percentile: 0.140878
-len: 235, percentile: 0.141222
-len: 236, percentile: 0.141721
-len: 237, percentile: 0.142299
-len: 238, percentile: 0.142802
-len: 239, percentile: 0.143308
-len: 240, percentile: 0.143815
-len: 241, percentile: 0.144011
-len: 242, percentile: 0.144326
-len: 243, percentile: 0.144682
-len: 244, percentile: 0.145277
-len: 245, percentile: 0.145716
-len: 246, percentile: 0.146076
-len: 247, percentile: 0.146397
-len: 248, percentile: 0.147083
-len: 249, percentile: 0.147771
-len: 250, percentile: 0.148178
-len: 251, percentile: 0.148423
-len: 252, percentile: 0.148669
-len: 253, percentile: 0.149081
-len: 254, percentile: 0.149494
-len: 255, percentile: 0.149743
-len: 256, percentile: 0.150076
-len: 257, percentile: 0.150327
-len: 258, percentile: 0.150411
-len: 259, percentile: 0.150748
-len: 260, percentile: 0.150959
-len: 261, percentile: 0.151342
-len: 262, percentile: 0.152109
-len: 263, percentile: 0.152408
-len: 264, percentile: 0.152880
-len: 265, percentile: 0.153441
-len: 266, percentile: 0.153960
-len: 267, percentile: 0.154611
-len: 268, percentile: 0.155178
-len: 269, percentile: 0.155834
-len: 270, percentile: 0.156054
-len: 271, percentile: 0.156362
-len: 272, percentile: 0.156672
-len: 273, percentile: 0.156850
-len: 274, percentile: 0.157340
-len: 275, percentile: 0.157922
-len: 276, percentile: 0.158595
-len: 277, percentile: 0.158820
-len: 278, percentile: 0.158956
-len: 279, percentile: 0.159138
-len: 280, percentile: 0.159320
-len: 281, percentile: 0.159503
-len: 282, percentile: 0.160374
-len: 283, percentile: 0.160696
-len: 284, percentile: 0.161158
-len: 285, percentile: 0.161344
-len: 286, percentile: 0.161995
-len: 287, percentile: 0.162835
-len: 288, percentile: 0.162929
-len: 289, percentile: 0.163446
-len: 290, percentile: 0.164154
-len: 291, percentile: 0.164627
-len: 292, percentile: 0.165244
-len: 293, percentile: 0.165626
-len: 294, percentile: 0.166152
-len: 295, percentile: 0.166775
-len: 296, percentile: 0.167257
-len: 297, percentile: 0.167595
-len: 298, percentile: 0.168128
-len: 299, percentile: 0.169246
-len: 300, percentile: 0.169783
-len: 301, percentile: 0.170224
-len: 302, percentile: 0.171108
-len: 303, percentile: 0.171650
-len: 304, percentile: 0.171996
-len: 305, percentile: 0.172492
-len: 306, percentile: 0.172841
-len: 307, percentile: 0.173140
-len: 308, percentile: 0.173291
-len: 309, percentile: 0.174145
-len: 310, percentile: 0.174498
-len: 311, percentile: 0.174903
-len: 312, percentile: 0.175055
-len: 313, percentile: 0.175564
-len: 314, percentile: 0.176177
-len: 315, percentile: 0.176587
-len: 316, percentile: 0.177101
-len: 317, percentile: 0.177616
-len: 318, percentile: 0.178289
-len: 319, percentile: 0.178704
-len: 320, percentile: 0.179328
-len: 321, percentile: 0.179903
-len: 322, percentile: 0.180060
-len: 323, percentile: 0.180375
-len: 324, percentile: 0.180586
-len: 325, percentile: 0.181273
-len: 326, percentile: 0.181697
-len: 327, percentile: 0.182495
-len: 328, percentile: 0.182602
-len: 329, percentile: 0.183030
-len: 330, percentile: 0.183728
-len: 331, percentile: 0.184481
-len: 332, percentile: 0.184913
-len: 333, percentile: 0.185076
-len: 334, percentile: 0.185511
-len: 335, percentile: 0.186056
-len: 336, percentile: 0.186602
-len: 337, percentile: 0.186931
-len: 338, percentile: 0.187646
-len: 339, percentile: 0.187756
-len: 340, percentile: 0.188585
-len: 341, percentile: 0.189251
-len: 342, percentile: 0.189474
-len: 343, percentile: 0.189920
-len: 344, percentile: 0.190423
-len: 345, percentile: 0.190928
-len: 346, percentile: 0.191604
-len: 347, percentile: 0.192168
-len: 348, percentile: 0.192678
-len: 349, percentile: 0.193132
-len: 350, percentile: 0.193359
-len: 351, percentile: 0.193816
-len: 352, percentile: 0.193931
-len: 353, percentile: 0.194562
-len: 354, percentile: 0.194793
-len: 355, percentile: 0.195312
-len: 356, percentile: 0.195776
-len: 357, percentile: 0.196240
-len: 358, percentile: 0.196822
-len: 359, percentile: 0.197290
-len: 360, percentile: 0.197465
-len: 361, percentile: 0.197642
-len: 362, percentile: 0.198289
-len: 363, percentile: 0.199116
-len: 364, percentile: 0.199589
-len: 365, percentile: 0.200124
-len: 366, percentile: 0.200778
-len: 367, percentile: 0.201435
-len: 368, percentile: 0.201734
-len: 369, percentile: 0.202154
-len: 370, percentile: 0.202335
-len: 371, percentile: 0.202939
-len: 372, percentile: 0.203665
-len: 373, percentile: 0.204211
-len: 374, percentile: 0.204819
-len: 375, percentile: 0.205124
-len: 376, percentile: 0.205491
-len: 377, percentile: 0.205981
-len: 378, percentile: 0.206350
-len: 379, percentile: 0.206474
-len: 380, percentile: 0.207462
-len: 381, percentile: 0.207834
-len: 382, percentile: 0.208580
-len: 383, percentile: 0.209016
-len: 384, percentile: 0.209703
-len: 385, percentile: 0.210266
-len: 386, percentile: 0.210455
-len: 387, percentile: 0.210896
-len: 388, percentile: 0.211400
-len: 389, percentile: 0.212160
-len: 390, percentile: 0.212604
-len: 391, percentile: 0.212985
-len: 392, percentile: 0.213177
-len: 393, percentile: 0.213432
-len: 394, percentile: 0.214073
-len: 395, percentile: 0.214651
-len: 396, percentile: 0.214716
-len: 397, percentile: 0.215039
-len: 398, percentile: 0.215168
-len: 399, percentile: 0.215298
-len: 400, percentile: 0.215559
-len: 401, percentile: 0.215754
-len: 402, percentile: 0.216278
-len: 403, percentile: 0.216671
-len: 404, percentile: 0.216999
-len: 405, percentile: 0.217922
-len: 406, percentile: 0.218384
-len: 407, percentile: 0.219046
-len: 408, percentile: 0.219444
-len: 409, percentile: 0.220043
-len: 410, percentile: 0.220376
-len: 411, percentile: 0.220777
-len: 412, percentile: 0.221112
-len: 413, percentile: 0.221515
-len: 414, percentile: 0.222727
-len: 415, percentile: 0.223402
-len: 416, percentile: 0.223741
-len: 417, percentile: 0.224351
-len: 418, percentile: 0.225099
-len: 420, percentile: 0.225236
-len: 421, percentile: 0.225578
-len: 422, percentile: 0.226470
-len: 423, percentile: 0.226677
-len: 424, percentile: 0.227022
-len: 425, percentile: 0.227091
-len: 426, percentile: 0.227230
-len: 427, percentile: 0.227299
-len: 428, percentile: 0.227578
-len: 429, percentile: 0.228136
-len: 431, percentile: 0.228627
-len: 432, percentile: 0.228838
-len: 433, percentile: 0.228908
-len: 434, percentile: 0.229120
-len: 435, percentile: 0.229332
-len: 436, percentile: 0.229829
-len: 438, percentile: 0.230256
-len: 439, percentile: 0.230828
-len: 440, percentile: 0.231114
-len: 441, percentile: 0.231329
-len: 442, percentile: 0.231617
-len: 443, percentile: 0.232121
-len: 444, percentile: 0.232194
-len: 445, percentile: 0.232556
-len: 446, percentile: 0.233353
-len: 447, percentile: 0.233644
-len: 448, percentile: 0.234227
-len: 449, percentile: 0.234519
-len: 450, percentile: 0.234739
-len: 451, percentile: 0.235253
-len: 452, percentile: 0.235620
-len: 453, percentile: 0.236062
-len: 454, percentile: 0.236505
-len: 455, percentile: 0.236580
-len: 456, percentile: 0.236876
-len: 457, percentile: 0.237545
-len: 458, percentile: 0.238216
-len: 459, percentile: 0.238664
-len: 460, percentile: 0.239112
-len: 461, percentile: 0.239787
-len: 463, percentile: 0.240164
-len: 464, percentile: 0.240466
-len: 465, percentile: 0.240617
-len: 466, percentile: 0.241072
-len: 467, percentile: 0.242211
-len: 469, percentile: 0.242288
-len: 470, percentile: 0.242594
-len: 471, percentile: 0.242977
-len: 472, percentile: 0.243437
-len: 473, percentile: 0.244360
-len: 474, percentile: 0.244438
-len: 475, percentile: 0.244901
-len: 476, percentile: 0.245753
-len: 477, percentile: 0.246141
-len: 478, percentile: 0.246607
-len: 479, percentile: 0.246997
-len: 480, percentile: 0.247621
-len: 481, percentile: 0.248013
-len: 482, percentile: 0.248326
-len: 483, percentile: 0.248641
-len: 484, percentile: 0.249349
-len: 485, percentile: 0.249507
-len: 486, percentile: 0.249823
-len: 487, percentile: 0.250378
-len: 488, percentile: 0.250774
-len: 489, percentile: 0.250934
-len: 490, percentile: 0.251492
-len: 491, percentile: 0.251572
-len: 492, percentile: 0.252052
-len: 493, percentile: 0.252533
-len: 494, percentile: 0.252613
-len: 495, percentile: 0.252774
-len: 496, percentile: 0.253339
-len: 497, percentile: 0.253663
-len: 498, percentile: 0.253825
-len: 500, percentile: 0.254150
-len: 501, percentile: 0.254313
-len: 502, percentile: 0.254721
-len: 503, percentile: 0.254803
-len: 504, percentile: 0.255050
-len: 506, percentile: 0.255379
-len: 507, percentile: 0.255626
-len: 508, percentile: 0.255957
-len: 509, percentile: 0.257447
-len: 510, percentile: 0.257779
-len: 511, percentile: 0.258610
-len: 512, percentile: 0.259193
-len: 513, percentile: 0.259276
-len: 514, percentile: 0.259778
-len: 515, percentile: 0.260364
-len: 516, percentile: 0.260532
-len: 517, percentile: 0.261121
-len: 518, percentile: 0.261289
-len: 519, percentile: 0.261543
-len: 520, percentile: 0.262304
-len: 521, percentile: 0.262643
-len: 522, percentile: 0.262813
-len: 523, percentile: 0.263153
-len: 524, percentile: 0.263409
-len: 525, percentile: 0.263836
-len: 526, percentile: 0.264178
-len: 527, percentile: 0.264264
-len: 528, percentile: 0.264522
-len: 529, percentile: 0.264608
-len: 530, percentile: 0.264866
-len: 531, percentile: 0.265212
-len: 532, percentile: 0.265818
-len: 533, percentile: 0.266078
-len: 534, percentile: 0.266252
-len: 535, percentile: 0.266513
-len: 536, percentile: 0.266774
-len: 537, percentile: 0.267211
-len: 538, percentile: 0.267561
-len: 539, percentile: 0.267912
-len: 540, percentile: 0.268088
-len: 541, percentile: 0.268264
-len: 542, percentile: 0.268440
-len: 543, percentile: 0.268970
-len: 544, percentile: 0.269412
-len: 545, percentile: 0.269501
-len: 547, percentile: 0.269946
-len: 548, percentile: 0.270036
-len: 549, percentile: 0.270482
-len: 550, percentile: 0.270840
-len: 551, percentile: 0.270930
-len: 552, percentile: 0.271020
-len: 553, percentile: 0.271380
-len: 555, percentile: 0.272102
-len: 556, percentile: 0.272192
-len: 557, percentile: 0.272283
-len: 558, percentile: 0.272555
-len: 559, percentile: 0.272828
-len: 561, percentile: 0.273467
-len: 562, percentile: 0.273924
-len: 563, percentile: 0.274107
-len: 564, percentile: 0.274291
-len: 565, percentile: 0.274842
-len: 566, percentile: 0.275395
-len: 567, percentile: 0.275856
-len: 568, percentile: 0.276410
-len: 569, percentile: 0.276688
-len: 570, percentile: 0.277059
-len: 571, percentile: 0.277337
-len: 572, percentile: 0.277709
-len: 573, percentile: 0.277896
-len: 574, percentile: 0.278736
-len: 575, percentile: 0.278923
-len: 576, percentile: 0.279017
-len: 577, percentile: 0.279205
-len: 578, percentile: 0.279769
-len: 579, percentile: 0.279863
-len: 581, percentile: 0.280430
-len: 582, percentile: 0.281093
-len: 583, percentile: 0.281188
-len: 584, percentile: 0.281378
-len: 585, percentile: 0.282044
-len: 586, percentile: 0.282235
-len: 587, percentile: 0.282521
-len: 588, percentile: 0.283286
-len: 589, percentile: 0.283382
-len: 590, percentile: 0.283862
-len: 591, percentile: 0.284535
-len: 593, percentile: 0.284824
-len: 594, percentile: 0.285404
-len: 595, percentile: 0.285791
-len: 596, percentile: 0.286082
-len: 597, percentile: 0.286471
-len: 598, percentile: 0.286665
-len: 599, percentile: 0.286860
-len: 601, percentile: 0.287349
-len: 602, percentile: 0.287741
-len: 604, percentile: 0.288429
-len: 605, percentile: 0.289117
-len: 606, percentile: 0.289610
-len: 607, percentile: 0.289906
-len: 608, percentile: 0.290104
-len: 609, percentile: 0.290302
-len: 610, percentile: 0.291096
-len: 611, percentile: 0.291196
-len: 612, percentile: 0.291793
-len: 613, percentile: 0.291992
-len: 614, percentile: 0.292691
-len: 615, percentile: 0.293192
-len: 616, percentile: 0.293592
-len: 617, percentile: 0.294194
-len: 618, percentile: 0.294295
-len: 619, percentile: 0.295000
-len: 620, percentile: 0.295605
-len: 623, percentile: 0.296213
-len: 624, percentile: 0.296416
-len: 625, percentile: 0.296721
-len: 626, percentile: 0.296925
-len: 627, percentile: 0.297129
-len: 628, percentile: 0.297435
-len: 629, percentile: 0.297845
-len: 630, percentile: 0.298152
-len: 631, percentile: 0.298255
-len: 632, percentile: 0.299180
-len: 634, percentile: 0.299283
-len: 635, percentile: 0.299593
-len: 636, percentile: 0.299697
-len: 637, percentile: 0.299904
-len: 638, percentile: 0.300423
-len: 639, percentile: 0.300943
-len: 640, percentile: 0.301671
-len: 641, percentile: 0.302088
-len: 642, percentile: 0.302610
-len: 643, percentile: 0.303029
-len: 644, percentile: 0.303343
-len: 645, percentile: 0.304182
-len: 646, percentile: 0.304498
-len: 647, percentile: 0.305339
-len: 648, percentile: 0.305761
-len: 649, percentile: 0.305867
-len: 650, percentile: 0.305972
-len: 651, percentile: 0.306078
-len: 652, percentile: 0.306291
-len: 653, percentile: 0.306716
-len: 654, percentile: 0.306928
-len: 655, percentile: 0.307248
-len: 656, percentile: 0.307355
-len: 657, percentile: 0.307996
-len: 658, percentile: 0.308317
-len: 659, percentile: 0.308532
-len: 660, percentile: 0.308639
-len: 661, percentile: 0.308747
-len: 662, percentile: 0.308854
-len: 663, percentile: 0.309825
-len: 664, percentile: 0.310257
-len: 665, percentile: 0.310473
-len: 667, percentile: 0.310691
-len: 668, percentile: 0.311017
-len: 669, percentile: 0.311343
-len: 670, percentile: 0.311779
-len: 671, percentile: 0.312325
-len: 673, percentile: 0.312544
-len: 675, percentile: 0.312873
-len: 676, percentile: 0.313313
-len: 677, percentile: 0.313534
-len: 678, percentile: 0.313644
-len: 679, percentile: 0.313865
-len: 680, percentile: 0.314197
-len: 681, percentile: 0.314861
-len: 682, percentile: 0.315194
-len: 683, percentile: 0.315305
-len: 684, percentile: 0.315862
-len: 685, percentile: 0.316530
-len: 686, percentile: 0.316753
-len: 687, percentile: 0.316865
-len: 688, percentile: 0.317089
-len: 690, percentile: 0.317314
-len: 691, percentile: 0.317651
-len: 693, percentile: 0.317877
-len: 694, percentile: 0.318215
-len: 695, percentile: 0.318668
-len: 697, percentile: 0.318895
-len: 698, percentile: 0.319008
-len: 699, percentile: 0.319349
-len: 700, percentile: 0.319805
-len: 702, percentile: 0.320376
-len: 703, percentile: 0.320833
-len: 704, percentile: 0.321291
-len: 705, percentile: 0.321521
-len: 706, percentile: 0.321636
-len: 708, percentile: 0.322096
-len: 709, percentile: 0.322327
-len: 710, percentile: 0.322558
-len: 711, percentile: 0.323021
-len: 712, percentile: 0.323368
-len: 713, percentile: 0.323948
-len: 714, percentile: 0.324645
-len: 715, percentile: 0.324994
-len: 716, percentile: 0.325692
-len: 717, percentile: 0.326159
-len: 718, percentile: 0.326276
-len: 719, percentile: 0.326744
-len: 720, percentile: 0.326861
-len: 721, percentile: 0.327096
-len: 723, percentile: 0.327566
-len: 724, percentile: 0.327684
-len: 725, percentile: 0.327920
-len: 726, percentile: 0.328274
-len: 728, percentile: 0.328511
-len: 729, percentile: 0.328630
-len: 730, percentile: 0.328867
-len: 731, percentile: 0.328986
-len: 732, percentile: 0.329463
-len: 735, percentile: 0.329822
-len: 736, percentile: 0.330301
-len: 737, percentile: 0.331020
-len: 738, percentile: 0.331860
-len: 739, percentile: 0.332701
-len: 740, percentile: 0.333303
-len: 741, percentile: 0.333785
-len: 742, percentile: 0.334388
-len: 743, percentile: 0.334751
-len: 744, percentile: 0.334993
-len: 745, percentile: 0.335357
-len: 746, percentile: 0.335721
-len: 747, percentile: 0.335964
-len: 748, percentile: 0.336329
-len: 749, percentile: 0.336573
-len: 750, percentile: 0.336695
-len: 751, percentile: 0.337183
-len: 752, percentile: 0.337550
-len: 753, percentile: 0.337918
-len: 755, percentile: 0.338286
-len: 756, percentile: 0.338778
-len: 757, percentile: 0.339394
-len: 760, percentile: 0.339765
-len: 761, percentile: 0.339889
-len: 762, percentile: 0.340137
-len: 763, percentile: 0.340510
-len: 767, percentile: 0.341009
-len: 768, percentile: 0.341633
-len: 769, percentile: 0.342134
-len: 770, percentile: 0.342259
-len: 771, percentile: 0.342510
-len: 772, percentile: 0.342761
-len: 773, percentile: 0.343264
-len: 774, percentile: 0.343768
-len: 776, percentile: 0.344273
-len: 777, percentile: 0.344778
-len: 778, percentile: 0.345284
-len: 779, percentile: 0.345411
-len: 780, percentile: 0.345792
-len: 781, percentile: 0.345919
-len: 782, percentile: 0.346046
-len: 783, percentile: 0.346301
-len: 784, percentile: 0.346811
-len: 785, percentile: 0.347322
-len: 786, percentile: 0.347450
-len: 787, percentile: 0.347706
-len: 788, percentile: 0.347834
-len: 789, percentile: 0.348347
-len: 790, percentile: 0.348733
-len: 791, percentile: 0.349248
-len: 792, percentile: 0.349505
-len: 793, percentile: 0.350150
-len: 794, percentile: 0.350538
-len: 795, percentile: 0.350796
-len: 796, percentile: 0.351444
-len: 797, percentile: 0.351703
-len: 798, percentile: 0.351963
-len: 800, percentile: 0.352223
-len: 801, percentile: 0.352484
-len: 803, percentile: 0.353006
-len: 804, percentile: 0.353399
-len: 805, percentile: 0.353530
-len: 806, percentile: 0.354185
-len: 807, percentile: 0.354579
-len: 808, percentile: 0.354710
-len: 809, percentile: 0.354842
-len: 810, percentile: 0.354974
-len: 811, percentile: 0.355634
-len: 812, percentile: 0.355898
-len: 814, percentile: 0.356825
-len: 817, percentile: 0.357091
-len: 818, percentile: 0.357357
-len: 819, percentile: 0.357623
-len: 820, percentile: 0.358024
-len: 822, percentile: 0.358158
-len: 823, percentile: 0.358559
-len: 824, percentile: 0.358693
-len: 825, percentile: 0.358962
-len: 826, percentile: 0.359768
-len: 828, percentile: 0.360037
-len: 829, percentile: 0.360307
-len: 830, percentile: 0.360578
-len: 834, percentile: 0.360985
-len: 835, percentile: 0.361528
-len: 836, percentile: 0.361800
-len: 837, percentile: 0.362753
-len: 838, percentile: 0.363025
-len: 839, percentile: 0.363844
-len: 840, percentile: 0.364117
-len: 841, percentile: 0.364254
-len: 843, percentile: 0.364529
-len: 844, percentile: 0.364941
-len: 845, percentile: 0.365078
-len: 847, percentile: 0.365354
-len: 848, percentile: 0.365492
-len: 849, percentile: 0.366182
-len: 850, percentile: 0.366459
-len: 851, percentile: 0.367013
-len: 852, percentile: 0.367982
-len: 853, percentile: 0.368260
-len: 854, percentile: 0.368399
-len: 855, percentile: 0.368816
-len: 856, percentile: 0.369095
-len: 857, percentile: 0.369513
-len: 858, percentile: 0.369792
-len: 859, percentile: 0.370212
-len: 863, percentile: 0.370493
-len: 866, percentile: 0.370775
-len: 867, percentile: 0.370916
-len: 868, percentile: 0.371481
-len: 869, percentile: 0.371764
-len: 871, percentile: 0.371905
-len: 873, percentile: 0.372048
-len: 874, percentile: 0.372616
-len: 875, percentile: 0.372901
-len: 877, percentile: 0.373186
-len: 878, percentile: 0.373901
-len: 881, percentile: 0.374044
-len: 882, percentile: 0.374188
-len: 884, percentile: 0.374332
-len: 885, percentile: 0.374620
-len: 886, percentile: 0.374764
-len: 887, percentile: 0.374908
-len: 888, percentile: 0.375342
-len: 889, percentile: 0.375920
-len: 890, percentile: 0.376354
-len: 892, percentile: 0.376790
-len: 894, percentile: 0.377662
-len: 895, percentile: 0.377808
-len: 896, percentile: 0.378245
-len: 898, percentile: 0.378537
-len: 899, percentile: 0.378976
-len: 900, percentile: 0.379415
-len: 901, percentile: 0.379562
-len: 903, percentile: 0.380443
-len: 904, percentile: 0.380590
-len: 905, percentile: 0.380738
-len: 908, percentile: 0.381329
-len: 909, percentile: 0.381625
-len: 910, percentile: 0.382217
-len: 914, percentile: 0.382514
-len: 915, percentile: 0.383407
-len: 916, percentile: 0.383854
-len: 917, percentile: 0.384004
-len: 919, percentile: 0.384452
-len: 921, percentile: 0.384902
-len: 922, percentile: 0.385202
-len: 924, percentile: 0.385353
-len: 927, percentile: 0.385504
-len: 929, percentile: 0.386410
-len: 930, percentile: 0.386713
-len: 931, percentile: 0.387319
-len: 933, percentile: 0.387470
-len: 934, percentile: 0.387622
-len: 935, percentile: 0.388079
-len: 936, percentile: 0.388384
-len: 939, percentile: 0.388538
-len: 947, percentile: 0.388846
-len: 948, percentile: 0.389308
-len: 949, percentile: 0.389771
-len: 950, percentile: 0.390081
-len: 953, percentile: 0.390236
-len: 954, percentile: 0.390391
-len: 956, percentile: 0.390858
-len: 957, percentile: 0.391636
-len: 958, percentile: 0.392727
-len: 959, percentile: 0.393039
-len: 960, percentile: 0.393195
-len: 962, percentile: 0.393508
-len: 963, percentile: 0.393821
-len: 964, percentile: 0.394292
-len: 965, percentile: 0.395076
-len: 966, percentile: 0.395391
-len: 967, percentile: 0.395863
-len: 968, percentile: 0.396335
-len: 969, percentile: 0.396493
-len: 970, percentile: 0.396966
-len: 971, percentile: 0.397440
-len: 972, percentile: 0.397914
-len: 973, percentile: 0.398389
-len: 974, percentile: 0.398706
-len: 975, percentile: 0.399023
-len: 978, percentile: 0.399183
-len: 980, percentile: 0.399501
-len: 981, percentile: 0.399821
-len: 982, percentile: 0.400140
-len: 983, percentile: 0.400620
-len: 984, percentile: 0.400780
-len: 985, percentile: 0.401100
-len: 986, percentile: 0.401582
-len: 989, percentile: 0.401743
-len: 990, percentile: 0.402226
-len: 991, percentile: 0.402389
-len: 1002, percentile: 0.402552
-len: 1003, percentile: 0.402878
-len: 1004, percentile: 0.403205
-len: 1005, percentile: 0.403532
-len: 1007, percentile: 0.403860
-len: 1009, percentile: 0.404516
-len: 1010, percentile: 0.404681
-len: 1011, percentile: 0.405832
-len: 1012, percentile: 0.405997
-len: 1015, percentile: 0.406162
-len: 1016, percentile: 0.406327
-len: 1017, percentile: 0.406824
-len: 1019, percentile: 0.407155
-len: 1020, percentile: 0.407653
-len: 1021, percentile: 0.407985
-len: 1022, percentile: 0.408151
-len: 1024, percentile: 0.408485
-len: 1025, percentile: 0.408818
-len: 1026, percentile: 0.409486
-len: 1027, percentile: 0.410154
-len: 1030, percentile: 0.410489
-len: 1032, percentile: 0.410825
-len: 1034, percentile: 0.411162
-len: 1035, percentile: 0.411330
-len: 1038, percentile: 0.411500
-len: 1044, percentile: 0.411840
-len: 1045, percentile: 0.412180
-len: 1047, percentile: 0.413031
-len: 1048, percentile: 0.413543
-len: 1049, percentile: 0.413713
-len: 1050, percentile: 0.413884
-len: 1052, percentile: 0.414398
-len: 1053, percentile: 0.414569
-len: 1055, percentile: 0.414913
-len: 1057, percentile: 0.415085
-len: 1058, percentile: 0.415601
-len: 1061, percentile: 0.415947
-len: 1063, percentile: 0.416293
-len: 1064, percentile: 0.416466
-len: 1065, percentile: 0.416812
-len: 1066, percentile: 0.417159
-len: 1067, percentile: 0.417333
-len: 1073, percentile: 0.417857
-len: 1074, percentile: 0.418206
-len: 1075, percentile: 0.418731
-len: 1076, percentile: 0.418906
-len: 1077, percentile: 0.419081
-len: 1078, percentile: 0.419432
-len: 1079, percentile: 0.419608
-len: 1080, percentile: 0.419959
-len: 1083, percentile: 0.420664
-len: 1085, percentile: 0.420841
-len: 1088, percentile: 0.421018
-len: 1089, percentile: 0.421195
-len: 1090, percentile: 0.421727
-len: 1092, percentile: 0.422793
-len: 1093, percentile: 0.422971
-len: 1094, percentile: 0.423149
-len: 1095, percentile: 0.423505
-len: 1097, percentile: 0.424397
-len: 1098, percentile: 0.424754
-len: 1099, percentile: 0.425469
-len: 1100, percentile: 0.426543
-len: 1102, percentile: 0.426722
-len: 1103, percentile: 0.427081
-len: 1104, percentile: 0.427620
-len: 1105, percentile: 0.427979
-len: 1106, percentile: 0.428339
-len: 1107, percentile: 0.429239
-len: 1108, percentile: 0.429780
-len: 1111, percentile: 0.429961
-len: 1113, percentile: 0.430685
-len: 1114, percentile: 0.431229
-len: 1115, percentile: 0.431411
-len: 1119, percentile: 0.431593
-len: 1120, percentile: 0.432322
-len: 1122, percentile: 0.432687
-len: 1123, percentile: 0.433235
-len: 1124, percentile: 0.433417
-len: 1125, percentile: 0.433601
-len: 1128, percentile: 0.434335
-len: 1129, percentile: 0.434518
-len: 1130, percentile: 0.435070
-len: 1131, percentile: 0.435622
-len: 1132, percentile: 0.435806
-len: 1134, percentile: 0.436359
-len: 1135, percentile: 0.436913
-len: 1136, percentile: 0.437283
-len: 1137, percentile: 0.437468
-len: 1142, percentile: 0.437654
-len: 1143, percentile: 0.438212
-len: 1145, percentile: 0.438585
-len: 1148, percentile: 0.438959
-len: 1150, percentile: 0.439520
-len: 1151, percentile: 0.440269
-len: 1157, percentile: 0.440834
-len: 1159, percentile: 0.441023
-len: 1161, percentile: 0.441212
-len: 1162, percentile: 0.441779
-len: 1163, percentile: 0.441968
-len: 1166, percentile: 0.442158
-len: 1167, percentile: 0.442348
-len: 1168, percentile: 0.442728
-len: 1169, percentile: 0.443299
-len: 1172, percentile: 0.443680
-len: 1176, percentile: 0.443872
-len: 1177, percentile: 0.444064
-len: 1180, percentile: 0.444256
-len: 1182, percentile: 0.444641
-len: 1186, percentile: 0.445027
-len: 1187, percentile: 0.445413
-len: 1188, percentile: 0.445606
-len: 1189, percentile: 0.445993
-len: 1190, percentile: 0.446380
-len: 1191, percentile: 0.446574
-len: 1192, percentile: 0.446962
-len: 1194, percentile: 0.447350
-len: 1195, percentile: 0.447545
-len: 1196, percentile: 0.447739
-len: 1197, percentile: 0.448518
-len: 1198, percentile: 0.448713
-len: 1199, percentile: 0.449103
-len: 1200, percentile: 0.449494
-len: 1201, percentile: 0.449689
-len: 1203, percentile: 0.450081
-len: 1205, percentile: 0.451061
-len: 1206, percentile: 0.451453
-len: 1207, percentile: 0.451649
-len: 1208, percentile: 0.451846
-len: 1209, percentile: 0.452239
-len: 1210, percentile: 0.452633
-len: 1213, percentile: 0.452831
-len: 1214, percentile: 0.453028
-len: 1215, percentile: 0.453226
-len: 1218, percentile: 0.453425
-len: 1221, percentile: 0.454021
-len: 1225, percentile: 0.454420
-len: 1228, percentile: 0.455019
-len: 1229, percentile: 0.455818
-len: 1230, percentile: 0.456019
-len: 1231, percentile: 0.456419
-len: 1232, percentile: 0.457020
-len: 1234, percentile: 0.457422
-len: 1235, percentile: 0.457623
-len: 1236, percentile: 0.458025
-len: 1237, percentile: 0.458628
-len: 1238, percentile: 0.459233
-len: 1240, percentile: 0.459434
-len: 1241, percentile: 0.460242
-len: 1243, percentile: 0.460444
-len: 1246, percentile: 0.460647
-len: 1248, percentile: 0.460851
-len: 1249, percentile: 0.461460
-len: 1250, percentile: 0.461867
-len: 1251, percentile: 0.462274
-len: 1252, percentile: 0.462681
-len: 1253, percentile: 0.463292
-len: 1254, percentile: 0.463497
-len: 1259, percentile: 0.464521
-len: 1260, percentile: 0.464726
-len: 1261, percentile: 0.465136
-len: 1264, percentile: 0.466164
-len: 1265, percentile: 0.466370
-len: 1266, percentile: 0.466782
-len: 1267, percentile: 0.466988
-len: 1268, percentile: 0.467400
-len: 1269, percentile: 0.467814
-len: 1275, percentile: 0.468022
-len: 1277, percentile: 0.468852
-len: 1278, percentile: 0.469061
-len: 1281, percentile: 0.469269
-len: 1284, percentile: 0.469479
-len: 1286, percentile: 0.469688
-len: 1287, percentile: 0.469897
-len: 1288, percentile: 0.470736
-len: 1293, percentile: 0.470946
-len: 1296, percentile: 0.471158
-len: 1299, percentile: 0.471580
-len: 1301, percentile: 0.472638
-len: 1302, percentile: 0.473062
-len: 1303, percentile: 0.473486
-len: 1306, percentile: 0.473912
-len: 1312, percentile: 0.474126
-len: 1317, percentile: 0.474340
-len: 1318, percentile: 0.474555
-len: 1319, percentile: 0.474984
-len: 1320, percentile: 0.475413
-len: 1322, percentile: 0.475629
-len: 1327, percentile: 0.476061
-len: 1332, percentile: 0.476278
-len: 1333, percentile: 0.477145
-len: 1334, percentile: 0.477362
-len: 1335, percentile: 0.477797
-len: 1338, percentile: 0.478668
-len: 1340, percentile: 0.479757
-len: 1341, percentile: 0.479976
-len: 1344, percentile: 0.480195
-len: 1346, percentile: 0.480414
-len: 1347, percentile: 0.480633
-len: 1349, percentile: 0.481072
-len: 1350, percentile: 0.481291
-len: 1351, percentile: 0.481731
-len: 1352, percentile: 0.481951
-len: 1353, percentile: 0.482171
-len: 1355, percentile: 0.482392
-len: 1357, percentile: 0.482833
-len: 1358, percentile: 0.483055
-len: 1365, percentile: 0.483277
-len: 1366, percentile: 0.483944
-len: 1367, percentile: 0.485723
-len: 1370, percentile: 0.486168
-len: 1372, percentile: 0.486392
-len: 1374, percentile: 0.487062
-len: 1377, percentile: 0.487287
-len: 1380, percentile: 0.487512
-len: 1383, percentile: 0.487962
-len: 1387, percentile: 0.488415
-len: 1401, percentile: 0.488644
-len: 1404, percentile: 0.488872
-len: 1406, percentile: 0.489330
-len: 1407, percentile: 0.489788
-len: 1409, percentile: 0.490017
-len: 1410, percentile: 0.491163
-len: 1411, percentile: 0.491623
-len: 1413, percentile: 0.491853
-len: 1415, percentile: 0.492083
-len: 1416, percentile: 0.492313
-len: 1417, percentile: 0.492544
-len: 1418, percentile: 0.493236
-len: 1419, percentile: 0.494620
-len: 1420, percentile: 0.495313
-len: 1421, percentile: 0.495775
-len: 1422, percentile: 0.496469
-len: 1424, percentile: 0.497164
-len: 1425, percentile: 0.497628
-len: 1426, percentile: 0.497860
-len: 1428, percentile: 0.498092
-len: 1429, percentile: 0.498558
-len: 1438, percentile: 0.498792
-len: 1440, percentile: 0.499495
-len: 1441, percentile: 0.499730
-len: 1444, percentile: 0.499965
-len: 1446, percentile: 0.500436
-len: 1450, percentile: 0.500672
-len: 1451, percentile: 0.500908
-len: 1453, percentile: 0.501145
-len: 1455, percentile: 0.501381
-len: 1456, percentile: 0.501855
-len: 1458, percentile: 0.503041
-len: 1460, percentile: 0.503278
-len: 1462, percentile: 0.503517
-len: 1465, percentile: 0.503994
-len: 1468, percentile: 0.504233
-len: 1470, percentile: 0.504472
-len: 1471, percentile: 0.504712
-len: 1476, percentile: 0.505192
-len: 1480, percentile: 0.505434
-len: 1487, percentile: 0.505676
-len: 1489, percentile: 0.506887
-len: 1491, percentile: 0.507372
-len: 1492, percentile: 0.507858
-len: 1493, percentile: 0.508344
-len: 1499, percentile: 0.508832
-len: 1501, percentile: 0.509076
-len: 1503, percentile: 0.509321
-len: 1504, percentile: 0.509565
-len: 1505, percentile: 0.509810
-len: 1506, percentile: 0.510300
-len: 1508, percentile: 0.510546
-len: 1513, percentile: 0.510794
-len: 1522, percentile: 0.511042
-len: 1524, percentile: 0.511785
-len: 1526, percentile: 0.512778
-len: 1529, percentile: 0.513028
-len: 1535, percentile: 0.514027
-len: 1537, percentile: 0.514527
-len: 1540, percentile: 0.514777
-len: 1541, percentile: 0.515279
-len: 1546, percentile: 0.515782
-len: 1547, percentile: 0.516034
-len: 1549, percentile: 0.516286
-len: 1551, percentile: 0.516539
-len: 1553, percentile: 0.516792
-len: 1555, percentile: 0.517045
-len: 1560, percentile: 0.517807
-len: 1561, percentile: 0.518568
-len: 1562, percentile: 0.519330
-len: 1563, percentile: 0.520347
-len: 1565, percentile: 0.520602
-len: 1566, percentile: 0.520857
-len: 1567, percentile: 0.521111
-len: 1568, percentile: 0.521622
-len: 1573, percentile: 0.521878
-len: 1574, percentile: 0.522390
-len: 1575, percentile: 0.522902
-len: 1576, percentile: 0.523415
-len: 1577, percentile: 0.523672
-len: 1581, percentile: 0.523929
-len: 1582, percentile: 0.524959
-len: 1584, percentile: 0.525474
-len: 1585, percentile: 0.526506
-len: 1590, percentile: 0.526764
-len: 1591, percentile: 0.527282
-len: 1594, percentile: 0.527542
-len: 1597, percentile: 0.528062
-len: 1600, percentile: 0.528582
-len: 1601, percentile: 0.528843
-len: 1602, percentile: 0.529103
-len: 1603, percentile: 0.529625
-len: 1607, percentile: 0.530148
-len: 1609, percentile: 0.530672
-len: 1612, percentile: 0.531721
-len: 1615, percentile: 0.531984
-len: 1616, percentile: 0.532773
-len: 1625, percentile: 0.533038
-len: 1627, percentile: 0.533567
-len: 1628, percentile: 0.533832
-len: 1629, percentile: 0.534099
-len: 1642, percentile: 0.534367
-len: 1646, percentile: 0.534635
-len: 1650, percentile: 0.535172
-len: 1651, percentile: 0.535441
-len: 1655, percentile: 0.535980
-len: 1660, percentile: 0.536790
-len: 1662, percentile: 0.537061
-len: 1669, percentile: 0.537333
-len: 1672, percentile: 0.537877
-len: 1675, percentile: 0.538150
-len: 1676, percentile: 0.538422
-len: 1677, percentile: 0.538969
-len: 1682, percentile: 0.539789
-len: 1685, percentile: 0.540612
-len: 1686, percentile: 0.540886
-len: 1687, percentile: 0.541161
-len: 1689, percentile: 0.541710
-len: 1693, percentile: 0.541986
-len: 1694, percentile: 0.542537
-len: 1695, percentile: 0.543088
-len: 1697, percentile: 0.543641
-len: 1701, percentile: 0.543919
-len: 1710, percentile: 0.544198
-len: 1717, percentile: 0.544757
-len: 1720, percentile: 0.545317
-len: 1722, percentile: 0.545877
-len: 1723, percentile: 0.546437
-len: 1724, percentile: 0.547280
-len: 1737, percentile: 0.547845
-len: 1738, percentile: 0.548129
-len: 1743, percentile: 0.548413
-len: 1748, percentile: 0.548697
-len: 1749, percentile: 0.549551
-len: 1751, percentile: 0.549837
-len: 1757, percentile: 0.550123
-len: 1759, percentile: 0.550695
-len: 1760, percentile: 0.550981
-len: 1763, percentile: 0.551268
-len: 1765, percentile: 0.551556
-len: 1766, percentile: 0.552704
-len: 1767, percentile: 0.553279
-len: 1768, percentile: 0.553567
-len: 1770, percentile: 0.553855
-len: 1772, percentile: 0.554144
-len: 1779, percentile: 0.554723
-len: 1782, percentile: 0.555014
-len: 1786, percentile: 0.555305
-len: 1794, percentile: 0.555889
-len: 1798, percentile: 0.556182
-len: 1799, percentile: 0.556475
-len: 1800, percentile: 0.557060
-len: 1802, percentile: 0.557647
-len: 1807, percentile: 0.558235
-len: 1812, percentile: 0.558530
-len: 1814, percentile: 0.559121
-len: 1816, percentile: 0.559713
-len: 1824, percentile: 0.560009
-len: 1825, percentile: 0.560306
-len: 1827, percentile: 0.560901
-len: 1828, percentile: 0.561198
-len: 1832, percentile: 0.561794
-len: 1833, percentile: 0.562093
-len: 1839, percentile: 0.562693
-len: 1847, percentile: 0.563294
-len: 1849, percentile: 0.563896
-len: 1853, percentile: 0.564197
-len: 1854, percentile: 0.565102
-len: 1856, percentile: 0.565404
-len: 1857, percentile: 0.565706
-len: 1858, percentile: 0.566612
-len: 1859, percentile: 0.567822
-len: 1864, percentile: 0.568732
-len: 1869, percentile: 0.569645
-len: 1873, percentile: 0.570256
-len: 1885, percentile: 0.570869
-len: 1889, percentile: 0.571177
-len: 1890, percentile: 0.571791
-len: 1891, percentile: 0.572099
-len: 1892, percentile: 0.572714
-len: 1893, percentile: 0.573022
-len: 1894, percentile: 0.573331
-len: 1897, percentile: 0.573639
-len: 1898, percentile: 0.573949
-len: 1901, percentile: 0.574258
-len: 1902, percentile: 0.574877
-len: 1904, percentile: 0.575496
-len: 1907, percentile: 0.575807
-len: 1909, percentile: 0.576428
-len: 1911, percentile: 0.577360
-len: 1913, percentile: 0.577672
-len: 1918, percentile: 0.578296
-len: 1920, percentile: 0.578609
-len: 1921, percentile: 0.578921
-len: 1924, percentile: 0.579549
-len: 1934, percentile: 0.579864
-len: 1938, percentile: 0.580181
-len: 1950, percentile: 0.580502
-len: 1974, percentile: 0.580824
-len: 1979, percentile: 0.581147
-len: 1987, percentile: 0.581470
-len: 1990, percentile: 0.582118
-len: 1992, percentile: 0.582442
-len: 1993, percentile: 0.582767
-len: 1999, percentile: 0.583417
-len: 2001, percentile: 0.583743
-len: 2003, percentile: 0.584070
-len: 2009, percentile: 0.584396
-len: 2010, percentile: 0.585051
-len: 2018, percentile: 0.585380
-len: 2019, percentile: 0.585708
-len: 2021, percentile: 0.586037
-len: 2023, percentile: 0.586366
-len: 2024, percentile: 0.587025
-len: 2026, percentile: 0.587684
-len: 2029, percentile: 0.588016
-len: 2041, percentile: 0.588348
-len: 2043, percentile: 0.589677
-len: 2045, percentile: 0.590010
-len: 2049, percentile: 0.590344
-len: 2051, percentile: 0.590678
-len: 2055, percentile: 0.591014
-len: 2066, percentile: 0.591687
-len: 2072, percentile: 0.592361
-len: 2073, percentile: 0.593035
-len: 2075, percentile: 0.593373
-len: 2079, percentile: 0.594050
-len: 2082, percentile: 0.594388
-len: 2083, percentile: 0.595744
-len: 2086, percentile: 0.596083
-len: 2088, percentile: 0.596762
-len: 2089, percentile: 0.597782
-len: 2095, percentile: 0.598465
-len: 2103, percentile: 0.599149
-len: 2104, percentile: 0.599834
-len: 2108, percentile: 0.600863
-len: 2114, percentile: 0.601207
-len: 2116, percentile: 0.601553
-len: 2125, percentile: 0.601899
-len: 2127, percentile: 0.602247
-len: 2146, percentile: 0.602598
-len: 2154, percentile: 0.602948
-len: 2157, percentile: 0.603300
-len: 2160, percentile: 0.603651
-len: 2162, percentile: 0.604355
-len: 2165, percentile: 0.604708
-len: 2170, percentile: 0.605061
-len: 2172, percentile: 0.605415
-len: 2176, percentile: 0.605771
-len: 2194, percentile: 0.606130
-len: 2207, percentile: 0.606491
-len: 2217, percentile: 0.607212
-len: 2220, percentile: 0.607934
-len: 2221, percentile: 0.608296
-len: 2227, percentile: 0.608658
-len: 2228, percentile: 0.609022
-len: 2236, percentile: 0.610113
-len: 2238, percentile: 0.610841
-len: 2240, percentile: 0.611206
-len: 2246, percentile: 0.611572
-len: 2248, percentile: 0.612303
-len: 2249, percentile: 0.612669
-len: 2251, percentile: 0.613036
-len: 2256, percentile: 0.613404
-len: 2263, percentile: 0.614508
-len: 2267, percentile: 0.614878
-len: 2271, percentile: 0.615248
-len: 2276, percentile: 0.615989
-len: 2284, percentile: 0.616732
-len: 2287, percentile: 0.617477
-len: 2291, percentile: 0.617852
-len: 2308, percentile: 0.618603
-len: 2309, percentile: 0.619354
-len: 2310, percentile: 0.619730
-len: 2312, percentile: 0.620859
-len: 2323, percentile: 0.621238
-len: 2330, percentile: 0.622375
-len: 2331, percentile: 0.623135
-len: 2341, percentile: 0.623896
-len: 2343, percentile: 0.624278
-len: 2346, percentile: 0.625041
-len: 2347, percentile: 0.625422
-len: 2348, percentile: 0.626187
-len: 2352, percentile: 0.626570
-len: 2356, percentile: 0.626954
-len: 2364, percentile: 0.627339
-len: 2365, percentile: 0.627724
-len: 2368, percentile: 0.628110
-len: 2373, percentile: 0.628882
-len: 2376, percentile: 0.629655
-len: 2383, percentile: 0.630818
-len: 2385, percentile: 0.631208
-len: 2399, percentile: 0.631989
-len: 2401, percentile: 0.632771
-len: 2409, percentile: 0.633554
-len: 2410, percentile: 0.634339
-len: 2413, percentile: 0.634731
-len: 2414, percentile: 0.635517
-len: 2418, percentile: 0.636303
-len: 2419, percentile: 0.636699
-len: 2432, percentile: 0.637491
-len: 2441, percentile: 0.638285
-len: 2443, percentile: 0.639082
-len: 2456, percentile: 0.639482
-len: 2462, percentile: 0.639883
-len: 2465, percentile: 0.640685
-len: 2469, percentile: 0.641088
-len: 2476, percentile: 0.641492
-len: 2488, percentile: 0.642302
-len: 2491, percentile: 0.642707
-len: 2493, percentile: 0.643113
-len: 2494, percentile: 0.643925
-len: 2500, percentile: 0.644738
-len: 2504, percentile: 0.645553
-len: 2505, percentile: 0.645962
-len: 2518, percentile: 0.646373
-len: 2525, percentile: 0.647194
-len: 2528, percentile: 0.648017
-len: 2532, percentile: 0.648429
-len: 2533, percentile: 0.649253
-len: 2538, percentile: 0.649666
-len: 2540, percentile: 0.650493
-len: 2543, percentile: 0.650907
-len: 2545, percentile: 0.651321
-len: 2549, percentile: 0.652153
-len: 2564, percentile: 0.652987
-len: 2569, percentile: 0.653406
-len: 2574, percentile: 0.653826
-len: 2586, percentile: 0.654247
-len: 2590, percentile: 0.655092
-len: 2606, percentile: 0.655942
-len: 2623, percentile: 0.656373
-len: 2649, percentile: 0.657668
-len: 2664, percentile: 0.658102
-len: 2669, percentile: 0.658536
-len: 2671, percentile: 0.658971
-len: 2678, percentile: 0.659410
-len: 2696, percentile: 0.659848
-len: 2697, percentile: 0.660288
-len: 2704, percentile: 0.661167
-len: 2705, percentile: 0.661608
-len: 2710, percentile: 0.662932
-len: 2721, percentile: 0.663375
-len: 2725, percentile: 0.663819
-len: 2734, percentile: 0.664265
-len: 2740, percentile: 0.665157
-len: 2746, percentile: 0.665605
-len: 2755, percentile: 0.666054
-len: 2764, percentile: 0.667408
-len: 2795, percentile: 0.667863
-len: 2798, percentile: 0.668773
-len: 2802, percentile: 0.669229
-len: 2803, percentile: 0.670143
-len: 2819, percentile: 0.671063
-len: 2841, percentile: 0.671989
-len: 2853, percentile: 0.672917
-len: 2856, percentile: 0.673850
-len: 2880, percentile: 0.674321
-len: 2899, percentile: 0.674793
-len: 2900, percentile: 0.675266
-len: 2907, percentile: 0.675738
-len: 2908, percentile: 0.676214
-len: 2922, percentile: 0.676691
-len: 2936, percentile: 0.677169
-len: 2938, percentile: 0.677647
-len: 2944, percentile: 0.678129
-len: 2962, percentile: 0.678611
-len: 2966, percentile: 0.679096
-len: 2979, percentile: 0.680067
-len: 2995, percentile: 0.680556
-len: 3009, percentile: 0.682024
-len: 3010, percentile: 0.682514
-len: 3011, percentile: 0.683494
-len: 3021, percentile: 0.683986
-len: 3022, percentile: 0.684970
-len: 3028, percentile: 0.685466
-len: 3051, percentile: 0.686460
-len: 3064, percentile: 0.687457
-len: 3065, percentile: 0.687956
-len: 3071, percentile: 0.688957
-len: 3085, percentile: 0.689965
-len: 3115, percentile: 0.690476
-len: 3141, percentile: 0.690987
-len: 3145, percentile: 0.692010
-len: 3147, percentile: 0.693034
-len: 3149, percentile: 0.693547
-len: 3155, percentile: 0.694061
-len: 3162, percentile: 0.695100
-len: 3231, percentile: 0.695627
-len: 3238, percentile: 0.696154
-len: 3244, percentile: 0.697210
-len: 3250, percentile: 0.697740
-len: 3260, percentile: 0.698271
-len: 3267, percentile: 0.699336
-len: 3277, percentile: 0.699872
-len: 3302, percentile: 0.700949
-len: 3319, percentile: 0.702028
-len: 3320, percentile: 0.702568
-len: 3321, percentile: 0.704189
-len: 3326, percentile: 0.705812
-len: 3329, percentile: 0.706354
-len: 3331, percentile: 0.706897
-len: 3339, percentile: 0.707985
-len: 3357, percentile: 0.708532
-len: 3361, percentile: 0.709079
-len: 3364, percentile: 0.710174
-len: 3374, percentile: 0.710726
-len: 3390, percentile: 0.711831
-len: 3410, percentile: 0.712386
-len: 3411, percentile: 0.712941
-len: 3414, percentile: 0.713497
-len: 3419, percentile: 0.714609
-len: 3420, percentile: 0.715166
-len: 3423, percentile: 0.715722
-len: 3425, percentile: 0.716836
-len: 3426, percentile: 0.717394
-len: 3427, percentile: 0.718509
-len: 3430, percentile: 0.719068
-len: 3438, percentile: 0.719627
-len: 3439, percentile: 0.720746
-len: 3442, percentile: 0.721306
-len: 3449, percentile: 0.723550
-len: 3453, percentile: 0.724117
-len: 3486, percentile: 0.724685
-len: 3491, percentile: 0.726956
-len: 3495, percentile: 0.727529
-len: 3525, percentile: 0.728106
-len: 3548, percentile: 0.729840
-len: 3569, percentile: 0.730421
-len: 3573, percentile: 0.731003
-len: 3579, percentile: 0.732171
-len: 3605, percentile: 0.732758
-len: 3610, percentile: 0.733934
-len: 3622, percentile: 0.734523
-len: 3625, percentile: 0.735704
-len: 3640, percentile: 0.736297
-len: 3646, percentile: 0.736893
-len: 3662, percentile: 0.737489
-len: 3667, percentile: 0.738682
-len: 3671, percentile: 0.739282
-len: 3688, percentile: 0.739883
-len: 3696, percentile: 0.741085
-len: 3700, percentile: 0.741688
-len: 3707, percentile: 0.742899
-len: 3739, percentile: 0.743508
-len: 3745, percentile: 0.744117
-len: 3748, percentile: 0.745339
-len: 3770, percentile: 0.746566
-len: 3772, percentile: 0.747180
-len: 3780, percentile: 0.748410
-len: 3785, percentile: 0.749026
-len: 3786, percentile: 0.749642
-len: 3788, percentile: 0.750259
-len: 3797, percentile: 0.751498
-len: 3820, percentile: 0.753364
-len: 3840, percentile: 0.754617
-len: 3862, percentile: 0.755876
-len: 3885, percentile: 0.757142
-len: 3896, percentile: 0.758409
-len: 3901, percentile: 0.759049
-len: 3936, percentile: 0.759689
-len: 3937, percentile: 0.760330
-len: 3941, percentile: 0.760979
-len: 3989, percentile: 0.762278
-len: 4000, percentile: 0.762934
-len: 4036, percentile: 0.764247
-len: 4039, percentile: 0.764904
-len: 4042, percentile: 0.766224
-len: 4075, percentile: 0.767559
-len: 4136, percentile: 0.768905
-len: 4139, percentile: 0.770252
-len: 4145, percentile: 0.770929
-len: 4168, percentile: 0.771608
-len: 4176, percentile: 0.772970
-len: 4197, percentile: 0.773653
-len: 4201, percentile: 0.774341
-len: 4232, percentile: 0.775722
-len: 4259, percentile: 0.777128
-len: 4391, percentile: 0.779276
-len: 4431, percentile: 0.780728
-len: 4499, percentile: 0.782193
-len: 4508, percentile: 0.782926
-len: 4509, percentile: 0.783659
-len: 4510, percentile: 0.785131
-len: 4539, percentile: 0.785870
-len: 4547, percentile: 0.786611
-len: 4555, percentile: 0.788093
-len: 4563, percentile: 0.788836
-len: 4570, percentile: 0.789580
-len: 4572, percentile: 0.790326
-len: 4587, percentile: 0.791822
-len: 4615, percentile: 0.793325
-len: 4628, percentile: 0.794088
-len: 4693, percentile: 0.794851
-len: 4696, percentile: 0.795616
-len: 4703, percentile: 0.797916
-len: 4740, percentile: 0.798687
-len: 4742, percentile: 0.799464
-len: 4777, percentile: 0.801794
-len: 4779, percentile: 0.802575
-len: 4803, percentile: 0.803360
-len: 4829, percentile: 0.804151
-len: 4863, percentile: 0.804950
-len: 4912, percentile: 0.805753
-len: 4940, percentile: 0.806558
-len: 4950, percentile: 0.808174
-len: 4988, percentile: 0.808987
-len: 5004, percentile: 0.810628
-len: 5083, percentile: 0.811456
-len: 5094, percentile: 0.813130
-len: 5202, percentile: 0.814827
-len: 5234, percentile: 0.815684
-len: 5273, percentile: 0.816569
-len: 5440, percentile: 0.817456
-len: 5454, percentile: 0.818345
-len: 5472, percentile: 0.820155
-len: 5659, percentile: 0.821077
-len: 5668, percentile: 0.822001
-len: 5685, percentile: 0.823851
-len: 5695, percentile: 0.825704
-len: 5697, percentile: 0.826636
-len: 5736, percentile: 0.828511
-len: 5793, percentile: 0.829456
-len: 5811, percentile: 0.830404
-len: 5833, percentile: 0.832304
-len: 5849, percentile: 0.833260
-len: 5881, percentile: 0.834218
-len: 5889, percentile: 0.836138
-len: 5923, percentile: 0.837105
-len: 5944, percentile: 0.838072
-len: 5947, percentile: 0.839041
-len: 5960, percentile: 0.840010
-len: 5961, percentile: 0.841950
-len: 5968, percentile: 0.843897
-len: 6008, percentile: 0.845864
-len: 6091, percentile: 0.847845
-len: 6092, percentile: 0.848851
-len: 6186, percentile: 0.849860
-len: 6207, percentile: 0.851880
-len: 6216, percentile: 0.852901
-len: 6282, percentile: 0.854947
-len: 6301, percentile: 0.857001
-len: 6328, percentile: 0.859109
-len: 6635, percentile: 0.860216
-len: 6808, percentile: 0.861328
-len: 6843, percentile: 0.862442
-len: 6852, percentile: 0.863558
-len: 6860, percentile: 0.865791
-len: 6876, percentile: 0.868040
-len: 6957, percentile: 0.869187
-len: 7055, percentile: 0.870375
-len: 7301, percentile: 0.871568
-len: 7342, percentile: 0.872769
-len: 7383, percentile: 0.875185
-len: 7476, percentile: 0.876413
-len: 7551, percentile: 0.877692
-len: 7870, percentile: 0.879009
-len: 8095, percentile: 0.880327
-len: 8109, percentile: 0.881648
-len: 8124, percentile: 0.882983
-len: 8213, percentile: 0.886991
-len: 8223, percentile: 0.888332
-len: 8245, percentile: 0.889683
-len: 8309, percentile: 0.892389
-len: 8332, percentile: 0.893765
-len: 8463, percentile: 0.897908
-len: 8557, percentile: 0.900761
-len: 8989, percentile: 0.902223
-len: 8990, percentile: 0.903703
-len: 9106, percentile: 0.906684
-len: 9226, percentile: 0.908185
-len: 9230, percentile: 0.911209
-len: 9367, percentile: 0.914294
-len: 9608, percentile: 0.915858
-len: 9616, percentile: 0.917479
-len: 9974, percentile: 0.920746
-len: 10117, percentile: 0.922393
-len: 10128, percentile: 0.924053
-len: 10210, percentile: 0.925754
-len: 10462, percentile: 0.927490
-len: 10674, percentile: 0.929237
-len: 10749, percentile: 0.932763
-len: 10937, percentile: 0.936355
-len: 11153, percentile: 0.940037
-len: 11489, percentile: 0.943815
-len: 11745, percentile: 0.947701
-len: 12160, percentile: 0.949819
-len: 13021, percentile: 0.951974
-len: 13255, percentile: 0.956309
-len: 13407, percentile: 0.958528
-len: 13649, percentile: 0.963093
-len: 14422, percentile: 0.965642
-len: 15682, percentile: 0.970793
-len: 15995, percentile: 0.976036
-len: 16249, percentile: 0.978827
-len: 17164, percentile: 0.981619
-len: 17173, percentile: 0.987252
-len: 17470, percentile: 0.993349
-len: 20030, percentile: 0.996675
+100, 1, 15966
+101, 2, 6110
+102, 3, 3848
+103, 4, 2685
+104, 5, 2048
+105, 6, 1565
+106, 7, 1269
+107, 8, 1075
+108, 9, 923
+109, 10, 800
+110, 11, 707
+111, 12, 620
+112, 13, 592
+113, 14, 532
+114, 15, 470
+115, 16, 437
+116, 17, 411
+117, 18, 390
+118, 19, 370
+119, 20, 342
+120, 21, 318
+121, 22, 296
+122, 23, 290
+123, 24, 266
+124, 25, 254
+125, 26, 253
+126, 27, 232
+127, 28, 235
+128, 29, 223
+129, 30, 189
+130, 31, 208
+131, 32, 188
+132, 33, 196
+133, 34, 171
+134, 35, 167
+135, 36, 162
+136, 37, 157
+137, 38, 148
+138, 39, 166
+139, 40, 133
+140, 41, 135
+141, 42, 142
+142, 43, 140
+143, 44, 130
+144, 45, 133
+145, 46, 134
+146, 47, 119
+147, 48, 114
+148, 49, 109
+149, 50, 105
+150, 51, 108
+151, 52, 97
+152, 53, 110
+153, 54, 97
+154, 55, 102
+155, 56, 101
+156, 57, 86
+157, 58, 96
+158, 59, 93
+159, 60, 89
+160, 61, 94
+161, 62, 78
+162, 63, 89
+163, 64, 76
+164, 65, 79
+165, 66, 71
+166, 67, 88
+167, 68, 73
+168, 69, 63
+169, 70, 73
+170, 71, 83
+171, 72, 63
+172, 73, 59
+173, 74, 67
+174, 75, 70
+175, 76, 59
+176, 77, 58
+177, 78, 55
+178, 79, 54
+179, 80, 67
+180, 81, 53
+181, 82, 52
+182, 83, 53
+183, 84, 62
+184, 85, 57
+185, 86, 55
+186, 87, 53
+187, 88, 48
+188, 89, 64
+189, 90, 49
+190, 91, 43
+191, 92, 45
+192, 93, 54
+193, 94, 55
+194, 95, 42
+195, 96, 51
+196, 97, 46
+197, 98, 50
+198, 99, 48
+5050, 5050, 69
+199, 101, 26296
+200, 102, 16999
+201, 103, 13547
+202, 104, 11080
+203, 105, 9562
+204, 106, 8189
+205, 107, 7177
+206, 108, 6311
+207, 109, 5567
+208, 110, 5011
+209, 111, 4613
+210, 112, 4156
+211, 113, 3913
+212, 114, 3621
+213, 115, 3419
+214, 116, 3135
+215, 117, 2985
+216, 118, 2804
+217, 119, 2699
+218, 120, 2486
+219, 121, 2397
+220, 122, 2435
+221, 123, 2324
+222, 124, 2088
+223, 125, 2065
+224, 126, 1985
+225, 127, 1817
+226, 128, 1851
+227, 129, 1633
+228, 130, 1709
+229, 131, 1744
+230, 132, 1470
+231, 133, 1441
+232, 134, 1561
+233, 135, 1450
+234, 136, 1390
+235, 137, 1544
+236, 138, 1273
+237, 139, 1306
+238, 140, 1303
+239, 141, 1180
+240, 142, 1151
+241, 143, 1060
+242, 144, 1210
+243, 145, 1041
+244, 146, 1068
+245, 147, 1040
+246, 148, 906
+247, 149, 1000
+248, 150, 1011
+249, 151, 980
+250, 152, 901
+251, 153, 985
+252, 154, 920
+253, 155, 881
+254, 156, 891
+255, 157, 939
+256, 158, 913
+257, 159, 856
+258, 160, 836
+259, 161, 808
+260, 162, 869
+261, 163, 860
+262, 164, 801
+263, 165, 729
+264, 166, 746
+265, 167, 759
+266, 168, 687
+267, 169, 799
+268, 170, 682
+269, 171, 753
+270, 172, 670
+271, 173, 628
+272, 174, 637
+273, 175, 751
+274, 176, 599
+275, 177, 731
+276, 178, 538
+277, 179, 704
+278, 180, 643
+279, 181, 641
+280, 182, 642
+281, 183, 625
+282, 184, 600
+283, 185, 611
+284, 186, 590
+285, 187, 580
+286, 188, 476
+287, 189, 659
+288, 190, 562
+289, 191, 504
+290, 192, 577
+291, 193, 491
+292, 194, 520
+293, 195, 481
+294, 196, 451
+295, 197, 465
+296, 198, 517
+5051, 5051, 806
+297, 200, 28313
+298, 201, 20182
+299, 202, 16917
+300, 203, 14578
+301, 204, 12839
+302, 205, 11520
+303, 206, 10298
+304, 207, 9342
+305, 208, 8498
+306, 209, 7618
+307, 210, 7178
+308, 211, 6515
+309, 212, 6237
+310, 213, 5776
+311, 214, 5509
+312, 215, 5109
+313, 216, 4842
+314, 217, 4753
+315, 218, 4441
+316, 219, 3997
+317, 220, 3961
+318, 221, 3879
+319, 222, 3738
+320, 223, 3515
+321, 224, 3305
+322, 225, 3018
+323, 226, 2880
+324, 227, 2890
+325, 228, 2758
+326, 229, 2797
+327, 230, 2580
+328, 231, 2605
+329, 232, 2646
+330, 233, 2394
+331, 234, 2517
+332, 235, 2309
+333, 236, 2447
+334, 237, 2226
+335, 238, 2119
+336, 239, 2053
+337, 240, 2077
+338, 241, 2024
+339, 242, 1850
+340, 243, 1940
+341, 244, 1925
+342, 245, 1859
+343, 246, 1761
+344, 247, 1733
+345, 248, 1854
+346, 249, 1725
+347, 250, 1778
+348, 251, 1693
+349, 252, 1576
+350, 253, 1603
+351, 254, 1459
+352, 255, 1630
+353, 256, 1622
+354, 257, 1631
+355, 258, 1439
+356, 259, 1301
+357, 260, 1473
+358, 261, 1447
+359, 262, 1377
+360, 263, 1332
+361, 264, 1361
+362, 265, 1252
+363, 266, 1210
+364, 267, 1359
+365, 268, 1144
+366, 269, 1291
+367, 270, 1165
+368, 271, 1142
+369, 272, 1177
+370, 273, 1102
+371, 274, 1162
+372, 275, 1065
+373, 276, 1104
+374, 277, 1020
+375, 278, 1158
+376, 279, 1125
+377, 280, 1137
+378, 281, 1037
+379, 282, 1021
+380, 283, 1014
+381, 284, 969
+382, 285, 922
+383, 286, 1187
+384, 287, 947
+385, 288, 1053
+386, 289, 952
+387, 290, 1065
+388, 291, 931
+389, 292, 892
+390, 293, 833
+391, 294, 815
+392, 295, 813
+393, 296, 1035
+5052, 5052, 1266
+394, 298, 29461
+395, 299, 22315
+396, 300, 19116
+397, 301, 16795
+398, 302, 15074
+399, 303, 13822
+400, 304, 12576
+401, 305, 11650
+402, 306, 10721
+403, 307, 9676
+404, 308, 8981
+405, 309, 8636
+406, 310, 8048
+407, 311, 7304
+408, 312, 7172
+409, 313, 6613
+410, 314, 6143
+411, 315, 5961
+412, 316, 5882
+413, 317, 5435
+414, 318, 5210
+415, 319, 4805
+416, 320, 4931
+417, 321, 4680
+418, 322, 4618
+419, 323, 4164
+420, 324, 4120
+421, 325, 3903
+422, 326, 4049
+423, 327, 3666
+424, 328, 3561
+425, 329, 3556
+426, 330, 3340
+427, 331, 3267
+428, 332, 3331
+429, 333, 3158
+430, 334, 3279
+431, 335, 3137
+432, 336, 2805
+433, 337, 2669
+434, 338, 2675
+435, 339, 2818
+436, 340, 2341
+437, 341, 2561
+438, 342, 2541
+439, 343, 2653
+440, 344, 2400
+441, 345, 2507
+442, 346, 2340
+443, 347, 2059
+444, 348, 2174
+445, 349, 2249
+446, 350, 2066
+447, 351, 2167
+448, 352, 2215
+449, 353, 2006
+450, 354, 1762
+451, 355, 2107
+452, 356, 2027
+453, 357, 1938
+454, 358, 1935
+455, 359, 1846
+456, 360, 1993
+457, 361, 1819
+458, 362, 1933
+459, 363, 1915
+460, 364, 1544
+461, 365, 1656
+462, 366, 1711
+463, 367, 1696
+464, 368, 1755
+465, 369, 1800
+466, 370, 1743
+467, 371, 1828
+468, 372, 1579
+469, 373, 1637
+470, 374, 1694
+471, 375, 1548
+472, 376, 1714
+473, 377, 1595
+474, 378, 1554
+475, 379, 1616
+476, 380, 1514
+477, 381, 1637
+478, 382, 1226
+479, 383, 1470
+480, 384, 1434
+481, 385, 1550
+482, 386, 1423
+483, 387, 1417
+484, 388, 1168
+485, 389, 1389
+486, 390, 1089
+487, 391, 1210
+488, 392, 1346
+489, 393, 1346
+5053, 5053, 1538
+490, 395, 30168
+491, 396, 23842
+492, 397, 20758
+493, 398, 18463
+494, 399, 16829
+495, 400, 15632
+496, 401, 14416
+497, 402, 13207
+498, 403, 12485
+499, 404, 11631
+500, 405, 10847
+501, 406, 10171
+502, 407, 9784
+503, 408, 9294
+504, 409, 8528
+505, 410, 8323
+506, 411, 7840
+507, 412, 7719
+508, 413, 7066
+509, 414, 6906
+510, 415, 6615
+511, 416, 6186
+512, 417, 5791
+513, 418, 5765
+514, 419, 5513
+515, 420, 5115
+516, 421, 5296
+517, 422, 5116
+518, 423, 4929
+519, 424, 4629
+520, 425, 4611
+521, 426, 4513
+522, 427, 4370
+523, 428, 3919
+524, 429, 4012
+525, 430, 3917
+526, 431, 4108
+527, 432, 3890
+528, 433, 3735
+529, 434, 3332
+530, 435, 3592
+531, 436, 3408
+532, 437, 3035
+533, 438, 3242
+534, 439, 2948
+535, 440, 3180
+536, 441, 3046
+537, 442, 3075
+538, 443, 3019
+539, 444, 2967
+540, 445, 2609
+541, 446, 2911
+542, 447, 2604
+543, 448, 2903
+544, 449, 2566
+545, 450, 2575
+546, 451, 2434
+547, 452, 2373
+548, 453, 2458
+549, 454, 2304
+550, 455, 2447
+551, 456, 2368
+552, 457, 2155
+553, 458, 2412
+554, 459, 2318
+555, 460, 2466
+556, 461, 2169
+557, 462, 2298
+558, 463, 2292
+559, 464, 2290
+560, 465, 2061
+561, 466, 2022
+562, 467, 2241
+563, 468, 2043
+564, 469, 2185
+565, 470, 1861
+566, 471, 1917
+567, 472, 2335
+568, 473, 1907
+569, 474, 1932
+570, 475, 2023
+571, 476, 1861
+572, 477, 1979
+573, 478, 1755
+574, 479, 1845
+575, 480, 1797
+576, 481, 1696
+577, 482, 1789
+578, 483, 1841
+579, 484, 1710
+580, 485, 1584
+581, 486, 1734
+582, 487, 1512
+583, 488, 1570
+584, 489, 1305
+5054, 5054, 1740
+585, 491, 30654
+586, 492, 24975
+587, 493, 21895
+588, 494, 19840
+589, 495, 18204
+590, 496, 16802
+591, 497, 15744
+592, 498, 14697
+593, 499, 13756
+594, 500, 12844
+595, 501, 12220
+596, 502, 11266
+597, 503, 10699
+598, 504, 10354
+599, 505, 10005
+600, 506, 9470
+601, 507, 8930
+602, 508, 8676
+603, 509, 8502
+604, 510, 8031
+605, 511, 7647
+606, 512, 7238
+607, 513, 6807
+608, 514, 6695
+609, 515, 6624
+610, 516, 6350
+611, 517, 6303
+612, 518, 5616
+613, 519, 5793
+614, 520, 5428
+615, 521, 5394
+616, 522, 5218
+617, 523, 5395
+618, 524, 4912
+619, 525, 4809
+620, 526, 4879
+621, 527, 4884
+622, 528, 4464
+623, 529, 4565
+624, 530, 4275
+625, 531, 4145
+626, 532, 4212
+627, 533, 3840
+628, 534, 4001
+629, 535, 3921
+630, 536, 3712
+631, 537, 3662
+632, 538, 3895
+633, 539, 3309
+634, 540, 3496
+635, 541, 3209
+636, 542, 3486
+637, 543, 3492
+638, 544, 3370
+639, 545, 3233
+640, 546, 3028
+641, 547, 3098
+642, 548, 2879
+643, 549, 2894
+644, 550, 3277
+645, 551, 2966
+646, 552, 2903
+647, 553, 2738
+648, 554, 2856
+649, 555, 2709
+650, 556, 3137
+651, 557, 2514
+652, 558, 2741
+653, 559, 2795
+654, 560, 2584
+655, 561, 2694
+656, 562, 2431
+657, 563, 2382
+658, 564, 2696
+659, 565, 2679
+660, 566, 2180
+661, 567, 2111
+662, 568, 2416
+663, 569, 2435
+664, 570, 2063
+665, 571, 2268
+666, 572, 1902
+667, 573, 2114
+668, 574, 2221
+669, 575, 2068
+670, 576, 2191
+671, 577, 2046
+672, 578, 1933
+673, 579, 2177
+674, 580, 2282
+675, 581, 1951
+676, 582, 1751
+677, 583, 1881
+678, 584, 2262
+5055, 5055, 2083
+679, 586, 30950
+680, 587, 25831
+681, 588, 22878
+682, 589, 20638
+683, 590, 19222
+684, 591, 17781
+685, 592, 16929
+686, 593, 15882
+687, 594, 14938
+688, 595, 14142
+689, 596, 13351
+690, 597, 12606
+691, 598, 12025
+692, 599, 11628
+693, 600, 11086
+694, 601, 10527
+695, 602, 10044
+696, 603, 9722
+697, 604, 9526
+698, 605, 8841
+699, 606, 8133
+700, 607, 8207
+701, 608, 7741
+702, 609, 7814
+703, 610, 7369
+704, 611, 7066
+705, 612, 7134
+706, 613, 6460
+707, 614, 6334
+708, 615, 6484
+709, 616, 6393
+710, 617, 6045
+711, 618, 6020
+712, 619, 5652
+713, 620, 5501
+714, 621, 5270
+715, 622, 5179
+716, 623, 5164
+717, 624, 5309
+718, 625, 4851
+719, 626, 4852
+720, 627, 4302
+721, 628, 4778
+722, 629, 4487
+723, 630, 4446
+724, 631, 4309
+725, 632, 4364
+726, 633, 4340
+727, 634, 4203
+728, 635, 3914
+729, 636, 3949
+730, 637, 4111
+731, 638, 4206
+732, 639, 3738
+733, 640, 3788
+734, 641, 3306
+735, 642, 3625
+736, 643, 3640
+737, 644, 3873
+738, 645, 3560
+739, 646, 3488
+740, 647, 3409
+741, 648, 3080
+742, 649, 3372
+743, 650, 3129
+744, 651, 3470
+745, 652, 3383
+746, 653, 3127
+747, 654, 3112
+748, 655, 3020
+749, 656, 2814
+750, 657, 2769
+751, 658, 2844
+752, 659, 3049
+753, 660, 3122
+754, 661, 2830
+755, 662, 2937
+756, 663, 2586
+757, 664, 2771
+758, 665, 2639
+759, 666, 2386
+760, 667, 2518
+761, 668, 2446
+762, 669, 2544
+763, 670, 2712
+764, 671, 2474
+765, 672, 2627
+766, 673, 2431
+767, 674, 2641
+768, 675, 2454
+769, 676, 2448
+770, 677, 2447
+771, 678, 2336
+5056, 5056, 2396
+772, 680, 31256
+773, 681, 26680
+774, 682, 23927
+775, 683, 21882
+776, 684, 20272
+777, 685, 18909
+778, 686, 17811
+779, 687, 16834
+780, 688, 15980
+781, 689, 14996
+782, 690, 14411
+783, 691, 13812
+784, 692, 13199
+785, 693, 12304
+786, 694, 11814
+787, 695, 11678
+788, 696, 11143
+789, 697, 10621
+790, 698, 10724
+791, 699, 9941
+792, 700, 9564
+793, 701, 9158
+794, 702, 8679
+795, 703, 8712
+796, 704, 8198
+797, 705, 7991
+798, 706, 7906
+799, 707, 7795
+800, 708, 7244
+801, 709, 7251
+802, 710, 7027
+803, 711, 7194
+804, 712, 6529
+805, 713, 6489
+806, 714, 6365
+807, 715, 5772
+808, 716, 5970
+809, 717, 5561
+810, 718, 5772
+811, 719, 5550
+812, 720, 5599
+813, 721, 5441
+814, 722, 4954
+815, 723, 4973
+816, 724, 4885
+817, 725, 4901
+818, 726, 4712
+819, 727, 4510
+820, 728, 4222
+821, 729, 4432
+822, 730, 4099
+823, 731, 4544
+824, 732, 4336
+825, 733, 4338
+826, 734, 4283
+827, 735, 4238
+828, 736, 4287
+829, 737, 4225
+830, 738, 3864
+831, 739, 3650
+832, 740, 3859
+833, 741, 3767
+834, 742, 3517
+835, 743, 3710
+836, 744, 3263
+837, 745, 3696
+838, 746, 3509
+839, 747, 3673
+840, 748, 3555
+841, 749, 2919
+842, 750, 3022
+843, 751, 3209
+844, 752, 2713
+845, 753, 3252
+846, 754, 3522
+847, 755, 3177
+848, 756, 3103
+849, 757, 2798
+850, 758, 3073
+851, 759, 2878
+852, 760, 2857
+853, 761, 2843
+854, 762, 3027
+855, 763, 2657
+856, 764, 2967
+857, 765, 2693
+858, 766, 2926
+859, 767, 2778
+860, 768, 2718
+861, 769, 2823
+862, 770, 2772
+863, 771, 2826
+5057, 5057, 3150
+864, 773, 31447
+865, 774, 27162
+866, 775, 24614
+867, 776, 22432
+868, 777, 20892
+869, 778, 19728
+870, 779, 18552
+871, 780, 17507
+872, 781, 16656
+873, 782, 15893
+874, 783, 15423
+875, 784, 14615
+876, 785, 13938
+877, 786, 13405
+878, 787, 12824
+879, 788, 12336
+880, 789, 12010
+881, 790, 11093
+882, 791, 11162
+883, 792, 10598
+884, 793, 10100
+885, 794, 9970
+886, 795, 9573
+887, 796, 9238
+888, 797, 9342
+889, 798, 8770
+890, 799, 8840
+891, 800, 8318
+892, 801, 8559
+893, 802, 7483
+894, 803, 7538
+895, 804, 7413
+896, 805, 7565
+897, 806, 7056
+898, 807, 7221
+899, 808, 6740
+900, 809, 6557
+901, 810, 6579
+902, 811, 6443
+903, 812, 6199
+904, 813, 5860
+905, 814, 5818
+906, 815, 5942
+907, 816, 5705
+908, 817, 5330
+909, 818, 5304
+910, 819, 5361
+911, 820, 4825
+912, 821, 4777
+913, 822, 5347
+914, 823, 4886
+915, 824, 4728
+916, 825, 4647
+917, 826, 4994
+918, 827, 5205
+919, 828, 4278
+920, 829, 4538
+921, 830, 4554
+922, 831, 4086
+923, 832, 4481
+924, 833, 4446
+925, 834, 4314
+926, 835, 4015
+927, 836, 4277
+928, 837, 4518
+929, 838, 3971
+930, 839, 4079
+931, 840, 3957
+932, 841, 4125
+933, 842, 3838
+934, 843, 3855
+935, 844, 3775
+936, 845, 3649
+937, 846, 3170
+938, 847, 3814
+939, 848, 3523
+940, 849, 3717
+941, 850, 3084
+942, 851, 3599
+943, 852, 3585
+944, 853, 3789
+945, 854, 3153
+946, 855, 3073
+947, 856, 2972
+948, 857, 3309
+949, 858, 3217
+950, 859, 3592
+951, 860, 3104
+952, 861, 2871
+953, 862, 3072
+954, 863, 3264
+5058, 5058, 3167
+955, 865, 31570
+956, 866, 27679
+957, 867, 25245
+958, 868, 23104
+959, 869, 21670
+960, 870, 20501
+961, 871, 19260
+962, 872, 18263
+963, 873, 17220
+964, 874, 16716
+965, 875, 15964
+966, 876, 15109
+967, 877, 14611
+968, 878, 13981
+969, 879, 13555
+970, 880, 12861
+971, 881, 12834
+972, 882, 12317
+973, 883, 11605
+974, 884, 11497
+975, 885, 11306
+976, 886, 10680
+977, 887, 10157
+978, 888, 10149
+979, 889, 9893
+980, 890, 9711
+981, 891, 9393
+982, 892, 9059
+983, 893, 9302
+984, 894, 8457
+985, 895, 8291
+986, 896, 8145
+987, 897, 8412
+988, 898, 7740
+989, 899, 7513
+990, 900, 7324
+991, 901, 7109
+992, 902, 6953
+993, 903, 7048
+994, 904, 7170
+995, 905, 6736
+996, 906, 6260
+997, 907, 6248
+998, 908, 6271
+999, 909, 6396
+1000, 910, 5950
+1001, 911, 5663
+1002, 912, 5629
+1003, 913, 5546
+1004, 914, 5399
+1005, 915, 5274
+1006, 916, 5327
+1007, 917, 5297
+1008, 918, 5407
+1009, 919, 5487
+1010, 920, 4894
+1011, 921, 5598
+1012, 922, 4818
+1013, 923, 5072
+1014, 924, 4768
+1015, 925, 4535
+1016, 926, 4506
+1017, 927, 3896
+1018, 928, 4142
+1019, 929, 4815
+1020, 930, 4575
+1021, 931, 4096
+1022, 932, 4118
+1023, 933, 4355
+1024, 934, 4189
+1025, 935, 4011
+1026, 936, 4229
+1027, 937, 4028
+1028, 938, 3734
+1029, 939, 3696
+1030, 940, 3875
+1031, 941, 3786
+1032, 942, 3579
+1033, 943, 3726
+1034, 944, 3681
+1035, 945, 3726
+1036, 946, 3580
+1037, 947, 3414
+1038, 948, 3454
+1039, 949, 3669
+1040, 950, 3389
+1041, 951, 3543
+1042, 952, 3221
+1043, 953, 3295
+1044, 954, 3122
+5059, 5059, 3438
+1045, 956, 31727
+1046, 957, 28106
+1047, 958, 25855
+1048, 959, 23807
+1049, 960, 22245
+1050, 961, 20931
+1051, 962, 20069
+1052, 963, 18817
+1053, 964, 18088
+1054, 965, 17343
+1055, 966, 16463
+1056, 967, 15754
+1057, 968, 15375
+1058, 969, 14906
+1059, 970, 14454
+1060, 971, 13925
+1061, 972, 13749
+1062, 973, 13131
+1063, 974, 12783
+1064, 975, 12345
+1065, 976, 11325
+1066, 977, 11225
+1067, 978, 10948
+1068, 979, 10794
+1069, 980, 10498
+1070, 981, 10097
+1071, 982, 9911
+1072, 983, 9615
+1073, 984, 9459
+1074, 985, 8809
+1075, 986, 8250
+1076, 987, 8271
+1077, 988, 8655
+1078, 989, 8085
+1079, 990, 8092
+1080, 991, 7623
+1081, 992, 7470
+1082, 993, 7526
+1083, 994, 7564
+1084, 995, 7276
+1085, 996, 6759
+1086, 997, 6843
+1087, 998, 6862
+1088, 999, 6619
+1089, 1000, 6689
+1090, 1001, 6451
+1091, 1002, 6276
+1092, 1003, 6317
+1093, 1004, 5989
+1094, 1005, 6093
+1095, 1006, 5711
+1096, 1007, 6063
+1097, 1008, 6090
+1098, 1009, 5824
+1099, 1010, 6051
+1100, 1011, 5756
+1101, 1012, 5373
+1102, 1013, 5513
+1103, 1014, 5880
+1104, 1015, 5198
+1105, 1016, 5008
+1106, 1017, 5131
+1107, 1018, 4671
+1108, 1019, 4681
+1109, 1020, 5021
+1110, 1021, 4578
+1111, 1022, 4315
+1112, 1023, 4498
+1113, 1024, 4446
+1114, 1025, 4619
+1115, 1026, 4446
+1116, 1027, 4512
+1117, 1028, 4561
+1118, 1029, 4270
+1119, 1030, 4214
+1120, 1031, 4330
+1121, 1032, 4182
+1122, 1033, 4016
+1123, 1034, 4166
+1124, 1035, 3578
+1125, 1036, 4233
+1126, 1037, 4117
+1127, 1038, 3739
+1128, 1039, 3850
+1129, 1040, 3454
+1130, 1041, 3506
+1131, 1042, 3681
+1132, 1043, 3808
+1133, 1044, 3563
+5060, 5060, 4100
+1134, 1046, 31821
+1135, 1047, 28463
+1136, 1048, 26226
+1137, 1049, 24535
+1138, 1050, 22879
+1139, 1051, 21812
+1140, 1052, 20334
+1141, 1053, 19522
+1142, 1054, 18699
+1143, 1055, 18110
+1144, 1056, 17109
+1145, 1057, 16748
+1146, 1058, 15952
+1147, 1059, 15454
+1148, 1060, 15046
+1149, 1061, 14432
+1150, 1062, 14288
+1151, 1063, 13840
+1152, 1064, 13167
+1153, 1065, 13086
+1154, 1066, 12117
+1155, 1067, 12060
+1156, 1068, 11639
+1157, 1069, 11669
+1158, 1070, 11104
+1159, 1071, 10935
+1160, 1072, 10334
+1161, 1073, 10146
+1162, 1074, 9965
+1163, 1075, 9609
+1164, 1076, 9594
+1165, 1077, 9446
+1166, 1078, 9182
+1167, 1079, 8669
+1168, 1080, 8750
+1169, 1081, 8298
+1170, 1082, 7990
+1171, 1083, 8424
+1172, 1084, 8003
+1173, 1085, 7411
+1174, 1086, 7893
+1175, 1087, 7636
+1176, 1088, 7177
+1177, 1089, 7029
+1178, 1090, 6892
+1179, 1091, 6933
+1180, 1092, 7050
+1181, 1093, 6543
+1182, 1094, 6460
+1183, 1095, 6320
+1184, 1096, 6298
+1185, 1097, 6486
+1186, 1098, 6242
+1187, 1099, 6518
+1188, 1100, 5851
+1189, 1101, 6059
+1190, 1102, 5964
+1191, 1103, 6040
+1192, 1104, 5701
+1193, 1105, 5538
+1194, 1106, 5356
+1195, 1107, 5056
+1196, 1108, 5248
+1197, 1109, 5217
+1198, 1110, 5731
+1199, 1111, 4723
+1200, 1112, 5058
+1201, 1113, 4950
+1202, 1114, 5037
+1203, 1115, 4725
+1204, 1116, 5291
+1205, 1117, 4553
+1206, 1118, 5143
+1207, 1119, 4833
+1208, 1120, 4617
+1209, 1121, 4656
+1210, 1122, 4518
+1211, 1123, 5163
+1212, 1124, 4389
+1213, 1125, 3868
+1214, 1126, 4103
+1215, 1127, 3981
+1216, 1128, 4241
+1217, 1129, 4129
+1218, 1130, 4380
+1219, 1131, 3934
+1220, 1132, 3999
+1221, 1133, 4270
+5061, 5061, 4623
+1222, 1135, 31899
+1223, 1136, 28667
+1224, 1137, 26436
+1225, 1138, 24869
+1226, 1139, 23506
+1227, 1140, 22153
+1228, 1141, 21077
+1229, 1142, 20097
+1230, 1143, 19024
+1231, 1144, 18739
+1232, 1145, 17942
+1233, 1146, 17033
+1234, 1147, 16624
+1235, 1148, 16076
+1236, 1149, 15625
+1237, 1150, 15435
+1238, 1151, 14756
+1239, 1152, 14367
+1240, 1153, 13780
+1241, 1154, 13603
+1242, 1155, 12872
+1243, 1156, 12550
+1244, 1157, 12501
+1245, 1158, 11767
+1246, 1159, 11384
+1247, 1160, 11396
+1248, 1161, 11504
+1249, 1162, 10877
+1250, 1163, 11062
+1251, 1164, 10378
+1252, 1165, 10251
+1253, 1166, 9443
+1254, 1167, 9548
+1255, 1168, 9352
+1256, 1169, 9443
+1257, 1170, 9320
+1258, 1171, 8718
+1259, 1172, 8577
+1260, 1173, 8802
+1261, 1174, 8591
+1262, 1175, 8023
+1263, 1176, 7849
+1264, 1177, 8204
+1265, 1178, 7806
+1266, 1179, 7784
+1267, 1180, 7950
+1268, 1181, 7788
+1269, 1182, 6888
+1270, 1183, 6976
+1271, 1184, 7060
+1272, 1185, 6810
+1273, 1186, 6565
+1274, 1187, 6870
+1275, 1188, 6710
+1276, 1189, 6553
+1277, 1190, 6670
+1278, 1191, 6540
+1279, 1192, 6719
+1280, 1193, 6278
+1281, 1194, 5620
+1282, 1195, 5820
+1283, 1196, 5965
+1284, 1197, 5559
+1285, 1198, 5371
+1286, 1199, 6241
+1287, 1200, 5277
+1288, 1201, 5221
+1289, 1202, 5282
+1290, 1203, 5198
+1291, 1204, 5230
+1292, 1205, 5448
+1293, 1206, 4912
+1294, 1207, 5503
+1295, 1208, 4681
+1296, 1209, 5106
+1297, 1210, 5095
+1298, 1211, 4465
+1299, 1212, 4906
+1300, 1213, 4634
+1301, 1214, 4261
+1302, 1215, 4626
+1303, 1216, 4408
+1304, 1217, 4370
+1305, 1218, 4571
+1306, 1219, 4659
+1307, 1220, 4107
+1308, 1221, 5037
+5062, 5062, 4779
+1309, 1223, 31985
+1310, 1224, 29067
+1311, 1225, 26910
+1312, 1226, 25409
+1313, 1227, 23996
+1314, 1228, 22594
+1315, 1229, 21401
+1316, 1230, 20601
+1317, 1231, 19834
+1318, 1232, 19065
+1319, 1233, 18324
+1320, 1234, 17674
+1321, 1235, 16918
+1322, 1236, 16407
+1323, 1237, 16138
+1324, 1238, 15700
+1325, 1239, 15304
+1326, 1240, 14961
+1327, 1241, 14261
+1328, 1242, 13981
+1329, 1243, 13950
+1330, 1244, 12994
+1331, 1245, 13119
+1332, 1246, 12603
+1333, 1247, 12417
+1334, 1248, 12294
+1335, 1249, 12209
+1336, 1250, 11797
+1337, 1251, 10975
+1338, 1252, 10424
+1339, 1253, 10605
+1340, 1254, 10401
+1341, 1255, 10463
+1342, 1256, 9796
+1343, 1257, 9803
+1344, 1258, 9333
+1345, 1259, 9610
+1346, 1260, 9392
+1347, 1261, 9026
+1348, 1262, 8538
+1349, 1263, 8639
+1350, 1264, 8292
+1351, 1265, 8450
+1352, 1266, 8220
+1353, 1267, 8413
+1354, 1268, 8078
+1355, 1269, 7817
+1356, 1270, 7052
+1357, 1271, 7280
+1358, 1272, 7446
+1359, 1273, 7190
+1360, 1274, 6909
+1361, 1275, 7029
+1362, 1276, 6860
+1363, 1277, 6282
+1364, 1278, 7028
+1365, 1279, 6805
+1366, 1280, 6501
+1367, 1281, 6895
+1368, 1282, 6452
+1369, 1283, 6453
+1370, 1284, 6230
+1371, 1285, 5473
+1372, 1286, 5131
+1373, 1287, 5806
+1374, 1288, 4877
+1375, 1289, 5439
+1376, 1290, 5894
+1377, 1291, 5319
+1378, 1292, 5150
+1379, 1293, 5368
+1380, 1294, 5340
+1381, 1295, 5187
+1382, 1296, 5127
+1383, 1297, 5148
+1384, 1298, 5338
+1385, 1299, 5122
+1386, 1300, 5532
+1387, 1301, 5199
+1388, 1302, 4352
+1389, 1303, 4993
+1390, 1304, 4635
+1391, 1305, 4988
+1392, 1306, 5087
+1393, 1307, 4898
+1394, 1308, 4249
+5063, 5063, 5184
+1395, 1310, 32049
+1396, 1311, 29276
+1397, 1312, 27435
+1398, 1313, 25792
+1399, 1314, 24142
+1400, 1315, 23291
+1401, 1316, 22078
+1402, 1317, 21106
+1403, 1318, 20251
+1404, 1319, 19688
+1405, 1320, 18955
+1406, 1321, 18092
+1407, 1322, 17682
+1408, 1323, 17265
+1409, 1324, 17082
+1410, 1325, 16089
+1411, 1326, 15915
+1412, 1327, 15554
+1413, 1328, 15031
+1414, 1329, 14499
+1415, 1330, 14368
+1416, 1331, 14035
+1417, 1332, 13899
+1418, 1333, 13318
+1419, 1334, 12966
+1420, 1335, 12282
+1421, 1336, 11849
+1422, 1337, 11570
+1423, 1338, 11232
+1424, 1339, 11111
+1425, 1340, 11422
+1426, 1341, 10593
+1427, 1342, 10639
+1428, 1343, 9970
+1429, 1344, 10185
+1430, 1345, 9621
+1431, 1346, 10020
+1432, 1347, 9608
+1433, 1348, 9387
+1434, 1349, 9400
+1435, 1350, 9170
+1436, 1351, 8799
+1437, 1352, 8839
+1438, 1353, 8299
+1439, 1354, 8600
+1440, 1355, 8595
+1441, 1356, 8637
+1442, 1357, 7670
+1443, 1358, 7628
+1444, 1359, 7816
+1445, 1360, 7558
+1446, 1361, 7271
+1447, 1362, 7862
+1448, 1363, 7655
+1449, 1364, 7010
+1450, 1365, 7193
+1451, 1366, 7504
+1452, 1367, 7032
+1453, 1368, 6996
+1454, 1369, 6675
+1455, 1370, 6941
+1456, 1371, 6408
+1457, 1372, 6461
+1458, 1373, 6097
+1459, 1374, 6521
+1460, 1375, 6275
+1461, 1376, 5835
+1462, 1377, 6867
+1463, 1378, 6036
+1464, 1379, 5898
+1465, 1380, 5221
+1466, 1381, 5364
+1467, 1382, 5845
+1468, 1383, 6180
+1469, 1384, 5565
+1470, 1385, 5305
+1471, 1386, 5294
+1472, 1387, 5736
+1473, 1388, 5902
+1474, 1389, 4904
+1475, 1390, 5351
+1476, 1391, 4681
+1477, 1392, 5512
+1478, 1393, 5192
+1479, 1394, 5044
+5064, 5064, 5541
+1480, 1396, 32084
+1481, 1397, 29470
+1482, 1398, 27704
+1483, 1399, 26131
+1484, 1400, 24763
+1485, 1401, 23791
+1486, 1402, 22513
+1487, 1403, 21506
+1488, 1404, 20637
+1489, 1405, 19918
+1490, 1406, 19351
+1491, 1407, 18846
+1492, 1408, 18154
+1493, 1409, 17410
+1494, 1410, 17147
+1495, 1411, 17035
+1496, 1412, 16268
+1497, 1413, 15939
+1498, 1414, 15497
+1499, 1415, 14851
+1500, 1416, 14618
+1501, 1417, 14311
+1502, 1418, 14304
+1503, 1419, 13274
+1504, 1420, 13289
+1505, 1421, 12789
+1506, 1422, 12643
+1507, 1423, 12429
+1508, 1424, 12544
+1509, 1425, 11303
+1510, 1426, 11462
+1511, 1427, 11583
+1512, 1428, 11229
+1513, 1429, 10885
+1514, 1430, 10510
+1515, 1431, 10363
+1516, 1432, 10572
+1517, 1433, 10131
+1518, 1434, 10054
+1519, 1435, 9766
+1520, 1436, 9365
+1521, 1437, 9464
+1522, 1438, 9345
+1523, 1439, 8878
+1524, 1440, 9114
+1525, 1441, 9358
+1526, 1442, 8565
+1527, 1443, 7949
+1528, 1444, 7990
+1529, 1445, 8111
+1530, 1446, 8030
+1531, 1447, 7693
+1532, 1448, 8159
+1533, 1449, 7460
+1534, 1450, 7669
+1535, 1451, 7320
+1536, 1452, 7536
+1537, 1453, 7578
+1538, 1454, 6723
+1539, 1455, 6858
+1540, 1456, 6829
+1541, 1457, 6959
+1542, 1458, 6741
+1543, 1459, 6265
+1544, 1460, 6743
+1545, 1461, 6574
+1546, 1462, 6519
+1547, 1463, 6528
+1548, 1464, 6553
+1549, 1465, 6117
+1550, 1466, 5926
+1551, 1467, 6186
+1552, 1468, 6342
+1553, 1469, 5951
+1554, 1470, 6106
+1555, 1471, 5833
+1556, 1472, 6094
+1557, 1473, 5803
+1558, 1474, 6048
+1559, 1475, 5252
+1560, 1476, 5278
+1561, 1477, 5581
+1562, 1478, 5333
+1563, 1479, 4945
+5065, 5065, 5458
+1564, 1481, 32151
+1565, 1482, 29687
+1566, 1483, 27962
+1567, 1484, 26211
+1568, 1485, 25167
+1569, 1486, 23980
+1570, 1487, 22794
+1571, 1488, 22042
+1572, 1489, 21137
+1573, 1490, 20394
+1574, 1491, 19772
+1575, 1492, 19246
+1576, 1493, 18485
+1577, 1494, 18013
+1578, 1495, 17625
+1579, 1496, 17022
+1580, 1497, 17250
+1581, 1498, 16143
+1582, 1499, 15513
+1583, 1500, 15303
+1584, 1501, 15016
+1585, 1502, 14457
+1586, 1503, 14548
+1587, 1504, 13910
+1588, 1505, 13801
+1589, 1506, 13869
+1590, 1507, 13336
+1591, 1508, 12970
+1592, 1509, 12562
+1593, 1510, 11876
+1594, 1511, 12071
+1595, 1512, 12035
+1596, 1513, 11937
+1597, 1514, 11180
+1598, 1515, 11445
+1599, 1516, 10273
+1600, 1517, 11061
+1601, 1518, 10378
+1602, 1519, 10895
+1603, 1520, 9975
+1604, 1521, 10178
+1605, 1522, 10113
+1606, 1523, 9873
+1607, 1524, 9350
+1608, 1525, 8914
+1609, 1526, 9119
+1610, 1527, 9050
+1611, 1528, 9001
+1612, 1529, 8604
+1613, 1530, 8384
+1614, 1531, 8378
+1615, 1532, 8204
+1616, 1533, 8693
+1617, 1534, 8222
+1618, 1535, 7460
+1619, 1536, 7277
+1620, 1537, 7776
+1621, 1538, 7557
+1622, 1539, 7087
+1623, 1540, 7741
+1624, 1541, 7504
+1625, 1542, 7770
+1626, 1543, 7172
+1627, 1544, 7036
+1628, 1545, 7461
+1629, 1546, 6690
+1630, 1547, 6527
+1631, 1548, 7073
+1632, 1549, 7553
+1633, 1550, 6706
+1634, 1551, 6212
+1635, 1552, 6416
+1636, 1553, 6287
+1637, 1554, 6558
+1638, 1555, 6616
+1639, 1556, 6899
+1640, 1557, 5888
+1641, 1558, 6038
+1642, 1559, 5841
+1643, 1560, 5767
+1644, 1561, 5659
+1645, 1562, 6150
+1646, 1563, 6005
+5066, 5066, 7025
+1647, 1565, 32181
+1648, 1566, 29869
+1649, 1567, 28138
+1650, 1568, 26714
+1651, 1569, 25556
+1652, 1570, 24129
+1653, 1571, 23259
+1654, 1572, 22153
+1655, 1573, 21537
+1656, 1574, 20480
+1657, 1575, 20357
+1658, 1576, 19489
+1659, 1577, 18927
+1660, 1578, 18459
+1661, 1579, 18097
+1662, 1580, 17517
+1663, 1581, 17111
+1664, 1582, 16668
+1665, 1583, 16319
+1666, 1584, 15879
+1667, 1585, 15533
+1668, 1586, 14771
+1669, 1587, 14895
+1670, 1588, 14830
+1671, 1589, 14077
+1672, 1590, 13864
+1673, 1591, 13972
+1674, 1592, 13429
+1675, 1593, 12905
+1676, 1594, 12505
+1677, 1595, 12279
+1678, 1596, 12141
+1679, 1597, 12935
+1680, 1598, 11546
+1681, 1599, 11447
+1682, 1600, 11147
+1683, 1601, 11222
+1684, 1602, 10965
+1685, 1603, 10831
+1686, 1604, 10724
+1687, 1605, 10939
+1688, 1606, 10255
+1689, 1607, 10350
+1690, 1608, 9482
+1691, 1609, 9625
+1692, 1610, 9754
+1693, 1611, 9385
+1694, 1612, 9130
+1695, 1613, 9159
+1696, 1614, 9137
+1697, 1615, 8892
+1698, 1616, 8028
+1699, 1617, 8384
+1700, 1618, 8733
+1701, 1619, 7989
+1702, 1620, 8363
+1703, 1621, 7780
+1704, 1622, 8439
+1705, 1623, 7831
+1706, 1624, 8177
+1707, 1625, 8340
+1708, 1626, 6932
+1709, 1627, 7609
+1710, 1628, 7803
+1711, 1629, 7263
+1712, 1630, 6570
+1713, 1631, 6618
+1714, 1632, 7688
+1715, 1633, 7368
+1716, 1634, 7042
+1717, 1635, 6727
+1718, 1636, 6629
+1719, 1637, 6524
+1720, 1638, 6263
+1721, 1639, 6029
+1722, 1640, 6681
+1723, 1641, 6062
+1724, 1642, 5941
+1725, 1643, 6202
+1726, 1644, 6665
+1727, 1645, 5899
+1728, 1646, 5733
+5067, 5067, 7348
+1729, 1648, 32232
+1730, 1649, 29981
+1731, 1650, 28426
+1732, 1651, 27092
+1733, 1652, 25842
+1734, 1653, 24782
+1735, 1654, 23783
+1736, 1655, 22680
+1737, 1656, 22019
+1738, 1657, 21444
+1739, 1658, 20660
+1740, 1659, 19741
+1741, 1660, 19433
+1742, 1661, 18591
+1743, 1662, 18572
+1744, 1663, 17845
+1745, 1664, 17430
+1746, 1665, 16943
+1747, 1666, 16788
+1748, 1667, 16637
+1749, 1668, 15876
+1750, 1669, 15382
+1751, 1670, 15741
+1752, 1671, 14949
+1753, 1672, 15187
+1754, 1673, 14817
+1755, 1674, 14251
+1756, 1675, 14059
+1757, 1676, 13768
+1758, 1677, 12730
+1759, 1678, 13245
+1760, 1679, 12926
+1761, 1680, 13424
+1762, 1681, 12475
+1763, 1682, 11844
+1764, 1683, 12053
+1765, 1684, 11672
+1766, 1685, 11469
+1767, 1686, 11066
+1768, 1687, 11178
+1769, 1688, 11068
+1770, 1689, 10784
+1771, 1690, 10973
+1772, 1691, 10585
+1773, 1692, 9792
+1774, 1693, 9824
+1775, 1694, 9599
+1776, 1695, 9957
+1777, 1696, 9399
+1778, 1697, 9213
+1779, 1698, 9335
+1780, 1699, 9565
+1781, 1700, 8916
+1782, 1701, 9219
+1783, 1702, 8798
+1784, 1703, 8921
+1785, 1704, 8732
+1786, 1705, 8405
+1787, 1706, 8287
+1788, 1707, 8247
+1789, 1708, 7749
+1790, 1709, 7549
+1791, 1710, 7748
+1792, 1711, 7781
+1793, 1712, 7340
+1794, 1713, 7796
+1795, 1714, 7276
+1796, 1715, 7811
+1797, 1716, 7779
+1798, 1717, 7581
+1799, 1718, 7404
+1800, 1719, 7226
+1801, 1720, 7065
+1802, 1721, 6538
+1803, 1722, 6272
+1804, 1723, 7307
+1805, 1724, 7557
+1806, 1725, 6892
+1807, 1726, 6966
+1808, 1727, 6515
+1809, 1728, 6150
+5068, 5068, 6827
+1810, 1730, 32259
+1811, 1731, 30117
+1812, 1732, 28599
+1813, 1733, 27270
+1814, 1734, 26162
+1815, 1735, 25036
+1816, 1736, 24041
+1817, 1737, 22965
+1818, 1738, 22355
+1819, 1739, 21339
+1820, 1740, 20749
+1821, 1741, 20269
+1822, 1742, 19762
+1823, 1743, 19168
+1824, 1744, 19015
+1825, 1745, 18355
+1826, 1746, 18035
+1827, 1747, 17687
+1828, 1748, 16914
+1829, 1749, 16716
+1830, 1750, 16486
+1831, 1751, 16135
+1832, 1752, 15522
+1833, 1753, 14998
+1834, 1754, 15075
+1835, 1755, 14229
+1836, 1756, 14410
+1837, 1757, 13613
+1838, 1758, 13647
+1839, 1759, 13246
+1840, 1760, 13472
+1841, 1761, 12713
+1842, 1762, 12897
+1843, 1763, 12606
+1844, 1764, 11855
+1845, 1765, 12149
+1846, 1766, 12059
+1847, 1767, 12247
+1848, 1768, 11883
+1849, 1769, 11143
+1850, 1770, 11688
+1851, 1771, 11463
+1852, 1772, 11034
+1853, 1773, 11148
+1854, 1774, 10861
+1855, 1775, 9822
+1856, 1776, 9972
+1857, 1777, 10145
+1858, 1778, 9820
+1859, 1779, 9796
+1860, 1780, 9698
+1861, 1781, 9881
+1862, 1782, 9330
+1863, 1783, 9709
+1864, 1784, 9238
+1865, 1785, 9646
+1866, 1786, 8728
+1867, 1787, 8899
+1868, 1788, 7638
+1869, 1789, 8686
+1870, 1790, 8833
+1871, 1791, 7852
+1872, 1792, 8251
+1873, 1793, 8208
+1874, 1794, 8354
+1875, 1795, 7626
+1876, 1796, 7392
+1877, 1797, 7616
+1878, 1798, 8328
+1879, 1799, 7464
+1880, 1800, 6999
+1881, 1801, 7870
+1882, 1802, 7364
+1883, 1803, 7313
+1884, 1804, 6779
+1885, 1805, 7281
+1886, 1806, 6558
+1887, 1807, 7226
+1888, 1808, 6371
+1889, 1809, 6080
+5069, 5069, 7113
+1890, 1811, 32278
+1891, 1812, 30334
+1892, 1813, 28788
+1893, 1814, 27426
+1894, 1815, 26329
+1895, 1816, 25351
+1896, 1817, 24277
+1897, 1818, 23363
+1898, 1819, 22652
+1899, 1820, 22048
+1900, 1821, 21540
+1901, 1822, 20698
+1902, 1823, 20342
+1903, 1824, 19587
+1904, 1825, 19300
+1905, 1826, 18789
+1906, 1827, 18055
+1907, 1828, 17530
+1908, 1829, 17473
+1909, 1830, 17061
+1910, 1831, 16901
+1911, 1832, 16150
+1912, 1833, 15974
+1913, 1834, 15987
+1914, 1835, 15253
+1915, 1836, 15002
+1916, 1837, 14577
+1917, 1838, 14351
+1918, 1839, 14390
+1919, 1840, 13810
+1920, 1841, 13734
+1921, 1842, 13935
+1922, 1843, 13657
+1923, 1844, 12961
+1924, 1845, 12095
+1925, 1846, 12481
+1926, 1847, 12022
+1927, 1848, 12323
+1928, 1849, 11779
+1929, 1850, 11370
+1930, 1851, 11806
+1931, 1852, 11275
+1932, 1853, 11156
+1933, 1854, 10617
+1934, 1855, 10908
+1935, 1856, 10523
+1936, 1857, 9910
+1937, 1858, 10018
+1938, 1859, 10496
+1939, 1860, 10451
+1940, 1861, 9941
+1941, 1862, 9581
+1942, 1863, 9437
+1943, 1864, 9304
+1944, 1865, 9455
+1945, 1866, 9485
+1946, 1867, 8601
+1947, 1868, 9113
+1948, 1869, 8762
+1949, 1870, 8823
+1950, 1871, 9150
+1951, 1872, 8953
+1952, 1873, 8083
+1953, 1874, 7925
+1954, 1875, 8124
+1955, 1876, 7871
+1956, 1877, 7823
+1957, 1878, 8168
+1958, 1879, 7718
+1959, 1880, 8014
+1960, 1881, 7824
+1961, 1882, 8356
+1962, 1883, 7456
+1963, 1884, 7595
+1964, 1885, 6836
+1965, 1886, 7683
+1966, 1887, 7330
+1967, 1888, 7097
+1968, 1889, 7318
+5070, 5070, 7632
+1969, 1891, 32272
+1970, 1892, 30285
+1971, 1893, 28974
+1972, 1894, 27449
+1973, 1895, 26346
+1974, 1896, 25409
+1975, 1897, 24592
+1976, 1898, 23694
+1977, 1899, 22884
+1978, 1900, 22068
+1979, 1901, 21611
+1980, 1902, 20872
+1981, 1903, 20450
+1982, 1904, 19683
+1983, 1905, 19342
+1984, 1906, 18979
+1985, 1907, 18528
+1986, 1908, 18062
+1987, 1909, 17767
+1988, 1910, 17456
+1989, 1911, 17121
+1990, 1912, 16544
+1991, 1913, 15989
+1992, 1914, 15914
+1993, 1915, 15758
+1994, 1916, 15437
+1995, 1917, 15378
+1996, 1918, 14781
+1997, 1919, 14525
+1998, 1920, 13644
+1999, 1921, 14032
+2000, 1922, 14042
+2001, 1923, 13574
+2002, 1924, 13151
+2003, 1925, 12813
+2004, 1926, 12588
+2005, 1927, 12776
+2006, 1928, 12581
+2007, 1929, 11846
+2008, 1930, 12391
+2009, 1931, 12213
+2010, 1932, 12108
+2011, 1933, 11409
+2012, 1934, 11788
+2013, 1935, 11354
+2014, 1936, 10476
+2015, 1937, 10409
+2016, 1938, 10329
+2017, 1939, 9955
+2018, 1940, 10268
+2019, 1941, 10067
+2020, 1942, 9758
+2021, 1943, 9734
+2022, 1944, 9602
+2023, 1945, 9322
+2024, 1946, 9963
+2025, 1947, 9176
+2026, 1948, 8929
+2027, 1949, 9491
+2028, 1950, 9086
+2029, 1951, 8595
+2030, 1952, 8913
+2031, 1953, 8331
+2032, 1954, 8947
+2033, 1955, 8291
+2034, 1956, 8227
+2035, 1957, 7877
+2036, 1958, 9034
+2037, 1959, 7787
+2038, 1960, 8271
+2039, 1961, 7301
+2040, 1962, 8089
+2041, 1963, 8123
+2042, 1964, 7372
+2043, 1965, 7328
+2044, 1966, 7694
+2045, 1967, 7481
+2046, 1968, 7503
+5071, 5071, 8362
+2047, 1970, 32310
+2048, 1971, 30482
+2049, 1972, 28950
+2050, 1973, 27583
+2051, 1974, 26533
+2052, 1975, 25759
+2053, 1976, 24696
+2054, 1977, 23944
+2055, 1978, 23358
+2056, 1979, 22305
+2057, 1980, 21681
+2058, 1981, 20854
+2059, 1982, 20799
+2060, 1983, 19906
+2061, 1984, 19633
+2062, 1985, 18981
+2063, 1986, 18898
+2064, 1987, 18614
+2065, 1988, 17765
+2066, 1989, 17861
+2067, 1990, 17434
+2068, 1991, 17074
+2069, 1992, 16439
+2070, 1993, 16109
+2071, 1994, 15699
+2072, 1995, 15614
+2073, 1996, 15565
+2074, 1997, 14930
+2075, 1998, 14954
+2076, 1999, 14231
+2077, 2000, 14164
+2078, 2001, 14314
+2079, 2002, 13946
+2080, 2003, 13737
+2081, 2004, 12527
+2082, 2005, 13368
+2083, 2006, 13047
+2084, 2007, 12753
+2085, 2008, 12607
+2086, 2009, 12508
+2087, 2010, 11850
+2088, 2011, 12153
+2089, 2012, 11803
+2090, 2013, 11572
+2091, 2014, 11612
+2092, 2015, 11027
+2093, 2016, 11036
+2094, 2017, 10720
+2095, 2018, 10778
+2096, 2019, 10980
+2097, 2020, 10207
+2098, 2021, 10547
+2099, 2022, 10816
+2100, 2023, 11026
+2101, 2024, 10589
+2102, 2025, 9979
+2103, 2026, 10247
+2104, 2027, 9856
+2105, 2028, 9303
+2106, 2029, 9380
+2107, 2030, 8942
+2108, 2031, 9194
+2109, 2032, 9385
+2110, 2033, 9208
+2111, 2034, 8776
+2112, 2035, 8414
+2113, 2036, 8204
+2114, 2037, 8524
+2115, 2038, 8173
+2116, 2039, 8691
+2117, 2040, 7636
+2118, 2041, 8589
+2119, 2042, 8172
+2120, 2043, 8185
+2121, 2044, 7681
+2122, 2045, 7474
+2123, 2046, 7934
+5072, 5072, 8925
+2124, 2048, 32357
+2125, 2049, 30524
+2126, 2050, 29265
+2127, 2051, 27939
+2128, 2052, 27043
+2129, 2053, 25819
+2130, 2054, 24940
+2131, 2055, 24148
+2132, 2056, 23529
+2133, 2057, 22987
+2134, 2058, 22259
+2135, 2059, 21799
+2136, 2060, 21187
+2137, 2061, 20425
+2138, 2062, 19894
+2139, 2063, 19433
+2140, 2064, 18912
+2141, 2065, 18389
+2142, 2066, 18202
+2143, 2067, 18052
+2144, 2068, 17549
+2145, 2069, 17219
+2146, 2070, 16544
+2147, 2071, 17204
+2148, 2072, 16768
+2149, 2073, 15881
+2150, 2074, 15327
+2151, 2075, 15551
+2152, 2076, 15090
+2153, 2077, 14653
+2154, 2078, 15040
+2155, 2079, 14480
+2156, 2080, 14033
+2157, 2081, 13282
+2158, 2082, 13284
+2159, 2083, 13302
+2160, 2084, 13097
+2161, 2085, 12657
+2162, 2086, 12908
+2163, 2087, 13063
+2164, 2088, 12066
+2165, 2089, 12316
+2166, 2090, 11996
+2167, 2091, 12286
+2168, 2092, 11669
+2169, 2093, 11649
+2170, 2094, 12188
+2171, 2095, 11189
+2172, 2096, 10598
+2173, 2097, 11539
+2174, 2098, 10499
+2175, 2099, 10898
+2176, 2100, 10661
+2177, 2101, 10784
+2178, 2102, 10264
+2179, 2103, 9944
+2180, 2104, 9682
+2181, 2105, 9935
+2182, 2106, 9392
+2183, 2107, 9414
+2184, 2108, 9667
+2185, 2109, 8872
+2186, 2110, 8906
+2187, 2111, 8916
+2188, 2112, 8841
+2189, 2113, 9026
+2190, 2114, 8691
+2191, 2115, 9079
+2192, 2116, 8727
+2193, 2117, 8983
+2194, 2118, 8334
+2195, 2119, 8304
+2196, 2120, 8450
+2197, 2121, 8924
+2198, 2122, 8571
+2199, 2123, 7615
+5073, 5073, 8832
+2200, 2125, 32404
+2201, 2126, 30670
+2202, 2127, 29409
+2203, 2128, 28137
+2204, 2129, 27105
+2205, 2130, 26160
+2206, 2131, 25280
+2207, 2132, 24586
+2208, 2133, 23570
+2209, 2134, 23140
+2210, 2135, 22431
+2211, 2136, 21981
+2212, 2137, 21474
+2213, 2138, 20628
+2214, 2139, 20540
+2215, 2140, 19702
+2216, 2141, 19239
+2217, 2142, 19044
+2218, 2143, 18297
+2219, 2144, 18356
+2220, 2145, 17834
+2221, 2146, 17261
+2222, 2147, 17557
+2223, 2148, 17330
+2224, 2149, 16876
+2225, 2150, 16566
+2226, 2151, 16176
+2227, 2152, 15911
+2228, 2153, 15499
+2229, 2154, 15020
+2230, 2155, 14944
+2231, 2156, 14625
+2232, 2157, 14739
+2233, 2158, 14179
+2234, 2159, 13892
+2235, 2160, 13716
+2236, 2161, 13441
+2237, 2162, 13345
+2238, 2163, 13627
+2239, 2164, 12606
+2240, 2165, 12615
+2241, 2166, 12428
+2242, 2167, 12062
+2243, 2168, 11830
+2244, 2169, 12024
+2245, 2170, 11494
+2246, 2171, 11755
+2247, 2172, 11612
+2248, 2173, 10800
+2249, 2174, 11180
+2250, 2175, 11265
+2251, 2176, 11272
+2252, 2177, 10859
+2253, 2178, 11157
+2254, 2179, 9852
+2255, 2180, 9844
+2256, 2181, 9992
+2257, 2182, 10227
+2258, 2183, 9755
+2259, 2184, 9821
+2260, 2185, 9885
+2261, 2186, 9832
+2262, 2187, 9068
+2263, 2188, 9254
+2264, 2189, 9194
+2265, 2190, 9293
+2266, 2191, 8977
+2267, 2192, 8945
+2268, 2193, 8915
+2269, 2194, 9544
+2270, 2195, 9005
+2271, 2196, 8891
+2272, 2197, 9143
+2273, 2198, 8736
+2274, 2199, 8839
+5074, 5074, 8227
+2275, 2201, 32407
+2276, 2202, 30648
+2277, 2203, 29355
+2278, 2204, 28218
+2279, 2205, 27237
+2280, 2206, 26518
+2281, 2207, 25504
+2282, 2208, 24835
+2283, 2209, 23999
+2284, 2210, 23487
+2285, 2211, 22850
+2286, 2212, 22278
+2287, 2213, 21676
+2288, 2214, 21214
+2289, 2215, 20515
+2290, 2216, 20002
+2291, 2217, 19548
+2292, 2218, 19409
+2293, 2219, 18584
+2294, 2220, 18673
+2295, 2221, 17982
+2296, 2222, 17354
+2297, 2223, 17570
+2298, 2224, 17266
+2299, 2225, 17082
+2300, 2226, 16042
+2301, 2227, 16164
+2302, 2228, 15760
+2303, 2229, 15955
+2304, 2230, 15492
+2305, 2231, 15490
+2306, 2232, 15157
+2307, 2233, 15006
+2308, 2234, 14583
+2309, 2235, 14471
+2310, 2236, 14004
+2311, 2237, 14502
+2312, 2238, 13726
+2313, 2239, 13782
+2314, 2240, 13156
+2315, 2241, 12849
+2316, 2242, 12323
+2317, 2243, 12625
+2318, 2244, 12361
+2319, 2245, 12323
+2320, 2246, 11672
+2321, 2247, 12235
+2322, 2248, 11931
+2323, 2249, 10968
+2324, 2250, 12219
+2325, 2251, 10995
+2326, 2252, 11637
+2327, 2253, 11062
+2328, 2254, 11677
+2329, 2255, 10874
+2330, 2256, 10445
+2331, 2257, 10434
+2332, 2258, 10014
+2333, 2259, 10202
+2334, 2260, 10240
+2335, 2261, 9692
+2336, 2262, 10096
+2337, 2263, 9592
+2338, 2264, 9431
+2339, 2265, 9869
+2340, 2266, 9319
+2341, 2267, 9441
+2342, 2268, 9871
+2343, 2269, 9626
+2344, 2270, 9140
+2345, 2271, 9473
+2346, 2272, 8268
+2347, 2273, 8687
+2348, 2274, 8260
+5075, 5075, 9764
+2349, 2276, 32398
+2350, 2277, 30735
+2351, 2278, 29664
+2352, 2279, 28334
+2353, 2280, 27433
+2354, 2281, 26596
+2355, 2282, 25506
+2356, 2283, 24894
+2357, 2284, 24120
+2358, 2285, 23588
+2359, 2286, 22798
+2360, 2287, 22233
+2361, 2288, 21989
+2362, 2289, 21170
+2363, 2290, 21033
+2364, 2291, 20375
+2365, 2292, 19793
+2366, 2293, 19742
+2367, 2294, 19321
+2368, 2295, 18326
+2369, 2296, 18718
+2370, 2297, 17767
+2371, 2298, 17702
+2372, 2299, 17479
+2373, 2300, 17355
+2374, 2301, 16937
+2375, 2302, 16716
+2376, 2303, 16606
+2377, 2304, 16502
+2378, 2305, 15582
+2379, 2306, 15668
+2380, 2307, 15381
+2381, 2308, 15304
+2382, 2309, 14358
+2383, 2310, 14706
+2384, 2311, 14492
+2385, 2312, 14100
+2386, 2313, 14088
+2387, 2314, 13995
+2388, 2315, 13066
+2389, 2316, 13268
+2390, 2317, 13260
+2391, 2318, 12775
+2392, 2319, 12615
+2393, 2320, 12878
+2394, 2321, 12336
+2395, 2322, 12454
+2396, 2323, 12211
+2397, 2324, 11760
+2398, 2325, 12477
+2399, 2326, 11924
+2400, 2327, 11486
+2401, 2328, 10992
+2402, 2329, 11908
+2403, 2330, 10822
+2404, 2331, 11376
+2405, 2332, 10965
+2406, 2333, 10405
+2407, 2334, 10885
+2408, 2335, 11179
+2409, 2336, 10370
+2410, 2337, 10026
+2411, 2338, 9782
+2412, 2339, 10003
+2413, 2340, 10347
+2414, 2341, 9679
+2415, 2342, 10114
+2416, 2343, 9462
+2417, 2344, 10094
+2418, 2345, 9699
+2419, 2346, 9417
+2420, 2347, 8747
+2421, 2348, 9547
+5076, 5076, 10326
+2422, 2350, 32431
+2423, 2351, 30824
+2424, 2352, 29637
+2425, 2353, 28619
+2426, 2354, 27742
+2427, 2355, 26783
+2428, 2356, 26024
+2429, 2357, 25036
+2430, 2358, 24722
+2431, 2359, 23772
+2432, 2360, 23072
+2433, 2361, 22614
+2434, 2362, 21869
+2435, 2363, 21646
+2436, 2364, 21000
+2437, 2365, 20752
+2438, 2366, 19940
+2439, 2367, 19835
+2440, 2368, 19022
+2441, 2369, 19089
+2442, 2370, 18292
+2443, 2371, 18256
+2444, 2372, 17997
+2445, 2373, 18205
+2446, 2374, 17782
+2447, 2375, 17223
+2448, 2376, 16665
+2449, 2377, 16503
+2450, 2378, 16792
+2451, 2379, 16271
+2452, 2380, 16047
+2453, 2381, 15148
+2454, 2382, 15709
+2455, 2383, 14516
+2456, 2384, 15244
+2457, 2385, 14489
+2458, 2386, 13802
+2459, 2387, 14538
+2460, 2388, 14154
+2461, 2389, 13522
+2462, 2390, 12989
+2463, 2391, 13715
+2464, 2392, 13414
+2465, 2393, 13415
+2466, 2394, 13116
+2467, 2395, 12534
+2468, 2396, 12953
+2469, 2397, 11872
+2470, 2398, 11754
+2471, 2399, 12141
+2472, 2400, 11992
+2473, 2401, 11973
+2474, 2402, 12290
+2475, 2403, 12532
+2476, 2404, 11213
+2477, 2405, 10522
+2478, 2406, 11269
+2479, 2407, 10535
+2480, 2408, 9959
+2481, 2409, 10472
+2482, 2410, 9955
+2483, 2411, 10180
+2484, 2412, 10046
+2485, 2413, 10271
+2486, 2414, 9950
+2487, 2415, 9939
+2488, 2416, 10095
+2489, 2417, 9469
+2490, 2418, 9940
+2491, 2419, 9524
+2492, 2420, 9492
+2493, 2421, 9606
+5077, 5077, 10073
+2494, 2423, 32467
+2495, 2424, 30976
+2496, 2425, 29813
+2497, 2426, 28790
+2498, 2427, 27763
+2499, 2428, 27036
+2500, 2429, 26511
+2501, 2430, 25709
+2502, 2431, 24567
+2503, 2432, 23917
+2504, 2433, 23449
+2505, 2434, 22759
+2506, 2435, 22401
+2507, 2436, 21853
+2508, 2437, 21410
+2509, 2438, 20869
+2510, 2439, 20773
+2511, 2440, 20097
+2512, 2441, 19336
+2513, 2442, 19061
+2514, 2443, 19202
+2515, 2444, 18780
+2516, 2445, 19010
+2517, 2446, 18325
+2518, 2447, 17442
+2519, 2448, 17534
+2520, 2449, 16524
+2521, 2450, 16045
+2522, 2451, 16335
+2523, 2452, 16444
+2524, 2453, 16225
+2525, 2454, 15259
+2526, 2455, 15581
+2527, 2456, 15142
+2528, 2457, 15346
+2529, 2458, 14730
+2530, 2459, 14100
+2531, 2460, 14501
+2532, 2461, 14649
+2533, 2462, 13602
+2534, 2463, 13878
+2535, 2464, 13782
+2536, 2465, 12890
+2537, 2466, 12704
+2538, 2467, 13276
+2539, 2468, 12646
+2540, 2469, 12426
+2541, 2470, 12642
+2542, 2471, 12817
+2543, 2472, 12749
+2544, 2473, 12593
+2545, 2474, 12189
+2546, 2475, 12252
+2547, 2476, 11820
+2548, 2477, 11527
+2549, 2478, 11351
+2550, 2479, 11381
+2551, 2480, 10893
+2552, 2481, 11104
+2553, 2482, 11234
+2554, 2483, 10552
+2555, 2484, 10764
+2556, 2485, 10227
+2557, 2486, 10705
+2558, 2487, 10632
+2559, 2488, 10268
+2560, 2489, 9968
+2561, 2490, 10617
+2562, 2491, 9795
+2563, 2492, 9481
+2564, 2493, 9704
+5078, 5078, 10230
+2565, 2495, 32450
+2566, 2496, 30934
+2567, 2497, 29876
+2568, 2498, 28926
+2569, 2499, 28140
+2570, 2500, 27277
+2571, 2501, 26416
+2572, 2502, 25346
+2573, 2503, 24713
+2574, 2504, 24362
+2575, 2505, 23778
+2576, 2506, 23452
+2577, 2507, 22894
+2578, 2508, 22270
+2579, 2509, 21677
+2580, 2510, 21256
+2581, 2511, 20672
+2582, 2512, 20552
+2583, 2513, 19748
+2584, 2514, 19474
+2585, 2515, 19175
+2586, 2516, 18850
+2587, 2517, 18707
+2588, 2518, 18484
+2589, 2519, 18095
+2590, 2520, 17646
+2591, 2521, 17631
+2592, 2522, 17298
+2593, 2523, 16815
+2594, 2524, 16954
+2595, 2525, 17005
+2596, 2526, 16389
+2597, 2527, 16345
+2598, 2528, 15464
+2599, 2529, 15477
+2600, 2530, 15251
+2601, 2531, 14614
+2602, 2532, 14759
+2603, 2533, 15286
+2604, 2534, 14380
+2605, 2535, 14303
+2606, 2536, 14085
+2607, 2537, 14650
+2608, 2538, 13524
+2609, 2539, 13912
+2610, 2540, 13040
+2611, 2541, 13272
+2612, 2542, 13162
+2613, 2543, 13114
+2614, 2544, 12812
+2615, 2545, 12745
+2616, 2546, 12884
+2617, 2547, 12382
+2618, 2548, 12618
+2619, 2549, 11754
+2620, 2550, 11838
+2621, 2551, 11978
+2622, 2552, 12034
+2623, 2553, 11714
+2624, 2554, 11606
+2625, 2555, 11813
+2626, 2556, 11568
+2627, 2557, 11710
+2628, 2558, 10730
+2629, 2559, 10991
+2630, 2560, 10314
+2631, 2561, 11187
+2632, 2562, 11398
+2633, 2563, 10922
+2634, 2564, 10785
+5079, 5079, 10421
+2635, 2566, 32451
+2636, 2567, 31099
+2637, 2568, 29949
+2638, 2569, 28732
+2639, 2570, 28095
+2640, 2571, 27565
+2641, 2572, 26501
+2642, 2573, 25907
+2643, 2574, 25123
+2644, 2575, 24506
+2645, 2576, 23953
+2646, 2577, 23417
+2647, 2578, 22791
+2648, 2579, 21918
+2649, 2580, 22053
+2650, 2581, 21270
+2651, 2582, 21331
+2652, 2583, 20606
+2653, 2584, 20013
+2654, 2585, 20007
+2655, 2586, 19397
+2656, 2587, 19115
+2657, 2588, 19050
+2658, 2589, 18387
+2659, 2590, 18542
+2660, 2591, 17718
+2661, 2592, 17606
+2662, 2593, 17314
+2663, 2594, 16934
+2664, 2595, 16931
+2665, 2596, 16631
+2666, 2597, 16373
+2667, 2598, 16297
+2668, 2599, 16175
+2669, 2600, 15352
+2670, 2601, 15218
+2671, 2602, 15321
+2672, 2603, 15609
+2673, 2604, 15302
+2674, 2605, 14393
+2675, 2606, 14388
+2676, 2607, 14372
+2677, 2608, 13657
+2678, 2609, 14669
+2679, 2610, 13779
+2680, 2611, 13344
+2681, 2612, 13848
+2682, 2613, 13663
+2683, 2614, 12948
+2684, 2615, 13019
+2685, 2616, 12193
+2686, 2617, 12843
+2687, 2618, 11952
+2688, 2619, 11829
+2689, 2620, 12492
+2690, 2621, 11234
+2691, 2622, 12311
+2692, 2623, 11874
+2693, 2624, 11854
+2694, 2625, 11816
+2695, 2626, 11104
+2696, 2627, 11249
+2697, 2628, 11076
+2698, 2629, 11361
+2699, 2630, 12000
+2700, 2631, 10518
+2701, 2632, 10869
+2702, 2633, 11507
+2703, 2634, 10035
+5080, 5080, 11538
+2704, 2636, 32497
+2705, 2637, 31038
+2706, 2638, 29996
+2707, 2639, 29233
+2708, 2640, 28274
+2709, 2641, 27412
+2710, 2642, 26369
+2711, 2643, 26170
+2712, 2644, 25467
+2713, 2645, 24458
+2714, 2646, 24104
+2715, 2647, 23353
+2716, 2648, 22747
+2717, 2649, 22200
+2718, 2650, 21981
+2719, 2651, 21698
+2720, 2652, 21181
+2721, 2653, 20564
+2722, 2654, 20828
+2723, 2655, 20005
+2724, 2656, 19699
+2725, 2657, 18915
+2726, 2658, 19238
+2727, 2659, 18447
+2728, 2660, 18794
+2729, 2661, 17563
+2730, 2662, 17848
+2731, 2663, 17812
+2732, 2664, 16942
+2733, 2665, 17335
+2734, 2666, 17039
+2735, 2667, 16442
+2736, 2668, 16356
+2737, 2669, 16378
+2738, 2670, 15992
+2739, 2671, 16041
+2740, 2672, 14673
+2741, 2673, 15267
+2742, 2674, 15262
+2743, 2675, 14663
+2744, 2676, 15359
+2745, 2677, 14641
+2746, 2678, 14337
+2747, 2679, 14367
+2748, 2680, 13937
+2749, 2681, 13333
+2750, 2682, 13693
+2751, 2683, 13585
+2752, 2684, 13265
+2753, 2685, 12964
+2754, 2686, 13432
+2755, 2687, 13702
+2756, 2688, 12909
+2757, 2689, 12157
+2758, 2690, 12405
+2759, 2691, 12007
+2760, 2692, 12347
+2761, 2693, 11582
+2762, 2694, 11371
+2763, 2695, 11207
+2764, 2696, 11897
+2765, 2697, 11396
+2766, 2698, 11148
+2767, 2699, 11537
+2768, 2700, 11120
+2769, 2701, 10870
+2770, 2702, 10365
+2771, 2703, 10286
+5081, 5081, 10953
+2772, 2705, 32505
+2773, 2706, 31195
+2774, 2707, 30257
+2775, 2708, 29365
+2776, 2709, 28460
+2777, 2710, 27985
+2778, 2711, 26958
+2779, 2712, 26343
+2780, 2713, 25152
+2781, 2714, 24909
+2782, 2715, 24670
+2783, 2716, 24139
+2784, 2717, 23316
+2785, 2718, 22484
+2786, 2719, 21912
+2787, 2720, 21703
+2788, 2721, 21444
+2789, 2722, 21237
+2790, 2723, 20306
+2791, 2724, 20009
+2792, 2725, 20044
+2793, 2726, 19439
+2794, 2727, 19037
+2795, 2728, 18768
+2796, 2729, 18503
+2797, 2730, 18011
+2798, 2731, 17648
+2799, 2732, 17569
+2800, 2733, 17391
+2801, 2734, 17426
+2802, 2735, 16829
+2803, 2736, 16925
+2804, 2737, 17031
+2805, 2738, 16789
+2806, 2739, 16480
+2807, 2740, 15990
+2808, 2741, 15315
+2809, 2742, 16022
+2810, 2743, 15530
+2811, 2744, 15287
+2812, 2745, 14754
+2813, 2746, 14761
+2814, 2747, 13834
+2815, 2748, 14931
+2816, 2749, 13869
+2817, 2750, 14000
+2818, 2751, 14072
+2819, 2752, 13519
+2820, 2753, 13432
+2821, 2754, 13007
+2822, 2755, 13461
+2823, 2756, 13110
+2824, 2757, 11928
+2825, 2758, 12731
+2826, 2759, 13014
+2827, 2760, 11979
+2828, 2761, 13073
+2829, 2762, 12697
+2830, 2763, 11745
+2831, 2764, 11778
+2832, 2765, 11773
+2833, 2766, 10985
+2834, 2767, 11255
+2835, 2768, 12944
+2836, 2769, 11413
+2837, 2770, 10666
+2838, 2771, 10198
+5082, 5082, 12203
+2839, 2773, 32522
+2840, 2774, 31187
+2841, 2775, 30197
+2842, 2776, 29063
+2843, 2777, 28421
+2844, 2778, 27820
+2845, 2779, 27199
+2846, 2780, 26516
+2847, 2781, 25840
+2848, 2782, 25087
+2849, 2783, 24481
+2850, 2784, 24012
+2851, 2785, 23660
+2852, 2786, 22908
+2853, 2787, 22528
+2854, 2788, 22172
+2855, 2789, 21527
+2856, 2790, 20975
+2857, 2791, 20512
+2858, 2792, 20311
+2859, 2793, 20167
+2860, 2794, 19844
+2861, 2795, 19568
+2862, 2796, 19077
+2863, 2797, 19298
+2864, 2798, 18973
+2865, 2799, 18317
+2866, 2800, 18700
+2867, 2801, 17476
+2868, 2802, 18018
+2869, 2803, 17670
+2870, 2804, 17299
+2871, 2805, 16739
+2872, 2806, 15965
+2873, 2807, 16529
+2874, 2808, 16377
+2875, 2809, 15911
+2876, 2810, 16158
+2877, 2811, 16034
+2878, 2812, 15576
+2879, 2813, 15531
+2880, 2814, 14919
+2881, 2815, 14482
+2882, 2816, 14750
+2883, 2817, 14064
+2884, 2818, 13938
+2885, 2819, 14735
+2886, 2820, 13046
+2887, 2821, 13656
+2888, 2822, 13339
+2889, 2823, 14341
+2890, 2824, 13064
+2891, 2825, 12835
+2892, 2826, 13224
+2893, 2827, 12234
+2894, 2828, 12201
+2895, 2829, 12156
+2896, 2830, 12206
+2897, 2831, 12368
+2898, 2832, 12032
+2899, 2833, 11829
+2900, 2834, 11788
+2901, 2835, 11330
+2902, 2836, 12006
+2903, 2837, 12595
+2904, 2838, 11622
+5083, 5083, 13136
+2905, 2840, 32530
+2906, 2841, 31243
+2907, 2842, 30312
+2908, 2843, 29375
+2909, 2844, 28672
+2910, 2845, 27758
+2911, 2846, 27225
+2912, 2847, 26543
+2913, 2848, 26034
+2914, 2849, 25546
+2915, 2850, 24786
+2916, 2851, 24158
+2917, 2852, 23704
+2918, 2853, 23287
+2919, 2854, 22524
+2920, 2855, 22138
+2921, 2856, 21767
+2922, 2857, 20951
+2923, 2858, 20643
+2924, 2859, 20584
+2925, 2860, 19961
+2926, 2861, 20116
+2927, 2862, 19511
+2928, 2863, 19094
+2929, 2864, 19115
+2930, 2865, 18842
+2931, 2866, 18572
+2932, 2867, 18278
+2933, 2868, 18684
+2934, 2869, 17856
+2935, 2870, 17978
+2936, 2871, 17395
+2937, 2872, 17820
+2938, 2873, 17065
+2939, 2874, 16560
+2940, 2875, 16587
+2941, 2876, 15817
+2942, 2877, 16423
+2943, 2878, 16089
+2944, 2879, 16384
+2945, 2880, 15958
+2946, 2881, 15105
+2947, 2882, 15098
+2948, 2883, 14818
+2949, 2884, 14482
+2950, 2885, 14348
+2951, 2886, 15170
+2952, 2887, 14006
+2953, 2888, 14035
+2954, 2889, 13808
+2955, 2890, 14183
+2956, 2891, 13358
+2957, 2892, 13123
+2958, 2893, 13435
+2959, 2894, 13361
+2960, 2895, 12073
+2961, 2896, 13008
+2962, 2897, 12142
+2963, 2898, 12554
+2964, 2899, 12601
+2965, 2900, 11977
+2966, 2901, 11654
+2967, 2902, 11745
+2968, 2903, 11635
+2969, 2904, 12072
+5084, 5084, 10992
+2970, 2906, 32517
+2971, 2907, 31344
+2972, 2908, 30380
+2973, 2909, 29455
+2974, 2910, 28718
+2975, 2911, 27828
+2976, 2912, 27106
+2977, 2913, 26396
+2978, 2914, 26052
+2979, 2915, 25501
+2980, 2916, 24794
+2981, 2917, 24301
+2982, 2918, 23646
+2983, 2919, 22862
+2984, 2920, 22547
+2985, 2921, 22575
+2986, 2922, 21901
+2987, 2923, 21578
+2988, 2924, 21189
+2989, 2925, 20428
+2990, 2926, 20588
+2991, 2927, 19770
+2992, 2928, 20166
+2993, 2929, 19466
+2994, 2930, 19532
+2995, 2931, 19447
+2996, 2932, 18581
+2997, 2933, 18104
+2998, 2934, 18250
+2999, 2935, 17589
+3000, 2936, 17716
+3001, 2937, 17579
+3002, 2938, 17425
+3003, 2939, 16699
+3004, 2940, 16924
+3005, 2941, 16278
+3006, 2942, 16214
+3007, 2943, 16704
+3008, 2944, 15929
+3009, 2945, 15819
+3010, 2946, 15178
+3011, 2947, 15855
+3012, 2948, 15656
+3013, 2949, 15267
+3014, 2950, 14238
+3015, 2951, 14919
+3016, 2952, 14533
+3017, 2953, 13753
+3018, 2954, 14927
+3019, 2955, 14109
+3020, 2956, 14455
+3021, 2957, 14069
+3022, 2958, 13462
+3023, 2959, 13509
+3024, 2960, 13094
+3025, 2961, 12365
+3026, 2962, 12233
+3027, 2963, 12827
+3028, 2964, 12698
+3029, 2965, 12953
+3030, 2966, 12564
+3031, 2967, 12766
+3032, 2968, 11820
+3033, 2969, 11977
+5085, 5085, 12429
+3034, 2971, 32511
+3035, 2972, 31326
+3036, 2973, 30516
+3037, 2974, 29536
+3038, 2975, 28973
+3039, 2976, 28085
+3040, 2977, 27535
+3041, 2978, 26757
+3042, 2979, 26150
+3043, 2980, 25558
+3044, 2981, 25078
+3045, 2982, 24351
+3046, 2983, 24490
+3047, 2984, 23688
+3048, 2985, 22891
+3049, 2986, 22884
+3050, 2987, 22451
+3051, 2988, 21750
+3052, 2989, 21749
+3053, 2990, 21448
+3054, 2991, 20699
+3055, 2992, 20334
+3056, 2993, 20332
+3057, 2994, 19552
+3058, 2995, 19496
+3059, 2996, 19189
+3060, 2997, 18597
+3061, 2998, 18596
+3062, 2999, 18521
+3063, 3000, 18136
+3064, 3001, 18261
+3065, 3002, 17440
+3066, 3003, 17401
+3067, 3004, 17043
+3068, 3005, 16658
+3069, 3006, 16503
+3070, 3007, 16559
+3071, 3008, 16639
+3072, 3009, 16721
+3073, 3010, 16290
+3074, 3011, 15442
+3075, 3012, 15706
+3076, 3013, 15212
+3077, 3014, 15164
+3078, 3015, 15401
+3079, 3016, 14468
+3080, 3017, 15539
+3081, 3018, 14578
+3082, 3019, 14337
+3083, 3020, 14389
+3084, 3021, 14572
+3085, 3022, 14420
+3086, 3023, 13726
+3087, 3024, 13702
+3088, 3025, 13820
+3089, 3026, 13010
+3090, 3027, 12466
+3091, 3028, 13421
+3092, 3029, 12270
+3093, 3030, 12784
+3094, 3031, 12758
+3095, 3032, 12592
+3096, 3033, 12155
+5086, 5086, 12279
+3097, 3035, 32543
+3098, 3036, 31326
+3099, 3037, 30550
+3100, 3038, 29728
+3101, 3039, 28804
+3102, 3040, 28175
+3103, 3041, 27468
+3104, 3042, 26796
+3105, 3043, 26407
+3106, 3044, 25588
+3107, 3045, 25517
+3108, 3046, 24458
+3109, 3047, 24136
+3110, 3048, 23845
+3111, 3049, 22916
+3112, 3050, 23027
+3113, 3051, 22638
+3114, 3052, 21895
+3115, 3053, 21222
+3116, 3054, 21040
+3117, 3055, 20891
+3118, 3056, 20121
+3119, 3057, 19730
+3120, 3058, 19943
+3121, 3059, 19999
+3122, 3060, 19389
+3123, 3061, 18679
+3124, 3062, 18712
+3125, 3063, 18721
+3126, 3064, 18498
+3127, 3065, 17746
+3128, 3066, 17900
+3129, 3067, 17700
+3130, 3068, 17693
+3131, 3069, 17073
+3132, 3070, 17440
+3133, 3071, 16872
+3134, 3072, 16994
+3135, 3073, 16984
+3136, 3074, 16528
+3137, 3075, 15932
+3138, 3076, 16605
+3139, 3077, 15633
+3140, 3078, 15060
+3141, 3079, 15065
+3142, 3080, 15333
+3143, 3081, 14523
+3144, 3082, 14465
+3145, 3083, 14356
+3146, 3084, 14683
+3147, 3085, 16041
+3148, 3086, 14718
+3149, 3087, 14276
+3150, 3088, 13290
+3151, 3089, 14006
+3152, 3090, 13638
+3153, 3091, 13370
+3154, 3092, 13986
+3155, 3093, 13013
+3156, 3094, 13336
+3157, 3095, 12884
+3158, 3096, 12931
+5087, 5087, 12800
+3159, 3098, 32550
+3160, 3099, 31403
+3161, 3100, 30612
+3162, 3101, 29651
+3163, 3102, 29116
+3164, 3103, 28404
+3165, 3104, 27721
+3166, 3105, 27217
+3167, 3106, 26433
+3168, 3107, 26067
+3169, 3108, 25356
+3170, 3109, 25152
+3171, 3110, 24598
+3172, 3111, 23859
+3173, 3112, 22969
+3174, 3113, 23053
+3175, 3114, 22855
+3176, 3115, 22143
+3177, 3116, 21639
+3178, 3117, 21651
+3179, 3118, 20835
+3180, 3119, 20675
+3181, 3120, 20268
+3182, 3121, 20240
+3183, 3122, 20101
+3184, 3123, 19559
+3185, 3124, 19448
+3186, 3125, 19282
+3187, 3126, 18835
+3188, 3127, 18010
+3189, 3128, 17749
+3190, 3129, 17941
+3191, 3130, 17760
+3192, 3131, 17392
+3193, 3132, 17370
+3194, 3133, 17278
+3195, 3134, 16917
+3196, 3135, 17136
+3197, 3136, 17283
+3198, 3137, 16159
+3199, 3138, 16482
+3200, 3139, 16671
+3201, 3140, 16003
+3202, 3141, 16519
+3203, 3142, 14973
+3204, 3143, 15679
+3205, 3144, 15165
+3206, 3145, 15136
+3207, 3146, 14758
+3208, 3147, 14393
+3209, 3148, 14833
+3210, 3149, 15034
+3211, 3150, 14958
+3212, 3151, 14123
+3213, 3152, 13938
+3214, 3153, 13723
+3215, 3154, 13972
+3216, 3155, 14117
+3217, 3156, 14036
+3218, 3157, 13097
+3219, 3158, 13492
+5088, 5088, 12803
+3220, 3160, 32547
+3221, 3161, 31564
+3222, 3162, 30689
+3223, 3163, 29981
+3224, 3164, 29058
+3225, 3165, 28505
+3226, 3166, 27899
+3227, 3167, 27275
+3228, 3168, 26543
+3229, 3169, 25810
+3230, 3170, 25429
+3231, 3171, 25013
+3232, 3172, 24567
+3233, 3173, 24265
+3234, 3174, 23746
+3235, 3175, 23143
+3236, 3176, 22605
+3237, 3177, 22928
+3238, 3178, 22142
+3239, 3179, 21498
+3240, 3180, 21089
+3241, 3181, 21042
+3242, 3182, 20359
+3243, 3183, 20341
+3244, 3184, 20282
+3245, 3185, 19464
+3246, 3186, 19089
+3247, 3187, 19252
+3248, 3188, 19474
+3249, 3189, 18641
+3250, 3190, 18391
+3251, 3191, 17825
+3252, 3192, 18190
+3253, 3193, 17582
+3254, 3194, 17395
+3255, 3195, 17317
+3256, 3196, 17114
+3257, 3197, 17253
+3258, 3198, 17149
+3259, 3199, 16113
+3260, 3200, 16347
+3261, 3201, 15833
+3262, 3202, 16128
+3263, 3203, 15910
+3264, 3204, 14913
+3265, 3205, 15591
+3266, 3206, 15083
+3267, 3207, 15618
+3268, 3208, 15007
+3269, 3209, 14869
+3270, 3210, 15491
+3271, 3211, 14883
+3272, 3212, 13447
+3273, 3213, 14182
+3274, 3214, 14443
+3275, 3215, 13900
+3276, 3216, 13703
+3277, 3217, 14304
+3278, 3218, 14619
+3279, 3219, 13722
+5089, 5089, 13697
+3280, 3221, 32554
+3281, 3222, 31409
+3282, 3223, 30837
+3283, 3224, 29896
+3284, 3225, 28879
+3285, 3226, 28509
+3286, 3227, 27830
+3287, 3228, 27357
+3288, 3229, 26823
+3289, 3230, 26062
+3290, 3231, 25686
+3291, 3232, 24777
+3292, 3233, 24176
+3293, 3234, 24206
+3294, 3235, 23870
+3295, 3236, 23978
+3296, 3237, 23020
+3297, 3238, 22419
+3298, 3239, 21946
+3299, 3240, 21861
+3300, 3241, 21400
+3301, 3242, 21052
+3302, 3243, 20816
+3303, 3244, 20598
+3304, 3245, 20023
+3305, 3246, 19927
+3306, 3247, 19594
+3307, 3248, 18881
+3308, 3249, 19104
+3309, 3250, 18482
+3310, 3251, 18272
+3311, 3252, 18483
+3312, 3253, 18688
+3313, 3254, 17752
+3314, 3255, 17933
+3315, 3256, 17632
+3316, 3257, 17126
+3317, 3258, 17065
+3318, 3259, 17222
+3319, 3260, 16259
+3320, 3261, 16435
+3321, 3262, 16081
+3322, 3263, 15954
+3323, 3264, 15540
+3324, 3265, 15287
+3325, 3266, 14857
+3326, 3267, 15184
+3327, 3268, 15146
+3328, 3269, 15247
+3329, 3270, 15145
+3330, 3271, 15244
+3331, 3272, 14756
+3332, 3273, 14783
+3333, 3274, 14091
+3334, 3275, 14264
+3335, 3276, 13625
+3336, 3277, 13581
+3337, 3278, 14695
+3338, 3279, 13610
+5090, 5090, 13751
+3339, 3281, 32547
+3340, 3282, 31487
+3341, 3283, 30877
+3342, 3284, 30142
+3343, 3285, 29340
+3344, 3286, 28754
+3345, 3287, 28210
+3346, 3288, 27565
+3347, 3289, 27153
+3348, 3290, 26334
+3349, 3291, 25808
+3350, 3292, 25596
+3351, 3293, 24626
+3352, 3294, 24374
+3353, 3295, 23739
+3354, 3296, 23670
+3355, 3297, 23271
+3356, 3298, 22629
+3357, 3299, 22309
+3358, 3300, 21991
+3359, 3301, 21834
+3360, 3302, 21568
+3361, 3303, 21076
+3362, 3304, 20361
+3363, 3305, 19857
+3364, 3306, 20182
+3365, 3307, 19401
+3366, 3308, 19631
+3367, 3309, 19457
+3368, 3310, 19335
+3369, 3311, 18738
+3370, 3312, 18163
+3371, 3313, 18287
+3372, 3314, 17719
+3373, 3315, 17494
+3374, 3316, 17505
+3375, 3317, 17091
+3376, 3318, 17319
+3377, 3319, 17768
+3378, 3320, 16533
+3379, 3321, 16018
+3380, 3322, 16632
+3381, 3323, 16321
+3382, 3324, 15827
+3383, 3325, 16046
+3384, 3326, 15504
+3385, 3327, 15784
+3386, 3328, 15241
+3387, 3329, 15790
+3388, 3330, 14767
+3389, 3331, 14981
+3390, 3332, 14991
+3391, 3333, 14956
+3392, 3334, 14185
+3393, 3335, 14827
+3394, 3336, 14278
+3395, 3337, 14158
+3396, 3338, 14753
+5091, 5091, 13763
+3397, 3340, 32573
+3398, 3341, 31601
+3399, 3342, 30693
+3400, 3343, 29816
+3401, 3344, 29352
+3402, 3345, 28846
+3403, 3346, 28122
+3404, 3347, 27224
+3405, 3348, 26833
+3406, 3349, 26073
+3407, 3350, 25858
+3408, 3351, 25217
+3409, 3352, 25149
+3410, 3353, 24381
+3411, 3354, 23921
+3412, 3355, 23753
+3413, 3356, 23517
+3414, 3357, 23033
+3415, 3358, 22504
+3416, 3359, 21530
+3417, 3360, 21841
+3418, 3361, 21397
+3419, 3362, 20817
+3420, 3363, 20802
+3421, 3364, 21006
+3422, 3365, 20117
+3423, 3366, 20268
+3424, 3367, 19620
+3425, 3368, 19100
+3426, 3369, 19348
+3427, 3370, 18815
+3428, 3371, 18416
+3429, 3372, 18959
+3430, 3373, 18208
+3431, 3374, 17683
+3432, 3375, 17604
+3433, 3376, 18416
+3434, 3377, 17197
+3435, 3378, 17710
+3436, 3379, 17287
+3437, 3380, 17131
+3438, 3381, 16407
+3439, 3382, 16603
+3440, 3383, 16080
+3441, 3384, 16049
+3442, 3385, 15510
+3443, 3386, 15577
+3444, 3387, 15781
+3445, 3388, 15320
+3446, 3389, 15263
+3447, 3390, 16049
+3448, 3391, 15223
+3449, 3392, 15328
+3450, 3393, 14372
+3451, 3394, 14775
+3452, 3395, 14590
+3453, 3396, 14548
+5092, 5092, 13714
+3454, 3398, 32569
+3455, 3399, 31582
+3456, 3400, 30892
+3457, 3401, 30012
+3458, 3402, 29580
+3459, 3403, 29043
+3460, 3404, 28173
+3461, 3405, 27534
+3462, 3406, 27160
+3463, 3407, 26694
+3464, 3408, 26099
+3465, 3409, 25883
+3466, 3410, 25126
+3467, 3411, 24594
+3468, 3412, 24114
+3469, 3413, 24134
+3470, 3414, 23387
+3471, 3415, 23028
+3472, 3416, 22958
+3473, 3417, 22676
+3474, 3418, 21881
+3475, 3419, 21645
+3476, 3420, 21723
+3477, 3421, 20841
+3478, 3422, 20829
+3479, 3423, 20322
+3480, 3424, 19905
+3481, 3425, 19919
+3482, 3426, 19223
+3483, 3427, 19601
+3484, 3428, 19562
+3485, 3429, 19070
+3486, 3430, 19027
+3487, 3431, 18406
+3488, 3432, 18405
+3489, 3433, 18398
+3490, 3434, 18235
+3491, 3435, 18010
+3492, 3436, 17892
+3493, 3437, 17088
+3494, 3438, 17175
+3495, 3439, 16631
+3496, 3440, 17092
+3497, 3441, 16761
+3498, 3442, 16779
+3499, 3443, 16049
+3500, 3444, 15974
+3501, 3445, 16274
+3502, 3446, 16535
+3503, 3447, 15483
+3504, 3448, 15526
+3505, 3449, 15381
+3506, 3450, 15344
+3507, 3451, 15492
+3508, 3452, 14667
+3509, 3453, 14558
+5093, 5093, 15074
+3510, 3455, 32581
+3511, 3456, 31660
+3512, 3457, 30966
+3513, 3458, 29980
+3514, 3459, 29343
+3515, 3460, 28869
+3516, 3461, 28136
+3517, 3462, 27704
+3518, 3463, 27400
+3519, 3464, 26334
+3520, 3465, 26279
+3521, 3466, 26044
+3522, 3467, 25192
+3523, 3468, 24419
+3524, 3469, 24406
+3525, 3470, 24052
+3526, 3471, 23379
+3527, 3472, 23600
+3528, 3473, 22227
+3529, 3474, 22143
+3530, 3475, 21786
+3531, 3476, 22024
+3532, 3477, 21830
+3533, 3478, 20897
+3534, 3479, 21180
+3535, 3480, 20841
+3536, 3481, 20004
+3537, 3482, 20198
+3538, 3483, 19582
+3539, 3484, 19070
+3540, 3485, 19292
+3541, 3486, 18975
+3542, 3487, 18780
+3543, 3488, 18996
+3544, 3489, 18219
+3545, 3490, 17931
+3546, 3491, 18400
+3547, 3492, 18012
+3548, 3493, 18016
+3549, 3494, 17372
+3550, 3495, 17701
+3551, 3496, 16514
+3552, 3497, 16868
+3553, 3498, 16170
+3554, 3499, 15910
+3555, 3500, 16721
+3556, 3501, 16265
+3557, 3502, 16484
+3558, 3503, 15721
+3559, 3504, 16558
+3560, 3505, 15611
+3561, 3506, 15477
+3562, 3507, 15355
+3563, 3508, 15601
+3564, 3509, 15372
+5094, 5094, 14887
+3565, 3511, 32587
+3566, 3512, 31631
+3567, 3513, 30911
+3568, 3514, 30006
+3569, 3515, 29465
+3570, 3516, 28852
+3571, 3517, 28349
+3572, 3518, 27815
+3573, 3519, 27200
+3574, 3520, 26765
+3575, 3521, 26458
+3576, 3522, 25948
+3577, 3523, 25563
+3578, 3524, 24998
+3579, 3525, 25116
+3580, 3526, 24227
+3581, 3527, 23754
+3582, 3528, 23150
+3583, 3529, 23318
+3584, 3530, 22726
+3585, 3531, 22475
+3586, 3532, 21610
+3587, 3533, 22133
+3588, 3534, 21035
+3589, 3535, 20896
+3590, 3536, 20821
+3591, 3537, 20661
+3592, 3538, 19959
+3593, 3539, 20192
+3594, 3540, 19889
+3595, 3541, 19216
+3596, 3542, 19484
+3597, 3543, 18810
+3598, 3544, 18709
+3599, 3545, 18952
+3600, 3546, 18526
+3601, 3547, 18253
+3602, 3548, 18120
+3603, 3549, 17674
+3604, 3550, 17175
+3605, 3551, 17098
+3606, 3552, 17069
+3607, 3553, 17161
+3608, 3554, 16883
+3609, 3555, 16626
+3610, 3556, 16210
+3611, 3557, 16875
+3612, 3558, 16310
+3613, 3559, 16279
+3614, 3560, 15640
+3615, 3561, 16040
+3616, 3562, 15703
+3617, 3563, 16208
+3618, 3564, 15959
+5095, 5095, 15171
+3619, 3566, 32582
+3620, 3567, 31553
+3621, 3568, 30902
+3622, 3569, 30057
+3623, 3570, 29535
+3624, 3571, 29106
+3625, 3572, 28303
+3626, 3573, 27453
+3627, 3574, 27299
+3628, 3575, 26666
+3629, 3576, 26550
+3630, 3577, 26038
+3631, 3578, 25385
+3632, 3579, 25547
+3633, 3580, 24743
+3634, 3581, 24374
+3635, 3582, 23495
+3636, 3583, 23436
+3637, 3584, 23051
+3638, 3585, 22900
+3639, 3586, 22222
+3640, 3587, 22529
+3641, 3588, 21837
+3642, 3589, 21130
+3643, 3590, 21606
+3644, 3591, 20983
+3645, 3592, 20925
+3646, 3593, 20326
+3647, 3594, 20260
+3648, 3595, 20243
+3649, 3596, 19858
+3650, 3597, 19550
+3651, 3598, 19229
+3652, 3599, 19015
+3653, 3600, 18318
+3654, 3601, 18242
+3655, 3602, 18569
+3656, 3603, 18409
+3657, 3604, 18750
+3658, 3605, 17793
+3659, 3606, 17554
+3660, 3607, 16883
+3661, 3608, 16926
+3662, 3609, 16893
+3663, 3610, 16987
+3664, 3611, 16855
+3665, 3612, 16626
+3666, 3613, 16706
+3667, 3614, 16288
+3668, 3615, 16618
+3669, 3616, 15624
+3670, 3617, 15528
+3671, 3618, 15733
+5096, 5096, 15634
+3672, 3620, 32586
+3673, 3621, 31750
+3674, 3622, 31082
+3675, 3623, 30099
+3676, 3624, 29735
+3677, 3625, 29242
+3678, 3626, 28246
+3679, 3627, 27615
+3680, 3628, 27428
+3681, 3629, 27053
+3682, 3630, 26431
+3683, 3631, 26380
+3684, 3632, 25367
+3685, 3633, 25263
+3686, 3634, 24827
+3687, 3635, 24460
+3688, 3636, 23832
+3689, 3637, 23467
+3690, 3638, 23276
+3691, 3639, 22699
+3692, 3640, 22456
+3693, 3641, 22589
+3694, 3642, 22332
+3695, 3643, 21793
+3696, 3644, 21375
+3697, 3645, 21580
+3698, 3646, 20077
+3699, 3647, 20537
+3700, 3648, 20656
+3701, 3649, 20345
+3702, 3650, 20266
+3703, 3651, 20097
+3704, 3652, 19902
+3705, 3653, 19411
+3706, 3654, 19196
+3707, 3655, 18733
+3708, 3656, 18814
+3709, 3657, 18043
+3710, 3658, 17846
+3711, 3659, 18050
+3712, 3660, 18266
+3713, 3661, 18015
+3714, 3662, 17288
+3715, 3663, 17141
+3716, 3664, 16340
+3717, 3665, 16854
+3718, 3666, 15918
+3719, 3667, 16624
+3720, 3668, 16206
+3721, 3669, 16128
+3722, 3670, 15978
+3723, 3671, 16567
+5097, 5097, 16748
+3724, 3673, 32616
+3725, 3674, 31646
+3726, 3675, 31049
+3727, 3676, 30107
+3728, 3677, 29740
+3729, 3678, 29206
+3730, 3679, 28703
+3731, 3680, 28127
+3732, 3681, 27577
+3733, 3682, 27389
+3734, 3683, 26575
+3735, 3684, 26223
+3736, 3685, 25772
+3737, 3686, 25504
+3738, 3687, 24933
+3739, 3688, 24151
+3740, 3689, 23948
+3741, 3690, 23706
+3742, 3691, 23202
+3743, 3692, 22882
+3744, 3693, 22230
+3745, 3694, 22203
+3746, 3695, 22290
+3747, 3696, 21948
+3748, 3697, 21740
+3749, 3698, 21589
+3750, 3699, 20829
+3751, 3700, 21007
+3752, 3701, 20864
+3753, 3702, 20447
+3754, 3703, 20014
+3755, 3704, 19616
+3756, 3705, 19024
+3757, 3706, 19234
+3758, 3707, 18833
+3759, 3708, 18568
+3760, 3709, 18424
+3761, 3710, 18487
+3762, 3711, 18052
+3763, 3712, 18044
+3764, 3713, 18127
+3765, 3714, 17631
+3766, 3715, 17534
+3767, 3716, 17688
+3768, 3717, 17106
+3769, 3718, 17503
+3770, 3719, 16811
+3771, 3720, 16969
+3772, 3721, 16834
+3773, 3722, 15924
+3774, 3723, 15653
+5098, 5098, 15959
+3775, 3725, 32618
+3776, 3726, 31732
+3777, 3727, 31075
+3778, 3728, 30369
+3779, 3729, 29848
+3780, 3730, 29320
+3781, 3731, 28420
+3782, 3732, 28132
+3783, 3733, 27631
+3784, 3734, 27189
+3785, 3735, 26940
+3786, 3736, 26300
+3787, 3737, 25731
+3788, 3738, 25128
+3789, 3739, 24981
+3790, 3740, 24654
+3791, 3741, 24103
+3792, 3742, 24038
+3793, 3743, 23614
+3794, 3744, 23264
+3795, 3745, 23056
+3796, 3746, 22979
+3797, 3747, 22206
+3798, 3748, 22291
+3799, 3749, 21245
+3800, 3750, 21283
+3801, 3751, 20871
+3802, 3752, 20282
+3803, 3753, 20374
+3804, 3754, 20358
+3805, 3755, 20297
+3806, 3756, 19796
+3807, 3757, 19525
+3808, 3758, 19153
+3809, 3759, 19225
+3810, 3760, 18911
+3811, 3761, 18880
+3812, 3762, 18463
+3813, 3763, 18680
+3814, 3764, 17782
+3815, 3765, 18361
+3816, 3766, 16946
+3817, 3767, 17536
+3818, 3768, 17042
+3819, 3769, 16224
+3820, 3770, 16861
+3821, 3771, 16557
+3822, 3772, 16292
+3823, 3773, 16662
+3824, 3774, 16795
+5099, 5099, 16164
+3825, 3776, 32606
+3826, 3777, 31766
+3827, 3778, 31032
+3828, 3779, 30384
+3829, 3780, 29735
+3830, 3781, 29134
+3831, 3782, 28804
+3832, 3783, 28111
+3833, 3784, 27345
+3834, 3785, 26974
+3835, 3786, 26840
+3836, 3787, 25975
+3837, 3788, 25794
+3838, 3789, 25501
+3839, 3790, 25147
+3840, 3791, 25029
+3841, 3792, 24110
+3842, 3793, 23762
+3843, 3794, 23311
+3844, 3795, 22629
+3845, 3796, 22730
+3846, 3797, 22290
+3847, 3798, 22334
+3848, 3799, 21992
+3849, 3800, 21473
+3850, 3801, 21397
+3851, 3802, 20686
+3852, 3803, 21495
+3853, 3804, 20883
+3854, 3805, 20051
+3855, 3806, 20274
+3856, 3807, 20221
+3857, 3808, 19425
+3858, 3809, 19763
+3859, 3810, 19305
+3860, 3811, 19154
+3861, 3812, 18943
+3862, 3813, 19166
+3863, 3814, 18692
+3864, 3815, 18299
+3865, 3816, 18166
+3866, 3817, 17512
+3867, 3818, 17813
+3868, 3819, 17327
+3869, 3820, 16996
+3870, 3821, 17470
+3871, 3822, 17305
+3872, 3823, 17607
+3873, 3824, 17026
+5100, 5100, 15659
+3874, 3826, 32599
+3875, 3827, 31773
+3876, 3828, 30978
+3877, 3829, 30320
+3878, 3830, 29925
+3879, 3831, 29657
+3880, 3832, 28987
+3881, 3833, 27888
+3882, 3834, 27621
+3883, 3835, 26872
+3884, 3836, 26494
+3885, 3837, 26332
+3886, 3838, 25990
+3887, 3839, 25503
+3888, 3840, 25038
+3889, 3841, 24712
+3890, 3842, 23899
+3891, 3843, 23749
+3892, 3844, 23689
+3893, 3845, 23125
+3894, 3846, 23214
+3895, 3847, 23070
+3896, 3848, 22506
+3897, 3849, 22222
+3898, 3850, 21600
+3899, 3851, 21478
+3900, 3852, 22021
+3901, 3853, 21288
+3902, 3854, 20914
+3903, 3855, 20568
+3904, 3856, 19971
+3905, 3857, 20336
+3906, 3858, 19725
+3907, 3859, 19806
+3908, 3860, 19295
+3909, 3861, 18475
+3910, 3862, 18855
+3911, 3863, 19082
+3912, 3864, 18745
+3913, 3865, 18748
+3914, 3866, 17964
+3915, 3867, 18108
+3916, 3868, 17791
+3917, 3869, 17333
+3918, 3870, 17609
+3919, 3871, 18125
+3920, 3872, 17538
+3921, 3873, 17613
+5101, 5101, 16852
+3922, 3875, 32608
+3923, 3876, 31757
+3924, 3877, 31133
+3925, 3878, 30171
+3926, 3879, 29929
+3927, 3880, 29254
+3928, 3881, 29227
+3929, 3882, 28257
+3930, 3883, 28013
+3931, 3884, 27357
+3932, 3885, 26673
+3933, 3886, 26127
+3934, 3887, 26169
+3935, 3888, 25759
+3936, 3889, 25564
+3937, 3890, 25282
+3938, 3891, 24594
+3939, 3892, 24544
+3940, 3893, 23717
+3941, 3894, 23805
+3942, 3895, 23388
+3943, 3896, 23320
+3944, 3897, 22726
+3945, 3898, 22491
+3946, 3899, 21650
+3947, 3900, 21400
+3948, 3901, 21532
+3949, 3902, 21141
+3950, 3903, 21040
+3951, 3904, 20540
+3952, 3905, 20785
+3953, 3906, 20204
+3954, 3907, 20414
+3955, 3908, 19808
+3956, 3909, 19251
+3957, 3910, 19182
+3958, 3911, 19174
+3959, 3912, 18929
+3960, 3913, 18803
+3961, 3914, 19252
+3962, 3915, 18421
+3963, 3916, 18446
+3964, 3917, 18650
+3965, 3918, 17295
+3966, 3919, 17466
+3967, 3920, 17902
+3968, 3921, 17251
+5102, 5102, 17949
+3969, 3923, 32619
+3970, 3924, 31645
+3971, 3925, 30976
+3972, 3926, 30473
+3973, 3927, 30112
+3974, 3928, 29505
+3975, 3929, 28778
+3976, 3930, 28193
+3977, 3931, 27939
+3978, 3932, 27856
+3979, 3933, 27110
+3980, 3934, 26504
+3981, 3935, 26379
+3982, 3936, 25555
+3983, 3937, 25429
+3984, 3938, 25005
+3985, 3939, 25101
+3986, 3940, 24588
+3987, 3941, 24077
+3988, 3942, 23879
+3989, 3943, 24071
+3990, 3944, 23045
+3991, 3945, 22973
+3992, 3946, 22809
+3993, 3947, 22233
+3994, 3948, 22361
+3995, 3949, 21600
+3996, 3950, 20731
+3997, 3951, 20793
+3998, 3952, 20603
+3999, 3953, 20607
+4000, 3954, 21255
+4001, 3955, 19933
+4002, 3956, 19517
+4003, 3957, 19959
+4004, 3958, 19543
+4005, 3959, 19687
+4006, 3960, 19440
+4007, 3961, 18974
+4008, 3962, 18608
+4009, 3963, 18284
+4010, 3964, 17707
+4011, 3965, 17842
+4012, 3966, 17748
+4013, 3967, 17747
+4014, 3968, 18380
+5103, 5103, 17771
+4015, 3970, 32621
+4016, 3971, 31759
+4017, 3972, 30803
+4018, 3973, 30587
+4019, 3974, 29977
+4020, 3975, 29270
+4021, 3976, 29206
+4022, 3977, 28181
+4023, 3978, 27932
+4024, 3979, 27582
+4025, 3980, 27257
+4026, 3981, 26672
+4027, 3982, 26515
+4028, 3983, 26348
+4029, 3984, 25436
+4030, 3985, 25490
+4031, 3986, 25163
+4032, 3987, 24767
+4033, 3988, 24083
+4034, 3989, 23659
+4035, 3990, 23308
+4036, 3991, 23320
+4037, 3992, 22780
+4038, 3993, 22592
+4039, 3994, 22351
+4040, 3995, 21736
+4041, 3996, 22236
+4042, 3997, 21772
+4043, 3998, 21315
+4044, 3999, 20750
+4045, 4000, 20899
+4046, 4001, 20226
+4047, 4002, 19432
+4048, 4003, 19349
+4049, 4004, 19714
+4050, 4005, 19528
+4051, 4006, 19156
+4052, 4007, 19386
+4053, 4008, 19035
+4054, 4009, 18982
+4055, 4010, 18581
+4056, 4011, 18637
+4057, 4012, 18413
+4058, 4013, 18158
+4059, 4014, 17739
+5104, 5104, 18178
+4060, 4016, 32620
+4061, 4017, 31778
+4062, 4018, 31245
+4063, 4019, 30341
+4064, 4020, 29935
+4065, 4021, 29615
+4066, 4022, 28928
+4067, 4023, 28678
+4068, 4024, 28089
+4069, 4025, 27550
+4070, 4026, 27105
+4071, 4027, 26892
+4072, 4028, 26340
+4073, 4029, 26073
+4074, 4030, 25557
+4075, 4031, 25532
+4076, 4032, 24595
+4077, 4033, 24125
+4078, 4034, 24434
+4079, 4035, 23427
+4080, 4036, 23797
+4081, 4037, 23529
+4082, 4038, 23139
+4083, 4039, 22393
+4084, 4040, 22090
+4085, 4041, 21720
+4086, 4042, 21904
+4087, 4043, 21336
+4088, 4044, 20712
+4089, 4045, 20638
+4090, 4046, 21149
+4091, 4047, 20677
+4092, 4048, 20529
+4093, 4049, 20100
+4094, 4050, 19776
+4095, 4051, 19396
+4096, 4052, 19124
+4097, 4053, 19432
+4098, 4054, 18892
+4099, 4055, 19104
+4100, 4056, 18924
+4101, 4057, 18429
+4102, 4058, 17817
+4103, 4059, 18543
+5105, 5105, 17983
+4104, 4061, 32622
+4105, 4062, 31866
+4106, 4063, 31105
+4107, 4064, 30804
+4108, 4065, 30406
+4109, 4066, 29780
+4110, 4067, 29135
+4111, 4068, 28421
+4112, 4069, 28301
+4113, 4070, 27678
+4114, 4071, 27179
+4115, 4072, 26771
+4116, 4073, 26577
+4117, 4074, 26329
+4118, 4075, 26030
+4119, 4076, 25337
+4120, 4077, 25587
+4121, 4078, 24662
+4122, 4079, 24407
+4123, 4080, 24178
+4124, 4081, 24150
+4125, 4082, 23350
+4126, 4083, 23065
+4127, 4084, 22306
+4128, 4085, 22143
+4129, 4086, 22425
+4130, 4087, 22174
+4131, 4088, 22135
+4132, 4089, 21259
+4133, 4090, 21026
+4134, 4091, 21018
+4135, 4092, 20581
+4136, 4093, 20403
+4137, 4094, 19816
+4138, 4095, 19614
+4139, 4096, 19086
+4140, 4097, 19961
+4141, 4098, 19889
+4142, 4099, 19473
+4143, 4100, 20148
+4144, 4101, 18853
+4145, 4102, 18727
+4146, 4103, 19084
+5106, 5106, 18264
+4147, 4105, 32622
+4148, 4106, 31794
+4149, 4107, 31319
+4150, 4108, 30668
+4151, 4109, 30070
+4152, 4110, 29869
+4153, 4111, 28844
+4154, 4112, 28572
+4155, 4113, 28448
+4156, 4114, 28350
+4157, 4115, 27475
+4158, 4116, 27236
+4159, 4117, 26737
+4160, 4118, 25966
+4161, 4119, 25849
+4162, 4120, 25552
+4163, 4121, 25474
+4164, 4122, 24629
+4165, 4123, 24495
+4166, 4124, 24036
+4167, 4125, 23853
+4168, 4126, 24352
+4169, 4127, 23122
+4170, 4128, 22878
+4171, 4129, 23206
+4172, 4130, 22882
+4173, 4131, 22161
+4174, 4132, 21888
+4175, 4133, 21861
+4176, 4134, 21240
+4177, 4135, 21551
+4178, 4136, 21022
+4179, 4137, 20158
+4180, 4138, 20724
+4181, 4139, 20263
+4182, 4140, 19389
+4183, 4141, 20232
+4184, 4142, 20128
+4185, 4143, 19743
+4186, 4144, 19446
+4187, 4145, 18935
+4188, 4146, 19466
+5107, 5107, 18399
+4189, 4148, 32645
+4190, 4149, 31820
+4191, 4150, 31362
+4192, 4151, 30766
+4193, 4152, 30311
+4194, 4153, 29738
+4195, 4154, 29099
+4196, 4155, 28715
+4197, 4156, 28085
+4198, 4157, 27522
+4199, 4158, 27501
+4200, 4159, 26806
+4201, 4160, 26618
+4202, 4161, 26598
+4203, 4162, 26034
+4204, 4163, 26156
+4205, 4164, 25478
+4206, 4165, 24684
+4207, 4166, 24536
+4208, 4167, 23626
+4209, 4168, 23846
+4210, 4169, 23916
+4211, 4170, 23676
+4212, 4171, 22910
+4213, 4172, 22962
+4214, 4173, 22367
+4215, 4174, 22372
+4216, 4175, 21202
+4217, 4176, 22252
+4218, 4177, 22088
+4219, 4178, 21363
+4220, 4179, 21050
+4221, 4180, 21191
+4222, 4181, 20892
+4223, 4182, 19891
+4224, 4183, 19573
+4225, 4184, 20352
+4226, 4185, 19842
+4227, 4186, 18962
+4228, 4187, 19113
+4229, 4188, 19799
+5108, 5108, 18492
+4230, 4190, 32627
+4231, 4191, 31916
+4232, 4192, 31444
+4233, 4193, 30930
+4234, 4194, 30222
+4235, 4195, 29745
+4236, 4196, 28975
+4237, 4197, 28863
+4238, 4198, 29006
+4239, 4199, 28223
+4240, 4200, 27756
+4241, 4201, 27052
+4242, 4202, 27073
+4243, 4203, 26272
+4244, 4204, 26315
+4245, 4205, 26293
+4246, 4206, 25396
+4247, 4207, 25017
+4248, 4208, 24455
+4249, 4209, 24348
+4250, 4210, 24176
+4251, 4211, 24006
+4252, 4212, 23522
+4253, 4213, 23037
+4254, 4214, 22901
+4255, 4215, 22752
+4256, 4216, 22745
+4257, 4217, 22252
+4258, 4218, 22033
+4259, 4219, 22332
+4260, 4220, 21014
+4261, 4221, 21083
+4262, 4222, 21286
+4263, 4223, 20459
+4264, 4224, 20278
+4265, 4225, 20411
+4266, 4226, 20684
+4267, 4227, 20254
+4268, 4228, 20324
+4269, 4229, 19525
+5109, 5109, 19429
+4270, 4231, 32627
+4271, 4232, 31855
+4272, 4233, 31280
+4273, 4234, 30778
+4274, 4235, 30333
+4275, 4236, 29831
+4276, 4237, 29356
+4277, 4238, 28692
+4278, 4239, 28197
+4279, 4240, 27926
+4280, 4241, 27544
+4281, 4242, 27327
+4282, 4243, 26663
+4283, 4244, 26417
+4284, 4245, 26350
+4285, 4246, 26033
+4286, 4247, 25158
+4287, 4248, 24660
+4288, 4249, 24639
+4289, 4250, 24059
+4290, 4251, 24092
+4291, 4252, 24479
+4292, 4253, 23645
+4293, 4254, 23297
+4294, 4255, 23102
+4295, 4256, 23029
+4296, 4257, 22236
+4297, 4258, 22657
+4298, 4259, 22085
+4299, 4260, 21856
+4300, 4261, 21012
+4301, 4262, 21371
+4302, 4263, 20852
+4303, 4264, 21158
+4304, 4265, 20759
+4305, 4266, 20949
+4306, 4267, 19861
+4307, 4268, 20502
+4308, 4269, 20228
+5110, 5110, 18940
+4309, 4271, 32640
+4310, 4272, 31945
+4311, 4273, 31410
+4312, 4274, 30949
+4313, 4275, 30389
+4314, 4276, 29756
+4315, 4277, 29153
+4316, 4278, 29024
+4317, 4279, 28549
+4318, 4280, 27888
+4319, 4281, 27937
+4320, 4282, 27273
+4321, 4283, 26878
+4322, 4284, 26563
+4323, 4285, 26206
+4324, 4286, 26254
+4325, 4287, 25049
+4326, 4288, 24269
+4327, 4289, 24505
+4328, 4290, 24664
+4329, 4291, 24695
+4330, 4292, 23892
+4331, 4293, 23922
+4332, 4294, 23379
+4333, 4295, 24281
+4334, 4296, 23026
+4335, 4297, 23093
+4336, 4298, 21978
+4337, 4299, 22672
+4338, 4300, 21692
+4339, 4301, 21912
+4340, 4302, 20898
+4341, 4303, 20733
+4342, 4304, 20616
+4343, 4305, 20921
+4344, 4306, 20838
+4345, 4307, 20212
+4346, 4308, 20870
+5111, 5111, 20740
+4347, 4310, 32634
+4348, 4311, 31817
+4349, 4312, 31338
+4350, 4313, 30682
+4351, 4314, 30444
+4352, 4315, 29988
+4353, 4316, 29373
+4354, 4317, 28983
+4355, 4318, 28706
+4356, 4319, 27930
+4357, 4320, 27829
+4358, 4321, 27603
+4359, 4322, 27423
+4360, 4323, 26844
+4361, 4324, 26181
+4362, 4325, 25917
+4363, 4326, 25696
+4364, 4327, 25503
+4365, 4328, 25220
+4366, 4329, 24773
+4367, 4330, 24729
+4368, 4331, 24686
+4369, 4332, 24242
+4370, 4333, 23664
+4371, 4334, 23843
+4372, 4335, 23587
+4373, 4336, 23458
+4374, 4337, 22285
+4375, 4338, 22653
+4376, 4339, 21650
+4377, 4340, 21900
+4378, 4341, 22642
+4379, 4342, 22103
+4380, 4343, 21399
+4381, 4344, 21220
+4382, 4345, 20768
+4383, 4346, 21517
+5112, 5112, 19929
+4384, 4348, 32641
+4385, 4349, 31975
+4386, 4350, 31309
+4387, 4351, 30829
+4388, 4352, 30260
+4389, 4353, 30132
+4390, 4354, 29452
+4391, 4355, 29172
+4392, 4356, 28339
+4393, 4357, 28407
+4394, 4358, 28125
+4395, 4359, 27534
+4396, 4360, 27267
+4397, 4361, 26780
+4398, 4362, 26616
+4399, 4363, 26811
+4400, 4364, 26092
+4401, 4365, 25064
+4402, 4366, 24802
+4403, 4367, 24607
+4404, 4368, 24307
+4405, 4369, 24529
+4406, 4370, 24040
+4407, 4371, 23068
+4408, 4372, 23515
+4409, 4373, 22970
+4410, 4374, 22121
+4411, 4375, 22468
+4412, 4376, 22496
+4413, 4377, 21565
+4414, 4378, 22290
+4415, 4379, 21604
+4416, 4380, 20908
+4417, 4381, 21352
+4418, 4382, 20979
+4419, 4383, 20862
+5113, 5113, 20282
+4420, 4385, 32657
+4421, 4386, 31914
+4422, 4387, 31114
+4423, 4388, 30725
+4424, 4389, 30441
+4425, 4390, 30101
+4426, 4391, 29372
+4427, 4392, 29012
+4428, 4393, 28510
+4429, 4394, 27932
+4430, 4395, 27940
+4431, 4396, 27176
+4432, 4397, 27078
+4433, 4398, 27099
+4434, 4399, 26537
+4435, 4400, 26046
+4436, 4401, 25185
+4437, 4402, 25207
+4438, 4403, 25215
+4439, 4404, 24433
+4440, 4405, 24363
+4441, 4406, 24067
+4442, 4407, 24091
+4443, 4408, 23385
+4444, 4409, 23708
+4445, 4410, 23133
+4446, 4411, 22516
+4447, 4412, 23349
+4448, 4413, 22428
+4449, 4414, 21851
+4450, 4415, 21820
+4451, 4416, 21901
+4452, 4417, 21169
+4453, 4418, 20909
+4454, 4419, 21845
+5114, 5114, 20887
+4455, 4421, 32631
+4456, 4422, 31918
+4457, 4423, 31318
+4458, 4424, 30793
+4459, 4425, 30527
+4460, 4426, 29888
+4461, 4427, 29429
+4462, 4428, 29087
+4463, 4429, 28791
+4464, 4430, 28259
+4465, 4431, 27954
+4466, 4432, 27451
+4467, 4433, 27165
+4468, 4434, 26244
+4469, 4435, 26594
+4470, 4436, 26080
+4471, 4437, 25820
+4472, 4438, 25266
+4473, 4439, 25307
+4474, 4440, 25253
+4475, 4441, 24956
+4476, 4442, 24171
+4477, 4443, 24649
+4478, 4444, 23990
+4479, 4445, 23427
+4480, 4446, 22921
+4481, 4447, 22463
+4482, 4448, 22357
+4483, 4449, 22621
+4484, 4450, 22429
+4485, 4451, 22010
+4486, 4452, 22066
+4487, 4453, 21546
+4488, 4454, 21235
+5115, 5115, 20224
+4489, 4456, 32647
+4490, 4457, 31889
+4491, 4458, 31503
+4492, 4459, 31097
+4493, 4460, 30683
+4494, 4461, 30150
+4495, 4462, 29372
+4496, 4463, 29281
+4497, 4464, 28967
+4498, 4465, 28236
+4499, 4466, 27827
+4500, 4467, 27530
+4501, 4468, 27352
+4502, 4469, 26752
+4503, 4470, 26811
+4504, 4471, 26258
+4505, 4472, 25362
+4506, 4473, 25181
+4507, 4474, 24881
+4508, 4475, 24781
+4509, 4476, 24949
+4510, 4477, 24529
+4511, 4478, 24182
+4512, 4479, 23858
+4513, 4480, 23446
+4514, 4481, 23555
+4515, 4482, 22529
+4516, 4483, 22886
+4517, 4484, 22626
+4518, 4485, 22610
+4519, 4486, 22163
+4520, 4487, 22133
+4521, 4488, 21798
+5116, 5116, 21035
+4522, 4490, 32655
+4523, 4491, 31949
+4524, 4492, 31472
+4525, 4493, 30906
+4526, 4494, 30549
+4527, 4495, 30173
+4528, 4496, 29678
+4529, 4497, 29291
+4530, 4498, 29005
+4531, 4499, 28401
+4532, 4500, 28088
+4533, 4501, 28088
+4534, 4502, 27402
+4535, 4503, 27059
+4536, 4504, 26670
+4537, 4505, 26670
+4538, 4506, 25756
+4539, 4507, 25380
+4540, 4508, 25957
+4541, 4509, 25155
+4542, 4510, 24715
+4543, 4511, 24537
+4544, 4512, 24465
+4545, 4513, 23729
+4546, 4514, 23826
+4547, 4515, 22824
+4548, 4516, 23595
+4549, 4517, 23220
+4550, 4518, 23273
+4551, 4519, 22957
+4552, 4520, 22756
+4553, 4521, 21719
+5117, 5117, 21532
+4554, 4523, 32670
+4555, 4524, 32120
+4556, 4525, 31449
+4557, 4526, 31291
+4558, 4527, 30691
+4559, 4528, 30203
+4560, 4529, 29417
+4561, 4530, 29082
+4562, 4531, 28338
+4563, 4532, 28057
+4564, 4533, 28257
+4565, 4534, 28024
+4566, 4535, 27614
+4567, 4536, 26721
+4568, 4537, 26832
+4569, 4538, 26821
+4570, 4539, 26264
+4571, 4540, 26007
+4572, 4541, 25697
+4573, 4542, 25117
+4574, 4543, 25800
+4575, 4544, 25051
+4576, 4545, 24624
+4577, 4546, 24469
+4578, 4547, 23777
+4579, 4548, 23254
+4580, 4549, 23303
+4581, 4550, 23373
+4582, 4551, 22956
+4583, 4552, 22713
+4584, 4553, 22448
+5118, 5118, 21649
+4585, 4555, 32668
+4586, 4556, 32043
+4587, 4557, 31647
+4588, 4558, 30914
+4589, 4559, 30528
+4590, 4560, 30041
+4591, 4561, 29455
+4592, 4562, 29365
+4593, 4563, 28786
+4594, 4564, 28480
+4595, 4565, 27650
+4596, 4566, 27460
+4597, 4567, 27129
+4598, 4568, 26640
+4599, 4569, 26387
+4600, 4570, 26510
+4601, 4571, 26434
+4602, 4572, 25469
+4603, 4573, 25669
+4604, 4574, 25057
+4605, 4575, 25112
+4606, 4576, 24531
+4607, 4577, 24398
+4608, 4578, 24269
+4609, 4579, 23898
+4610, 4580, 23344
+4611, 4581, 23255
+4612, 4582, 22971
+4613, 4583, 23315
+4614, 4584, 22784
+5119, 5119, 22494
+4615, 4586, 32651
+4616, 4587, 31911
+4617, 4588, 31476
+4618, 4589, 31193
+4619, 4590, 30640
+4620, 4591, 30106
+4621, 4592, 29616
+4622, 4593, 29108
+4623, 4594, 28922
+4624, 4595, 28584
+4625, 4596, 28216
+4626, 4597, 27791
+4627, 4598, 27354
+4628, 4599, 27230
+4629, 4600, 26886
+4630, 4601, 26954
+4631, 4602, 26310
+4632, 4603, 25926
+4633, 4604, 25821
+4634, 4605, 25550
+4635, 4606, 24893
+4636, 4607, 25069
+4637, 4608, 24644
+4638, 4609, 24580
+4639, 4610, 23993
+4640, 4611, 24145
+4641, 4612, 23764
+4642, 4613, 23076
+4643, 4614, 22895
+5120, 5120, 22161
+4644, 4616, 32656
+4645, 4617, 31981
+4646, 4618, 31447
+4647, 4619, 30916
+4648, 4620, 30574
+4649, 4621, 30059
+4650, 4622, 29947
+4651, 4623, 29558
+4652, 4624, 28879
+4653, 4625, 28718
+4654, 4626, 28041
+4655, 4627, 28129
+4656, 4628, 27573
+4657, 4629, 27138
+4658, 4630, 27164
+4659, 4631, 26956
+4660, 4632, 26211
+4661, 4633, 25967
+4662, 4634, 26429
+4663, 4635, 26029
+4664, 4636, 25921
+4665, 4637, 25177
+4666, 4638, 24336
+4667, 4639, 23996
+4668, 4640, 24337
+4669, 4641, 24070
+4670, 4642, 23948
+4671, 4643, 23367
+5121, 5121, 23102
+4672, 4645, 32671
+4673, 4646, 32029
+4674, 4647, 31576
+4675, 4648, 31316
+4676, 4649, 30680
+4677, 4650, 30630
+4678, 4651, 29948
+4679, 4652, 29523
+4680, 4653, 29208
+4681, 4654, 28914
+4682, 4655, 28370
+4683, 4656, 28224
+4684, 4657, 27510
+4685, 4658, 27280
+4686, 4659, 27204
+4687, 4660, 26917
+4688, 4661, 25980
+4689, 4662, 25993
+4690, 4663, 25654
+4691, 4664, 25878
+4692, 4665, 25001
+4693, 4666, 24967
+4694, 4667, 24311
+4695, 4668, 24172
+4696, 4669, 24218
+4697, 4670, 23741
+4698, 4671, 23960
+5122, 5122, 22921
+4699, 4673, 32675
+4700, 4674, 32009
+4701, 4675, 31599
+4702, 4676, 31131
+4703, 4677, 30776
+4704, 4678, 30176
+4705, 4679, 29535
+4706, 4680, 29346
+4707, 4681, 28912
+4708, 4682, 28873
+4709, 4683, 28066
+4710, 4684, 28129
+4711, 4685, 27337
+4712, 4686, 26962
+4713, 4687, 26999
+4714, 4688, 26982
+4715, 4689, 26183
+4716, 4690, 26472
+4717, 4691, 25662
+4718, 4692, 25486
+4719, 4693, 25332
+4720, 4694, 24390
+4721, 4695, 24672
+4722, 4696, 23813
+4723, 4697, 23874
+4724, 4698, 24029
+5123, 5123, 22241
+4725, 4700, 32671
+4726, 4701, 32018
+4727, 4702, 31702
+4728, 4703, 31134
+4729, 4704, 30682
+4730, 4705, 30407
+4731, 4706, 29986
+4732, 4707, 29471
+4733, 4708, 29273
+4734, 4709, 28895
+4735, 4710, 28580
+4736, 4711, 28341
+4737, 4712, 27847
+4738, 4713, 27453
+4739, 4714, 27065
+4740, 4715, 27203
+4741, 4716, 26027
+4742, 4717, 26147
+4743, 4718, 26026
+4744, 4719, 25669
+4745, 4720, 25798
+4746, 4721, 25262
+4747, 4722, 24844
+4748, 4723, 24560
+4749, 4724, 24462
+5124, 5124, 23785
+4750, 4726, 32668
+4751, 4727, 32019
+4752, 4728, 31596
+4753, 4729, 30997
+4754, 4730, 30937
+4755, 4731, 30341
+4756, 4732, 29632
+4757, 4733, 29298
+4758, 4734, 29093
+4759, 4735, 29241
+4760, 4736, 28745
+4761, 4737, 27930
+4762, 4738, 28120
+4763, 4739, 27132
+4764, 4740, 27390
+4765, 4741, 26674
+4766, 4742, 26868
+4767, 4743, 25871
+4768, 4744, 26337
+4769, 4745, 25975
+4770, 4746, 25795
+4771, 4747, 25363
+4772, 4748, 24835
+4773, 4749, 25007
+5125, 5125, 23887
+4774, 4751, 32665
+4775, 4752, 31953
+4776, 4753, 31615
+4777, 4754, 31360
+4778, 4755, 30878
+4779, 4756, 30035
+4780, 4757, 29523
+4781, 4758, 29545
+4782, 4759, 29155
+4783, 4760, 29023
+4784, 4761, 28767
+4785, 4762, 28011
+4786, 4763, 28043
+4787, 4764, 27471
+4788, 4765, 27110
+4789, 4766, 26774
+4790, 4767, 26463
+4791, 4768, 26394
+4792, 4769, 26755
+4793, 4770, 25437
+4794, 4771, 25721
+4795, 4772, 25423
+4796, 4773, 25126
+5126, 5126, 24427
+4797, 4775, 32661
+4798, 4776, 32109
+4799, 4777, 31722
+4800, 4778, 31180
+4801, 4779, 30901
+4802, 4780, 30251
+4803, 4781, 30291
+4804, 4782, 29768
+4805, 4783, 29630
+4806, 4784, 28910
+4807, 4785, 28997
+4808, 4786, 28354
+4809, 4787, 28403
+4810, 4788, 27614
+4811, 4789, 27127
+4812, 4790, 26805
+4813, 4791, 26877
+4814, 4792, 26877
+4815, 4793, 26258
+4816, 4794, 25873
+4817, 4795, 26072
+4818, 4796, 25135
+5127, 5127, 24976
+4819, 4798, 32675
+4820, 4799, 32077
+4821, 4800, 31652
+4822, 4801, 31205
+4823, 4802, 30779
+4824, 4803, 30333
+4825, 4804, 29949
+4826, 4805, 29823
+4827, 4806, 29381
+4828, 4807, 28773
+4829, 4808, 28818
+4830, 4809, 28093
+4831, 4810, 27812
+4832, 4811, 27332
+4833, 4812, 27444
+4834, 4813, 27274
+4835, 4814, 26627
+4836, 4815, 26702
+4837, 4816, 26666
+4838, 4817, 26146
+4839, 4818, 26007
+5128, 5128, 24987
+4840, 4820, 32671
+4841, 4821, 32135
+4842, 4822, 31560
+4843, 4823, 31176
+4844, 4824, 30850
+4845, 4825, 30436
+4846, 4826, 29896
+4847, 4827, 29590
+4848, 4828, 29425
+4849, 4829, 29440
+4850, 4830, 29019
+4851, 4831, 28184
+4852, 4832, 28063
+4853, 4833, 27869
+4854, 4834, 27465
+4855, 4835, 26978
+4856, 4836, 26780
+4857, 4837, 26340
+4858, 4838, 26356
+4859, 4839, 26421
+5129, 5129, 25669
+4860, 4841, 32673
+4861, 4842, 32150
+4862, 4843, 31717
+4863, 4844, 31427
+4864, 4845, 30852
+4865, 4846, 30377
+4866, 4847, 30290
+4867, 4848, 29823
+4868, 4849, 29286
+4869, 4850, 29001
+4870, 4851, 28764
+4871, 4852, 28228
+4872, 4853, 27960
+4873, 4854, 27607
+4874, 4855, 27300
+4875, 4856, 27112
+4876, 4857, 26994
+4877, 4858, 26627
+4878, 4859, 26569
+5130, 5130, 25586
+4879, 4861, 32676
+4880, 4862, 32124
+4881, 4863, 31535
+4882, 4864, 31278
+4883, 4865, 30987
+4884, 4866, 30353
+4885, 4867, 30264
+4886, 4868, 29614
+4887, 4869, 29119
+4888, 4870, 28806
+4889, 4871, 28937
+4890, 4872, 28364
+4891, 4873, 28234
+4892, 4874, 28032
+4893, 4875, 27596
+4894, 4876, 26781
+4895, 4877, 26658
+4896, 4878, 26521
+5131, 5131, 25631
+4897, 4880, 32674
+4898, 4881, 32149
+4899, 4882, 31696
+4900, 4883, 31410
+4901, 4884, 30783
+4902, 4885, 30531
+4903, 4886, 30286
+4904, 4887, 29744
+4905, 4888, 29585
+4906, 4889, 29208
+4907, 4890, 28890
+4908, 4891, 28140
+4909, 4892, 28288
+4910, 4893, 27988
+4911, 4894, 27603
+4912, 4895, 27617
+4913, 4896, 27090
+5132, 5132, 26186
+4914, 4898, 32689
+4915, 4899, 32122
+4916, 4900, 31773
+4917, 4901, 31337
+4918, 4902, 31000
+4919, 4903, 30550
+4920, 4904, 30040
+4921, 4905, 29580
+4922, 4906, 29184
+4923, 4907, 29164
+4924, 4908, 29116
+4925, 4909, 28368
+4926, 4910, 28659
+4927, 4911, 28078
+4928, 4912, 27587
+4929, 4913, 26829
+5133, 5133, 26152
+4930, 4915, 32674
+4931, 4916, 32147
+4932, 4917, 31808
+4933, 4918, 31252
+4934, 4919, 30959
+4935, 4920, 30228
+4936, 4921, 30288
+4937, 4922, 29776
+4938, 4923, 29627
+4939, 4924, 29369
+4940, 4925, 29107
+4941, 4926, 28519
+4942, 4927, 28175
+4943, 4928, 28152
+4944, 4929, 27611
+5134, 5134, 27011
+4945, 4931, 32676
+4946, 4932, 32146
+4947, 4933, 31896
+4948, 4934, 31352
+4949, 4935, 30939
+4950, 4936, 30617
+4951, 4937, 30309
+4952, 4938, 30021
+4953, 4939, 29334
+4954, 4940, 29091
+4955, 4941, 29127
+4956, 4942, 28378
+4957, 4943, 28676
+4958, 4944, 27775
+5135, 5135, 26709
+4959, 4946, 32683
+4960, 4947, 32188
+4961, 4948, 31860
+4962, 4949, 31389
+4963, 4950, 31076
+4964, 4951, 30529
+4965, 4952, 30594
+4966, 4953, 29978
+4967, 4954, 29664
+4968, 4955, 29435
+4969, 4956, 29238
+4970, 4957, 28488
+4971, 4958, 28829
+5136, 5136, 26618
+4972, 4960, 32675
+4973, 4961, 32076
+4974, 4962, 31744
+4975, 4963, 31330
+4976, 4964, 30988
+4977, 4965, 30234
+4978, 4966, 30183
+4979, 4967, 29690
+4980, 4968, 29489
+4981, 4969, 29322
+4982, 4970, 29175
+4983, 4971, 28590
+5137, 5137, 27489
+4984, 4973, 32696
+4985, 4974, 32229
+4986, 4975, 31685
+4987, 4976, 31626
+4988, 4977, 30945
+4989, 4978, 30564
+4990, 4979, 30203
+4991, 4980, 29900
+4992, 4981, 29860
+4993, 4982, 29580
+4994, 4983, 29050
+5138, 5138, 27805
+4995, 4985, 32674
+4996, 4986, 32160
+4997, 4987, 31890
+4998, 4988, 31397
+4999, 4989, 31179
+5000, 4990, 30631
+5001, 4991, 30551
+5002, 4992, 30477
+5003, 4993, 29914
+5004, 4994, 29565
+5139, 5139, 28656
+5005, 4996, 32698
+5006, 4997, 32198
+5007, 4998, 31875
+5008, 4999, 31320
+5009, 5000, 30920
+5010, 5001, 30724
+5011, 5002, 30487
+5012, 5003, 30095
+5013, 5004, 29793
+5140, 5140, 28402
+5014, 5006, 32684
+5015, 5007, 32144
+5016, 5008, 31895
+5017, 5009, 31457
+5018, 5010, 31098
+5019, 5011, 30585
+5020, 5012, 30477
+5021, 5013, 29876
+5141, 5141, 28751
+5022, 5015, 32697
+5023, 5016, 32171
+5024, 5017, 31789
+5025, 5018, 31358
+5026, 5019, 31006
+5027, 5020, 30556
+5028, 5021, 30577
+5142, 5142, 29370
+5029, 5023, 32669
+5030, 5024, 32145
+5031, 5025, 31843
+5032, 5026, 31438
+5033, 5027, 31170
+5034, 5028, 30373
+5143, 5143, 29771
+5035, 5030, 32688
+5036, 5031, 32235
+5037, 5032, 31930
+5038, 5033, 31331
+5039, 5034, 31434
+5144, 5144, 29870
+5040, 5036, 32694
+5041, 5037, 32174
+5042, 5038, 31798
+5043, 5039, 31491
+5145, 5145, 30164
+5044, 5041, 32697
+5045, 5042, 32221
+5046, 5043, 31740
+5146, 5146, 30935
+5047, 5045, 32708
+5048, 5046, 32257
+5147, 5147, 31305
+5049, 5048, 32673
+5148, 5148, 31620
+5149, 5149, 32677
+99, 99, 69
+198, 198, 804
+296, 296, 1268
+393, 393, 1541
+489, 489, 1743
+584, 584, 2085
+678, 678, 2396
+771, 771, 3150
+863, 863, 3172
+954, 954, 3435
+1044, 1044, 4099
+1133, 1133, 4621
+1221, 1221, 4777
+1308, 1308, 5186
+1394, 1394, 5537
+1479, 1479, 5462
+1563, 1563, 7025
+1646, 1646, 7351
+1728, 1728, 6828
+1809, 1809, 7123
+1889, 1889, 7637
+1968, 1968, 8375
+2046, 2046, 8920
+2123, 2123, 8825
+2199, 2199, 8228
+2274, 2274, 9768
+2348, 2348, 10325
+2421, 2421, 10067
+2493, 2493, 10232
+2564, 2564, 10428
+2634, 2634, 11538
+2703, 2703, 10959
+2771, 2771, 12198
+2838, 2838, 13136
+2904, 2904, 10999
+2969, 2969, 12438
+3033, 3033, 12278
+3096, 3096, 12800
+3158, 3158, 12793
+3219, 3219, 13701
+3279, 3279, 13750
+3338, 3338, 13753
+3396, 3396, 13711
+3453, 3453, 15082
+3509, 3509, 14901
+3564, 3564, 15166
+3618, 3618, 15631
+3671, 3671, 16761
+3723, 3723, 15960
+3774, 3774, 16156
+3824, 3824, 15783
+3873, 3873, 16846
+3921, 3921, 17947
+3968, 3968, 17780
+4014, 4014, 18179
+4059, 4059, 17971
+4103, 4103, 18271
+4146, 4146, 18401
+4188, 4188, 18480
+4229, 4229, 19426
+4269, 4269, 18935
+4308, 4308, 20716
+4346, 4346, 19925
+4383, 4383, 20285
+4419, 4419, 20899
+4454, 4454, 20217
+4488, 4488, 21046
+4521, 4521, 21543
+4553, 4553, 21644
+4584, 4584, 22488
+4614, 4614, 22174
+4643, 4643, 23111
+4671, 4671, 22921
+4698, 4698, 22240
+4724, 4724, 23780
+4749, 4749, 23886
+4773, 4773, 24414
+4796, 4796, 24976
+4818, 4818, 24987
+4839, 4839, 25668
+4859, 4859, 25594
+4878, 4878, 25630
+4896, 4896, 26189
+4913, 4913, 26155
+4929, 4929, 27008
+4944, 4944, 26705
+4958, 4958, 26615
+4971, 4971, 27502
+4983, 4983, 27808
+4994, 4994, 28662
+5004, 5004, 28408
+5013, 5013, 28747
+5021, 5021, 29366
+5028, 5028, 29773
+5034, 5034, 29873
+5039, 5039, 30159
+5043, 5043, 30939
+5046, 5046, 31302
+5048, 5048, 31618
+5049, 5049, 32677
