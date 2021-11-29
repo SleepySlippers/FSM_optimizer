@@ -106,7 +106,7 @@ struct fsm {
         actual_zeros += int(bit) == 0;
         actual_ones += int(bit) == 1;
         //++from[prev][bit];
-        ++from[prev.first * (prev.second * 2 - 1)][bit];
+        ++from[(int)prev.first * (prev.second * 2 - 1)][bit];
     }
 
     uint get_number(char *&p, char *q) {
@@ -248,6 +248,9 @@ bool split_most() {
         return false;
     }
     if (ind.second != abs(ind.first)) {
+//	std::cerr << ind.second << "\n";
+//	printf("%d\n", ind.second);
+//	printf("%d %d %d\n", ind.second, ind.first, FSM[ind.second].from[ind.first][0]);
         word zero_after = FSM[ind.second].s[0];
         word one_after = FSM[ind.second].s[1];
         FSM[ACTUAL_FSM_SIZE].s[0] = zero_after;
@@ -260,7 +263,7 @@ bool split_most() {
 
         FSM[abs(ind.first)].s[int(Bit(ind.first))] = ACTUAL_FSM_SIZE;
 
-        qword full_zero_out = FSM[zero_after].from[-sword(ind.second)][0] + FSM[zero_after].from[-sword(ind.second)][1];
+        /*qword full_zero_out = FSM[zero_after].from[-sword(ind.second)][0] + FSM[zero_after].from[-sword(ind.second)][1];
         sqword zero_out = full_zero_out;
         qword full_one_out = FSM[one_after].from[sword(ind.second)][0] + FSM[one_after].from[sword(ind.second)][1];
         sqword one_out = full_one_out;
@@ -272,10 +275,10 @@ bool split_most() {
         }
         sqword without = (FSM[ind.second].from[ind.first][0] + FSM[ind.second].from[ind.first][1]);
         zero_out = full_zero_out * without / sum;
-        one_out = full_one_out * without / sum;
+        one_out = full_one_out * without / sum;*/
 
-        zero_out = 0;
-        one_out = 0;
+        sqword zero_out = 0;
+        sqword one_out = 0;
 
         FSM[ind.second].from.erase(ind.first);
 

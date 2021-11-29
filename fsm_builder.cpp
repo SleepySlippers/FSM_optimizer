@@ -21,6 +21,10 @@ enum {
 #include <algorithm>
 #include <vector>
 #include <utility>
+#include <map>
+#include <array>
+#include <utility>
+#include <memory>
 
 typedef unsigned int uint;
 typedef unsigned short word;
@@ -29,26 +33,58 @@ typedef unsigned char byte;
 typedef unsigned long long int qword;
 typedef signed long long int sqword;
 
-struct FSMNodeBase {
-    std::array<word, 2> s = {0, 0}; // next state after bits 0,1
-    uint pp = SCALE - 1;
-};
+struct Bit {
+    template<typename T>
+    explicit Bit(const T &x) : _val(x > 0) {}
 
-struct AnalyzedFSMNode : FSMNodeBase {
-    qword goto_zeros = 0;
-    qword goto_ones = 0;
+    Bit() : _val(0) {}
 
-    uint UpdatePP() {
-        if (goto_zeros + goto_ones != 0) {
-            return pp = static_cast<uint>((goto_zeros << SCALElog) / (goto_zeros + goto_ones));
-        }
-        return 0;
+    operator int() const {
+        return int(_val);
     }
 
-    AnalyzedFSMNode() {}
+    ~Bit() = default;
 
-    AnalyzedFSMNode(const FSMNodeBase &b) : FSMNodeBase(b) {}
+private:
+    unsigned char _val;
 };
+
+namespace Nodes {
+
+    struct FSMNodeBase {
+        std::array<word, 2> s = {0, 0}; // next state after bits 0,1
+        uint pp = SCALE - 1;
+    };
+
+    struct AnalyzedFSMNode final : FSMNodeBase {
+        qword goto_zeros = 0;
+        qword goto_ones = 0;
+
+        uint UpdatePP() {
+            if (goto_zeros + goto_ones != 0) {
+                return pp = static_cast<uint>((goto_zeros << SCALElog) / (goto_zeros + goto_ones));
+            }
+            return 0;
+        }
+
+        AnalyzedFSMNode() = default;
+
+        AnalyzedFSMNode(const FSMNodeBase &b) : FSMNodeBase(b) {}
+    };
+
+    struct FromAnalyzedFSMNode final : FSMNodeBase {
+        std::map<sword, std::array<sqword, 2>> from;
+
+        void UpdateFrom(std::pair<word, char> prev, Bit bit) {
+            ++from[(int)prev.first * (prev.second * 2 - 1)][bit];
+        }
+
+        FromAnalyzedFSMNode() = default;
+
+        FromAnalyzedFSMNode(const FSMNodeBase &b) : FSMNodeBase(b) {}
+    };
+
+}
 
 template<typename Node>
 struct FSM {
@@ -56,7 +92,7 @@ struct FSM {
     word fsm_size = 0;
     word new_state_ind = 0;
 
-    FSM() {}
+    FSM() = default;
 
     template<typename ParentNode>
     FSM(const FSM<ParentNode> &p_fsm) : fsm_size(p_fsm.fsm_size), new_state_ind(p_fsm.new_state_ind) {
@@ -64,6 +100,17 @@ struct FSM {
         for (int i = 0; i < new_state_ind; ++i) {
             fsm[i] = p_fsm.fsm[i];
         }
+    }
+
+    template<typename ParentNode>
+    operator FSM<ParentNode>() {
+        FSM<ParentNode> res;
+        for (int i = 0; i < new_state_ind; ++i) {
+            res.fsm[i] = fsm[i];
+        }
+        res.new_state_ind = new_state_ind;
+        res.fsm_size = fsm_size;
+        return res;
     }
 
     void Print() const {
@@ -76,7 +123,7 @@ struct FSM {
         if (new_state_ind < N_STATES) {
             fsm[new_state_ind] = std::move(node);
         } else {
-            return static_cast<word>(-1);
+            return word(-1);
         }
         ++fsm_size;
         return new_state_ind++;
@@ -86,55 +133,68 @@ struct FSM {
 struct Empty {
 };
 
-using BaseFSM = FSM<FSMNodeBase>;
+using BaseFSM = FSM<Nodes::FSMNodeBase>;
 using NoFSM = FSM<Empty>;
 
-struct CounterBase {
-    virtual void Update(uint bit) = 0;
-};
+namespace Counters {
 
-template<typename FSM>
-struct FSMCounter : CounterBase {
-    static std::shared_ptr<FSM> fsm;
-    word state = 0;
+    struct CounterBase {
+        virtual void Update(Bit bit) = 0;
+    };
 
-    void Update(uint bit) override { state = fsm->fsm[state].s[bit]; }
-};
+    template<typename FSM>
+    struct FSMCounter : CounterBase {
+        static std::shared_ptr<FSM> fsm;
+        word state = 0;
 
-struct FSMAnalyzerCounter final : FSMCounter<FSM<AnalyzedFSMNode>> {
+        void Update(Bit bit) override { state = fsm->fsm[state].s[bit]; }
+    };
 
-    void Update(uint bit) override {
-        fsm->fsm[state].goto_ones += (bit == 1);
-        fsm->fsm[state].goto_zeros += (bit == 0);
-        state = fsm->fsm[state].s[bit];
-    }
-};
+    struct FSMAnalyzerCounter final : FSMCounter<FSM<Nodes::AnalyzedFSMNode>> {
 
-template<typename FSM>
-std::shared_ptr<FSM> FSMCounter<FSM>::fsm = nullptr;
-
-struct AnalyzerCounter final : CounterBase {
-    std::string starts;
-    qword zeros = 0;
-    qword ones = 0;
-
-    bool operator<(const AnalyzerCounter &other) const {
-        //return starts < other.starts;
-        return zeros + ones > other.zeros + other.ones;
-    }
-
-    static const int HIST_SZ = 20;
-
-    void Update(uint bit) override {
-        bit = (bit > 0);
-        zeros += (bit == 0);
-        ones += (bit == 1);
-        if (starts.size() < HIST_SZ) {
-            starts.push_back(bit + '0');
+        void Update(Bit bit) override {
+            fsm->fsm[state].goto_ones += (bit == 1);
+            fsm->fsm[state].goto_zeros += (bit == 0);
+            state = fsm->fsm[state].s[bit];
         }
-    }
-};
+    };
 
+    template<typename FSM>
+    std::shared_ptr<FSM> FSMCounter<FSM>::fsm = nullptr;
+
+    struct AnalyzerCounter final : CounterBase {
+        std::string starts;
+        qword zeros = 0;
+        qword ones = 0;
+
+        bool operator<(const AnalyzerCounter &other) const {
+            //return starts < other.starts;
+            return zeros + ones > other.zeros + other.ones;
+        }
+
+        static const int HIST_SZ = 20;
+
+        void Update(Bit bit) override {
+            zeros += (bit == 0);
+            ones += (bit == 1);
+            if (starts.size() < HIST_SZ) {
+                starts.push_back(bit + '0');
+            }
+        }
+    };
+
+    struct FromAnalyzerCounter final : FSMCounter<FSM<Nodes::FromAnalyzedFSMNode>> {
+        std::pair<word, char> prev = std::make_pair(word(-1), char(-1));
+
+        void Update(Bit bit) override {
+            if (state != 0) {
+                fsm->fsm[state].UpdateFrom(prev, bit);
+            }
+            prev = std::make_pair(state, bit);
+            FSMCounter::Update(bit);
+        }
+    };
+}
 
 template<typename Counter>
 struct Predictor {
@@ -150,8 +210,7 @@ struct Predictor {
         return c;
     }
 
-    void update(uint bit) {
-        bit = (bit > 0);
+    void update(Bit bit) {
         all_zeros += (bit == 0);
         all_ones += (bit == 1);
         //FSM[p[ctx].state].Update(State(), bit, p[ctx].prev);
@@ -161,9 +220,9 @@ struct Predictor {
     }
 };
 
-void PrintInfo(const std::shared_ptr<Predictor<AnalyzerCounter>> &p) {
-    std::vector<std::pair<AnalyzerCounter, int> > hits;
-    for (int i = 0; i < Predictor<AnalyzerCounter>::P_SZ; ++i) {
+void PrintInfo(const std::shared_ptr<Predictor<Counters::AnalyzerCounter>> &p) {
+    std::vector<std::pair<Counters::AnalyzerCounter, int> > hits;
+    for (int i = 0; i < Predictor<Counters::AnalyzerCounter>::P_SZ; ++i) {
         if (p->p[i].ones + p->p[i].zeros) {
             if (p->p[i].ones + p->p[i].zeros > 0) {
                 hits.emplace_back(p->p[i], i);
@@ -175,7 +234,7 @@ void PrintInfo(const std::shared_ptr<Predictor<AnalyzerCounter>> &p) {
     qword prev = 1;
     qword prev_zeros = 0;
     qword prev_ones = 0;
-    for (const auto& it: hits) {
+    for (const auto &it: hits) {
         prev_zeros += it.first.zeros;
         prev_ones += it.first.ones;
         if (prev == it.first.zeros + it.first.ones) {
@@ -201,8 +260,8 @@ void PrintInfo(const std::shared_ptr<Predictor<AnalyzerCounter>> &p) {
 
 template<typename Counter>
 void proc(std::shared_ptr<Predictor<Counter>> p, uint bit) {
-    bit = (bit > 0);
-    p->update(bit);
+    //bit = (bit > 0);
+    p->update(Bit(bit));
 }
 
 template<typename Counter>
@@ -226,7 +285,7 @@ std::shared_ptr<Predictor<Counter>> ProcessFile(std::string &s) {
     return p;
 }
 
-BaseFSM BuildGraph(const std::shared_ptr<Predictor<AnalyzerCounter>> &p) {
+BaseFSM BuildGraph(const std::shared_ptr<Predictor<Counters::AnalyzerCounter>> &p) {
     BaseFSM res;
     const int ANAL_LEN = 100;
     int st_num[ANAL_LEN][ANAL_LEN];
@@ -254,11 +313,73 @@ BaseFSM BuildGraph(const std::shared_ptr<Predictor<AnalyzerCounter>> &p) {
 }
 
 void CountPPForGraph(std::string &s, BaseFSM &graph) {
-    FSMAnalyzerCounter::fsm = std::make_shared<FSM<AnalyzedFSMNode>>(graph);
-    auto pred = ProcessFile<FSMAnalyzerCounter>(s);
-    for (int i = 0; i < FSMAnalyzerCounter::fsm->new_state_ind; ++i){
-        graph.fsm[i].pp = FSMAnalyzerCounter::fsm->fsm[i].UpdatePP();
+    Counters::FSMAnalyzerCounter::fsm = std::make_shared<FSM<Nodes::AnalyzedFSMNode>>(graph);
+    auto pred = ProcessFile<Counters::FSMAnalyzerCounter>(s);
+    for (int i = 0; i < Counters::FSMAnalyzerCounter::fsm->new_state_ind; ++i) {
+        graph.fsm[i].pp = Counters::FSMAnalyzerCounter::fsm->fsm[i].UpdatePP();
     }
+}
+
+word Split(const std::shared_ptr<FSM<Nodes::FromAnalyzedFSMNode>> &graph, word state, sword edge) {
+    if (state == 0) return -1;
+    if (state == abs(edge)) {
+        return -1;
+    }
+    if (!graph->fsm[state].from.count(edge))return -1;
+    auto st = graph->AddState({});
+    if (st == word(-1)) {
+        return -1;
+    }
+    graph->fsm[st].s = graph->fsm[state].s;
+    graph->fsm[st].from[edge] = graph->fsm[state].from[edge];
+    graph->fsm[abs(edge)].s[Bit(edge)] = st;
+    graph->fsm[state].from.erase(edge);
+    //graph->fsm[graph->fsm[st].s[0]].from[st][0] -= 0;
+    graph->fsm[graph->fsm[st].s[0]].from[-sword(st)][0] += 0;
+    graph->fsm[graph->fsm[st].s[1]].from[st][0] += 0;
+    graph->fsm[graph->fsm[st].s[0]].from[-sword(state)][0] -= 0;
+    graph->fsm[graph->fsm[st].s[1]].from[state][0] -= 0;
+    //graph->fsm[graph->fsm[st].s[1]].from[-sword(st)][0] -= 0;
+    return st;
+}
+
+bool SplitMost(decltype(Counters::FromAnalyzerCounter::fsm) fsm) {
+    qword mx = 0;
+    std::pair<sword, word> ind{};
+    for (int i = 1; i < fsm->new_state_ind; ++i) {
+        if (fsm->fsm[i].from.size() > 1) {
+            for (auto it: fsm->fsm[i].from) {
+                if (abs(it.first) != i && it.second[0] + it.second[1] > mx) {
+                    mx = it.second[0] + it.second[1];
+                    ind = std::make_pair(it.first, i);
+                }
+            }
+        }
+    }
+    if (mx == 0) {
+        return false;
+    }
+    if (ind.second == abs(ind.first)) return false;
+    //std::cerr << ind.second << "\n";
+    //printf("%d %d %d\n", ind.second, ind.first, fsm->fsm[ind.second].from[ind.first][0]);
+    Split(fsm, ind.second, ind.first);
+    return true;
+}
+
+void OptimizeGraph(std::string &s, BaseFSM &graph) {
+    Counters::FromAnalyzerCounter::fsm = std::make_shared<FSM<Nodes::FromAnalyzedFSMNode>>(BaseFSM(graph));
+    auto pred = ProcessFile<Counters::FromAnalyzerCounter>(s);
+    for (int j = 0; j < 10; ++j) {
+        for (int i = 0; i < 3000; ++i) {
+            if (!SplitMost(Counters::FromAnalyzerCounter::fsm)) {
+                break;
+            }
+        }
+        graph = *Counters::FromAnalyzerCounter::fsm;
+        Counters::FromAnalyzerCounter::fsm = std::make_shared<FSM<Nodes::FromAnalyzedFSMNode>>(BaseFSM(graph));
+        auto pred = ProcessFile<Counters::FromAnalyzerCounter>(s);
+    }
+    graph = *Counters::FromAnalyzerCounter::fsm;
 }
 
 uint flen(FILE *f);
@@ -270,11 +391,12 @@ int main(int argc, char *argv[]) {
     FILE *in = fopen(argv[1], "rb");
     freopen(argv[2], "w", stdout);
     std::string s = LoadFileIntoString(in);
-    auto info = ProcessFile<AnalyzerCounter>(s);
+    auto info = ProcessFile<Counters::AnalyzerCounter>(s);
     //PrintInfo(info);
-    FSMNodeBase b;
-    AnalyzedFSMNode a;
+    Nodes::FSMNodeBase b;
+    Nodes::AnalyzedFSMNode a;
     auto graph = BuildGraph(info);
+    OptimizeGraph(s, graph);
     CountPPForGraph(s, graph);
     graph.Print();
 }
